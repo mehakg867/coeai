@@ -1,11 +1,17 @@
 import React, {Component} from 'react';
 import { BrowserRouter as Router} from "react-router-dom";
-//import './App.css';
-
+//import Container from '@mui/material/Container';
+import Typography from '@mui/material/Typography';
+import '../App.css';
 function Home() {
     return (
         <div>
-            <h1>Home page</h1>
+           <div style={{height:"100px"}}>
+              <div><h3>Centre of Excellence in Artificial Intelligence</h3></div>
+              <div></div>
+           </div> 
+
+ 
         </div>
     );
   }
