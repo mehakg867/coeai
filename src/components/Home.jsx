@@ -12,13 +12,12 @@ function Home() {
                      <div><h2>CENTRE of EXCELLENCE</h2></div>
                
                      <div><h2>Artificial Intelligence</h2></div>
-                        <div>COE-AI</div>
-                           <div><h4>SUPPORTED BY</h4></div>
-                              <div><img src={goilogo} alt="this is college logo" className='photo' /></div>
-                                    <div>Department of Science and Technology</div>
-                                        <div>GOI</div>
            </div>
            <div><img src={IGDTUW} alt="this is college logo" className='image' /></div> 
+                           <div>SUPPORTED BY</div>
+                              <div><img src={goilogo} alt="this is college logo" className='photo' /></div>
+                             <div>Department of Science and Technology</div>
+                        <div>GOI</div>
 
  
         </div>
