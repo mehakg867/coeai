@@ -9,7 +9,7 @@ function Home() {
         <div>
            <div className='heading'>
                <div><h3>INDIRA GANDHI DELHI TECHNICAL UNIVERSITY FOR WOMEN</h3></div>
-                     <div><h3>CENTRE of EXCELLENCE</h3></div>
+                     <div><h3>CENTRE OF EXCELLENCE</h3></div>
                       <div><h3>Artificial Intelligence</h3></div>
            </div>
            <div><img src={IGDTUW} alt="this is college logo" className='image' /></div> 
