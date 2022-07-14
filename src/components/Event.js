@@ -1,10 +1,12 @@
 import React, {Component} from 'react';
 import { BrowserRouter as Router} from "react-router-dom";
+import Nav from '../container/Nav';
 import '../App.css';
 
 function Event() {
     return (
-        <div className='App'>
+        <div>
+        <Nav />
             <h1>Event page</h1>
             <p>this is event page</p>
         </div>
