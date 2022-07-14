@@ -8,11 +8,11 @@ import logo from "../images/logo.png";
 function Home() {
     return (
         <div >
-        <div className="bg_image">
+        <div className='bgimage'>
         <div id="coverTitle" className="w-100" >
         <div className="row container">
           <div className="col-5 ">
-            <div className="d-flex align-items-center justify-content-center" style={{height:100, fontSize:20, textAlign:'center',position:'relative',left:70 }}>
+          <div className="d-flex align-items-center justify-content-center" style={{height:100, fontSize:20, textAlign:'center',position:'relative',left:70 }}>
                CENTRE OF EXCELLENCE IN ARTIFICIAL INTELLIGENCE </div>
           </div>
           <div className="col-2">

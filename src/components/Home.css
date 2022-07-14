@@ -16,6 +16,11 @@
     width: 100px;
     height: 100px;
   }
+  .bgimage{
+    background-image: url('../images/IGDTUW2.jpg');
+    background-size: cover;
+    height: 100vh;
+  }
 
   .bg_image{
     background-image: url('../images/IGDTUW2.jpg');
