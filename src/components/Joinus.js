@@ -1,13 +1,15 @@
 import React, {Component} from 'react';
 import { BrowserRouter as Router} from "react-router-dom";
 import '../App.css';
+import Nav from '../container/Nav';
 
-function Partnership() {
+function Joinus() {
     return (
         <div>
-            <h1>Partnership page</h1>
+        <Nav/>
+            <h1>Join us page</h1>
         </div>
     );
   }
   
-  export default Partnership;
+  export default Joinus;

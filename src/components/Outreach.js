@@ -1,13 +1,15 @@
 import React, {Component} from 'react';
 import { BrowserRouter as Router} from "react-router-dom";
 import '../App.css';
+import Nav from '../container/Nav';
 
-function People() {
+function Outreach() {
     return (
         <div>
-            <h1>People page</h1>
+        <Nav />
+            <h1>Outreach page</h1>
         </div>
     );
   }
   
-  export default People;
+  export default Outreach;
