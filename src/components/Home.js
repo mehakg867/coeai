@@ -8,20 +8,20 @@ import logo from "../images/logo.png";
 function Home() {
     return (
         <div >
-        <div>
+        <div className='bgimage'>
         <div id="coverTitle" className="w-100" >
         <div className="row container">
           <div className="col-5 ">
-            <div className="d-flex align-items-center justify-content-center" style={{height:100, fontSize:20}}>
+          <div className="d-flex align-items-center justify-content-center" style={{height:100, fontSize:20, textAlign:'center',position:'relative',left:70 }}>
                CENTRE OF EXCELLENCE IN ARTIFICIAL INTELLIGENCE </div>
           </div>
           <div className="col-2">
-            <div className="d-flex align-items-center justify-content-center" style={{height:100}}>
+            <div className="d-flex align-items-center justify-content-center" style={{height:100,textAlign:'center',position:'relative',left:110 }}>
               <img src={logo} alt="this is college logo" className='photo' />
                </div>
           </div>
           <div className="col-5">
-            <div className="d-flex align-items-center justify-content-center" style={{height:100, fontSize:20}}>
+            <div className="d-flex align-items-center justify-content-center" style={{height:100, fontSize:20,position:'relative',left:140}}>
                INDIRA GANDHI DELHI TECHNICAL UNIVERSITY FOR WOMEN  </div>
           </div>
         </div>
