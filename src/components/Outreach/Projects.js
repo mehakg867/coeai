@@ -6,7 +6,7 @@ function Projects() {
     return (
         <div>
         <Navigation />
-            <h1>Outreach page</h1>
+            <h1>project page</h1>
         </div>
     );
   }

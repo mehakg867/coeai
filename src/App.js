@@ -19,6 +19,7 @@ import Partnership from './components/Partnership';
 import People from './components/People';
 import Joinus from './components/Joinus';
 import Event from './components/Event';
+import Aboutus from './components/Aboutus';
 
 
 
@@ -31,15 +32,15 @@ function App() {
           <Route path="/" element={<Home />} />
            <Route path="/Conference" element= {<Conference/>}/>
 
-          <Route Path="/Research/Patents" element={<Patents />}/>
-          <Route path="/Research/Projects" element={<Projects/>} />
-          <Route path="/Research/Products" element={<Products/>} />
-          <Route path="/Research/Publications" element={<Publications/>} />
+          <Route Path="/Outreach/Patents" element={<Patents />}/>
+          <Route path="/Outreach/Projects" element={<Projects/>} />
+          <Route path="/Outreach/Products" element={<Products/>} />
+          <Route path="/Outreach/Publications" element={<Publications/>} />
 
-          <Route path="/Outreach/ComputerVision" element={<ComputerVision/>} />
-          <Route path="/Outreach/ImageRecognition" element={<ImageRecognition />} />
-          <Route path="/Outreach/Nlp" element={<Nlp />} />
-          <Route path="/SpeechTech" element={<SpeechTech />} />
+          <Route path="/Research/ComputerVision" element={<ComputerVision/>} />
+          <Route path="/Research/ImageRecognition" element={<ImageRecognition />} />
+          <Route path="/Research/Nlp" element={<Nlp />} />
+          <Route path="Research/SpeechTech" element={<SpeechTech />} />
           
           <Route path="/Event" element={<Event />} />
 
@@ -48,7 +49,7 @@ function App() {
           <Route path="/Partnership" element={<Partnership />} />
           
           <Route path="/People" element={<People />} />
-          
+          <Route path="/Aboutus" element ={<Aboutus />} />         
           </Routes>
           
       </div>
