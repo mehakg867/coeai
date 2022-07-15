@@ -23,7 +23,7 @@ function Home() {
                </div>
           </div>
           <div className="col-5">
-            <div className="d-flex align-items-center justify-content-center" style={{height:100, fontSize:20,position:'relative',left:140}}>
+               <div className="d-flex align-items-center justify-content-center" style={{height:100, fontSize:20,position:'relative',left:140}}>
                INDIRA GANDHI DELHI TECHNICAL UNIVERSITY FOR WOMEN  </div>
           </div>
         </div>

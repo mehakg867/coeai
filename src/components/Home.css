@@ -42,9 +42,9 @@
     font-size: 130%;
     padding: 10px;
     margin-bottom: 10px;
-    margin-left: 40px;
+    margin-left: 30px;
     color:black ;
-    margin-right: 40px;
+    margin-right: 30px;
      padding-right: 16px;
   }
   div.homenav.nav-item.dropdown:hover{
@@ -68,10 +68,10 @@
   
   div.Navigation.navbar-nav{
     box-shadow: 0px -20px 40px -10px #8cb0d4 inset;
-  
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: auto;
+   border-radius: 25px 25px 25px 25px;
   }
- div.Navigation.navbar-nav{
-  border-radius: 25px 25px 25px 25px;
-position:relative;
-bottom: 2px;
- }
+ 
