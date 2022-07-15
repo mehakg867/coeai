@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import { BrowserRouter as Router, Switch, Route, Routes } from "react-router-dom";
 import './App.css';
 import Home from './components/Home';
-import Event from './components/Conference';
+import Conference from './components/Conference';
 
 import Projects from './components/Outreach/Projects';
 import Patents from './components/Outreach/Patents';
@@ -18,7 +18,8 @@ import Partnership from './components/Partnership';
 
 import People from './components/People';
 import Joinus from './components/Joinus';
-import 'bootstrap/dist/css/bootstrap.css'
+import Event from './components/Event';
+
 
 
 function App() {
@@ -28,15 +29,16 @@ function App() {
       
           <Routes>
           <Route path="/" element={<Home />} />
-          
-          <Route Path="/Patents" element={<Patents />}/>
-          <Route path="/Projects" element={<Projects/>} />
-          <Route path="/Products" element={<Products/>} />
-          <Route path="/Publications" element={<Publications/>} />
+           <Route path="/Conference" element= {<Conference/>}/>
 
-          <Route path="/ComputerVision" element={<ComputerVision/>} />
-          <Route path="/ImageRecognition" element={<ImageRecognition />} />
-          <Route path="/Nlp" element={<Nlp />} />
+          <Route Path="/Research/Patents" element={<Patents />}/>
+          <Route path="/Research/Projects" element={<Projects/>} />
+          <Route path="/Research/Products" element={<Products/>} />
+          <Route path="/Research/Publications" element={<Publications/>} />
+
+          <Route path="/Outreach/ComputerVision" element={<ComputerVision/>} />
+          <Route path="/Outreach/ImageRecognition" element={<ImageRecognition />} />
+          <Route path="/Outreach/Nlp" element={<Nlp />} />
           <Route path="/SpeechTech" element={<SpeechTech />} />
           
           <Route path="/Event" element={<Event />} />
