@@ -1,13 +1,13 @@
 import React, {Component} from 'react';
 import { BrowserRouter as Router} from "react-router-dom";
-import Nav from '../container/Nav';
+import Navigation from '../../container/Navigation';
 //import './App.css';
 
-function Courses() {
+function ImageRecognition() {
   return (
     
       <div>
-      <Nav />
+      <Navigation />
           <h1>About page</h1>
       </div>
    
@@ -15,4 +15,4 @@ function Courses() {
   );
 }
 
-export default Courses;
+export default ImageRecognition;

@@ -1,15 +1,14 @@
 import React, {Component} from 'react';
 import { BrowserRouter as Router} from "react-router-dom";
-import '../App.css';
-import Nav from '../container/Nav';
+import Navigation from '../../container/Navigation';
 
-function Outreach() {
+function Projects() {
     return (
         <div>
-        <Nav />
+        <Navigation />
             <h1>Outreach page</h1>
         </div>
     );
   }
   
-  export default Outreach;
+  export default Projects;

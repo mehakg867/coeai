@@ -1,9 +1,8 @@
 import React, {Component} from 'react';
 import { BrowserRouter as Router} from "react-router-dom";
-import '../App.css';
-import Navigation from '../container/Navigation';
+import Navigation from '../../container/Navigation';
 
-function Joinus() {
+function Products() {
     return (
         <div>
         <Navigation/>
@@ -12,4 +11,4 @@ function Joinus() {
     );
   }
   
-  export default Joinus;
+  export default Products;

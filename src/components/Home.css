@@ -21,12 +21,7 @@
     background-size: cover;
     height: 100vh;
   }
-
-  .bg_image{
-    background-image: url('../images/IGDTUW2.jpg');
-    background-size: cover;
-    height: 100vh;
-  }
+  
   .element style {
     all: none;
   }

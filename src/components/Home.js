@@ -5,10 +5,11 @@ import './Home.css';
 import IGDTUW2 from "../images/IGDTUW2.jpg"
 import goilogo from "../images/goilogo.jpg";
 import logo from "../images/logo.png";
+import {Nav,NavbarBrand,Navbar, NavDropdown } from 'react-bootstrap';
 function Home() {
     return (
         <div >
-        <div className='bgimage'>
+        <div>
         <div id="coverTitle" className="w-100" >
         <div className="row container">
           <div className="col-5 ">
@@ -27,10 +28,86 @@ function Home() {
         </div>
       </div>
       </div>
+      <div  className='bgimage'></div>
+      <>
+      <Navbar bg="light" varient= "bright" sticky="top" expand="lg">
+                <NavbarBrand>
+                    <img src={logo} width="40px" height="40px"/>{''}
+                    INDIRA GANDHI DELHI TECHNICAL UNIVERSITY FOR WOMEN
+                </NavbarBrand>
+                <Nav>
+            
+                <Nav.Link herf ="/Home">Home</Nav.Link>
+                <Nav.Link herf ="/People">People</Nav.Link>
 
+                <NavDropdown title= "Research">
+                <NavDropdown.Item herf="/Research/Nlp">NLP</NavDropdown.Item>
+                <NavDropdown.Item herf="/Research/ImageRecognition"> Image recognition</NavDropdown.Item>
+                <NavDropdown.Item herf="/Research/ComputerVision"> Computer Vision</NavDropdown.Item>
+                <NavDropdown.Item herf="/Research/SpeechTech"> Speech technology</NavDropdown.Item>
+                </NavDropdown> 
+
+                <Nav.Link herf ="/Event">Event</Nav.Link>
+
+                <NavDropdown title= "Outreach Program">
+                <NavDropdown.Item herf="/Outreach/Projects">Projects</NavDropdown.Item>
+                <NavDropdown.Item herf="/Outreach/Products"> Products</NavDropdown.Item>
+                <NavDropdown.Item herf="/Outreach/Patents"> Patents</NavDropdown.Item>
+                <NavDropdown.Item herf="/Outreach/Publications"> Publications</NavDropdown.Item>
+                </NavDropdown> 
+
+                <Nav.Link herf ="/Conference">Conference</Nav.Link>
+                <Nav.Link herf ="/Joinus">Joinus</Nav.Link>
+                <Nav.Link herf ="/Partnership">Partnership</Nav.Link>
+
+        </Nav>
+            </Navbar>
+            </>
+      {/* <ul className="nav nav-tabs">
+  <li className="nav-item">
+    <a className="nav-link nv-link" href="/">Home</a>
+  </li>
+<li className="nav-item">
+<a className="nav-link nv-link" href="/People">People</a>
+  </li>
+<li className="nav-item">
+<a className="nav-link nv-link" href="/Courses">Courses</a>
+  </li>
+<li className="nav-item">
+<a className="nav-link nv-link" href="/Partnership">Partnership</a>
+  </li>
+  <li className="nav-item">
+  <a className="nav-link nv-link" href="/Outreach">Outreach</a>
+  </li>
+  <li className="nav-item">
+  <a className="nav-link nv-link" href="/Event">Events</a>
+  </li>
+
+  <li className="nav-item dropdown">
+    <a className="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Research</a>
+    <ul className="dropdown-menu">
+      <li><a className="dropdown-item" href="/Event">Project</a></li>
+      <li><a className="dropdown-item" href="/Outreach">Patents</a></li>
+      <li><a className="dropdown-item" href="/Outreach">Publication</a></li>
+      <li><a className="dropdown-item" href="/Outreach">Products</a></li>
+    </ul>
+  </li>
+  <li className="nav-item dropdown">
+    <a className="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
+    <ul className="dropdown-menu">
+      <li><a className="dropdown-item" href="#">Action</a></li>
+      <li><a className="dropdown-item" href="#">Another action</a></li>
+      <li><a className="dropdown-item" href="#">Something else here</a></li>
+      <li><a className="dropdown-item" href="#">Separated link</a></li>
+    </ul>
+  </li>
+  <li className="nav-item">
+  <a className="nav-link nv-link" href="/JoinUS">JoinUs</a>
+  </li>
+</ul> */}
            
-           <nav className="navbar rounded  navbar-expand-lg navbar-light bg-light p-4
-            mid_nav nvbar "> <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+           {/* <nav className="navbar rounded  navbar-expand-lg navbar-light bg-light
+            mid_nav nvbar "> <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"> <span className="navbar-toggler-icon"></span> </button>
             <div className="collapse navbar-collapse" id="navbarNavDropdown" >
               <div className="row text-center w-100">
                 <div className="col border-right border-dark p-1"> 
@@ -58,7 +135,7 @@ function Home() {
                   <a className="nav-link nv-link" href="/JoinUS">JoinUs</a>
                 </div>
               </div>
-          </div></nav>
+          </div></nav> */}
            
            
                            <div>SUPPORTED BY</div>

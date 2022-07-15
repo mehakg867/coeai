@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
 import { BrowserRouter as Router} from "react-router-dom";
-import '../App.css';
-import Navigation from '../container/Navigation';
 
-function Joinus() {
+import Navigation from '../../container/Navigation';
+
+function ComputerVision() {
     return (
         <div>
         <Navigation/>
@@ -12,4 +12,4 @@ function Joinus() {
     );
   }
   
-  export default Joinus;
+  export default ComputerVision;
