@@ -18,6 +18,7 @@ import Partnership from './components/Partnership';
 
 import People from './components/People';
 import Joinus from './components/Joinus';
+import 'bootstrap/dist/css/bootstrap.css'
 
 
 function App() {

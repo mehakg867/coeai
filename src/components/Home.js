@@ -62,7 +62,7 @@ function Home() {
 
         </Nav>
             </Navbar>
-            </>
+  </>
       {/* <ul className="nav nav-tabs">
   <li className="nav-item">
     <a className="nav-link nv-link" href="/">Home</a>
