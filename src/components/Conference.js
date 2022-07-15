@@ -6,7 +6,7 @@ import '../App.css';
 function Conference() {
     return (
         <div>
-        <Navigation />
+        <Navigation/>
             <h1>Event page</h1>
             <p>this is event page</p>
         </div>

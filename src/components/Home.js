@@ -1,11 +1,12 @@
 import React, {Component} from 'react';
-import { BrowserRouter as Router} from "react-router-dom";
+import { BrowserRouter as Router, Routes} from "react-router-dom";
 import '../App.css';
 import './Home.css';
 import IGDTUW2 from "../images/IGDTUW2.jpg"
 import goilogo from "../images/goilogo.jpg";
 import logo from "../images/logo.png";
-import {Nav,NavbarBrand,Navbar, NavDropdown } from 'react-bootstrap';
+import {Nav,NavbarBrand,Navbar, NavDropdown, } from 'react-bootstrap';
+import {Link} from 'react-router-dom';
 function Home() {
     return (
         <div >
@@ -32,38 +33,38 @@ function Home() {
       <>
       <Navbar bg="light" varient= "bright" sticky="top" expand="lg">
                 <NavbarBrand>
-                    <img src={logo} width="40px" height="40px"/>{''}
+                    <img src={logo} width="40px" height="40px"/>
                     INDIRA GANDHI DELHI TECHNICAL UNIVERSITY FOR WOMEN
                 </NavbarBrand>
                 <Nav>
             
-                <Nav.Link herf ="/Home">Home</Nav.Link>
-                <Nav.Link herf ="/People">People</Nav.Link>
+                <a className="nav-link nv-link" href="/">Home</a>
+                <a className="nav-link nv-link" href="/People">People</a>
 
                 <NavDropdown title= "Research">
-                <NavDropdown.Item herf="/Research/Nlp">NLP</NavDropdown.Item>
-                <NavDropdown.Item herf="/Research/ImageRecognition"> Image recognition</NavDropdown.Item>
-                <NavDropdown.Item herf="/Research/ComputerVision"> Computer Vision</NavDropdown.Item>
-                <NavDropdown.Item herf="/Research/SpeechTech"> Speech technology</NavDropdown.Item>
+                <NavDropdown.Item herf="Research/Nlp">NLP</NavDropdown.Item>
+                <NavDropdown.Item  herf="Research/ImageRecognition"> Image recognition</NavDropdown.Item>
+                <NavDropdown.Item herf="Research/ComputerVision"> Computer Vision</NavDropdown.Item>
+                <NavDropdown.Item herf="Research/SpeechTech"> Speech technology</NavDropdown.Item>
                 </NavDropdown> 
 
-                <Nav.Link herf ="/Event">Event</Nav.Link>
+                <Nav.Link herf ="Event">Event</Nav.Link>
 
                 <NavDropdown title= "Outreach Program">
-                <NavDropdown.Item herf="/Outreach/Projects">Projects</NavDropdown.Item>
-                <NavDropdown.Item herf="/Outreach/Products"> Products</NavDropdown.Item>
-                <NavDropdown.Item herf="/Outreach/Patents"> Patents</NavDropdown.Item>
-                <NavDropdown.Item herf="/Outreach/Publications"> Publications</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/Outreach/Projects">Projects</NavDropdown.Item>
+                <NavDropdown.Item herf="Outreach/Products"> Products</NavDropdown.Item>
+                <NavDropdown.Item herf="Outreach/Patents"> Patents</NavDropdown.Item>
+                <NavDropdown.Item herf="Outreach/Publications"> Publications</NavDropdown.Item>
                 </NavDropdown> 
 
-                <Nav.Link herf ="/Conference">Conference</Nav.Link>
-                <Nav.Link herf ="/Joinus">Joinus</Nav.Link>
-                <Nav.Link herf ="/Partnership">Partnership</Nav.Link>
+                <Nav.Link as={Link} to="/Conference">Conference</Nav.Link>
+                <Nav.Link herf ="Joinus">Joinus</Nav.Link>
+                <Nav.Link herf ="Partnership">Partnership</Nav.Link>
 
         </Nav>
             </Navbar>
-  </>
-      {/* <ul className="nav nav-tabs">
+            </>
+    {/* <ul className="nav nav-tabs">
   <li className="nav-item">
     <a className="nav-link nv-link" href="/">Home</a>
   </li>
