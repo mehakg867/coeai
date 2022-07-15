@@ -1,12 +1,12 @@
 import React, {Component} from 'react';
 import { BrowserRouter as Router} from "react-router-dom";
 import '../App.css';
-import Nav from '../container/Nav';
+import Navigation from '../container/Navigation';
 
 function People() {
     return (
         <div>
-            <Nav />
+            <Navigation />
             <h1>People page</h1>
         </div>
     );

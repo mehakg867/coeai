@@ -2,9 +2,10 @@ import React, {Component} from 'react';
 import { BrowserRouter as Router} from "react-router-dom";
 import '../App.css';
 import './Home.css';
-import IGDTUW from "../images/IGDTUW.jpeg";
+import IGDTUW2 from "../images/IGDTUW2.jpg"
 import goilogo from "../images/goilogo.jpg";
 import logo from "../images/logo.png";
+import {Nav,NavbarBrand,Navbar, NavDropdown } from 'react-bootstrap';
 function Home() {
     return (
         <div >
@@ -28,7 +29,41 @@ function Home() {
       </div>
       </div>
       <div  className='bgimage'></div>
-      <ul className="nav nav-tabs">
+      <>
+      <Navbar bg="light" varient= "bright" sticky="top" expand="lg">
+                <NavbarBrand>
+                    <img src={logo} width="40px" height="40px"/>{''}
+                    INDIRA GANDHI DELHI TECHNICAL UNIVERSITY FOR WOMEN
+                </NavbarBrand>
+                <Nav>
+            
+                <Nav.Link herf ="/Home">Home</Nav.Link>
+                <Nav.Link herf ="/People">People</Nav.Link>
+
+                <NavDropdown title= "Research">
+                <NavDropdown.Item herf="/Research/Nlp">NLP</NavDropdown.Item>
+                <NavDropdown.Item herf="/Research/ImageRecognition"> Image recognition</NavDropdown.Item>
+                <NavDropdown.Item herf="/Research/ComputerVision"> Computer Vision</NavDropdown.Item>
+                <NavDropdown.Item herf="/Research/SpeechTech"> Speech technology</NavDropdown.Item>
+                </NavDropdown> 
+
+                <Nav.Link herf ="/Event">Event</Nav.Link>
+
+                <NavDropdown title= "Outreach Program">
+                <NavDropdown.Item herf="/Outreach/Projects">Projects</NavDropdown.Item>
+                <NavDropdown.Item herf="/Outreach/Products"> Products</NavDropdown.Item>
+                <NavDropdown.Item herf="/Outreach/Patents"> Patents</NavDropdown.Item>
+                <NavDropdown.Item herf="/Outreach/Publications"> Publications</NavDropdown.Item>
+                </NavDropdown> 
+
+                <Nav.Link herf ="/Conference">Conference</Nav.Link>
+                <Nav.Link herf ="/Joinus">Joinus</Nav.Link>
+                <Nav.Link herf ="/Partnership">Partnership</Nav.Link>
+
+        </Nav>
+            </Navbar>
+            </>
+      {/* <ul className="nav nav-tabs">
   <li className="nav-item">
     <a className="nav-link nv-link" href="/">Home</a>
   </li>
@@ -58,7 +93,7 @@ function Home() {
     </ul>
   </li>
   <li className="nav-item dropdown">
-    <a className="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false">Dropdown</a>
+    <a className="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
     <ul className="dropdown-menu">
       <li><a className="dropdown-item" href="#">Action</a></li>
       <li><a className="dropdown-item" href="#">Another action</a></li>
@@ -69,9 +104,9 @@ function Home() {
   <li className="nav-item">
   <a className="nav-link nv-link" href="/JoinUS">JoinUs</a>
   </li>
-</ul>
+</ul> */}
            
-           {/* <nav className="navbar rounded  navbar-expand-lg navbar-light bg-light p-4
+           {/* <nav className="navbar rounded  navbar-expand-lg navbar-light bg-light
             mid_nav nvbar "> <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"> <span className="navbar-toggler-icon"></span> </button>
             <div className="collapse navbar-collapse" id="navbarNavDropdown" >
               <div className="row text-center w-100">
@@ -101,9 +136,6 @@ function Home() {
                 </div>
               </div>
           </div></nav> */}
-
-
-          
            
            
                            <div>SUPPORTED BY</div>

@@ -1,15 +1,15 @@
 import React, {Component} from 'react';
 import { BrowserRouter as Router} from "react-router-dom";
-import '../App.css';
-import Navigation from '../container/Navigation';
 
-function Partnership() {
+import Navigation from '../../container/Navigation';
+
+function Nlp() {
     return (
         <div>
         <Navigation />
-            <h1>Partnership page</h1>
+            <h1>nlp page</h1>
         </div>
     );
   }
   
-  export default Partnership;
+  export default Nlp;

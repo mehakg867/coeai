@@ -21,4 +21,7 @@
     background-size: cover;
     height: 100vh;
   }
-
+  
+  .element style {
+    all: none;
+  }
