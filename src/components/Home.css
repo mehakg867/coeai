@@ -60,6 +60,8 @@
   }
   a.dropdown-toggle.nav-link{
     color: #011c38;
+    text-align: center;
+    padding-top: 20px;
   }
   a.dropdown-toggle.nav-link:hover{
     border-radius: 2px;
