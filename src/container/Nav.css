@@ -24,8 +24,10 @@ div.pagenav.navbar-nav{
 
 a.allnav.nav-link{
   margin-left: 10px;
-  margin-right: 20px;
+  margin-right: 10px;
   color:black ;
+  text-align: center;
+  margin-top: 10px;
 }
 a.allnav.nav-link:hover{
   border-radius: 2px;
@@ -45,4 +47,9 @@ a.allnav.dropdown-item:hover{
 } 
 span.logonav.navbar-brand{
   margin: auto;
+}
+div.allnav.nav-item.dropdown{
+  text-align: center;
+
+
 }
