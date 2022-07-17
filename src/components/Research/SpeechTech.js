@@ -6,7 +6,7 @@ function SpeechTech() {
     return (
         <div>
         <Navigation/>
-            <h1>Join us page</h1>
+            <h1>SpeechTech page</h1>
         </div>
     );
   }

@@ -8,7 +8,7 @@ function ImageRecognition() {
     
       <div>
       <Navigation />
-          <h1>About page</h1>
+          <h1>Image recognition</h1>
       </div>
    
       

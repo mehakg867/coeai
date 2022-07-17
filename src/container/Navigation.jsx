@@ -22,6 +22,8 @@ function Navigation(){
                     <img src={logo} width="40px" height="40px"/>
                       INDIRA GANDHI DELHI TECHNICAL UNIVERSITY FOR WOMEN
                   </NavbarBrand>
+                  <Navbar.Toggle aria-controls="navbarScroll" />
+        <Navbar.Collapse id="navbarScroll">
                   <Nav className='pagenav'>
               
                   <Nav.Link className='allnav' as={Link} to="/Aboutus">About us</Nav.Link>
@@ -46,6 +48,7 @@ function Navigation(){
                   <Nav.Link className='allnav'as={Link} to="/Partnership">Partnership</Nav.Link>
   
           </Nav>
+          </Navbar.Collapse>
               </Navbar>
               </>
     );
