@@ -40,17 +40,30 @@ function Home() {
                     },
                   ];
 
+    const styles ={
+      cardImage: {
+        objectFit: 'cover',
+        
+        width: '100%',
+        height: '30%'
+        }
+      }
+
   const renderCard = (card,index) => {
     return (
       <Card className='box' style={{ width: '18rem', backgroundColor: 'aliceblue' }} key={index} >
-      <Card.Img variant="top" src={card.image}/>
+      <Card.Img variant="top" src={card.image} style={styles.cardImage}/>
       <Card.Body>
         <Card.Title>{card.title}</Card.Title>
         <Card.Text>
           {card.text}
         </Card.Text>
-        <Button variant="outline-info" href={card.link}>{card.btn}</Button>
+        
+        
       </Card.Body>
+      <Card.Footer>
+      <Button variant="outline-info" href={card.link}>{card.btn}</Button>
+        </Card.Footer>
       </Card>
     )
 
