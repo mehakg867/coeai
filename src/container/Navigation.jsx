@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './Nav.css';
 
 import logo from '../images/logo.png';
 
@@ -17,9 +17,9 @@ function Navigation(){
     return (
         
         <>
-        <Navbar bg="light" varient= "bright" sticky="top" expand="lg">
-                  <NavbarBrand>
-                      <img src={logo} width="40px" height="40px"/>
+        <Navbar className='othernav' bg="light" varient= "bright" sticky="top" expand="lg">
+                  <NavbarBrand className='logonav' style={{fontFamily:"serif", textAlign:'center'}} >
+                    <img src={logo} width="40px" height="40px"/>
                       INDIRA GANDHI DELHI TECHNICAL UNIVERSITY FOR WOMEN
                   </NavbarBrand>
                   <Nav className='pagenav'>

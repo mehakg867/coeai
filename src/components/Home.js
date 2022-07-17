@@ -1,20 +1,46 @@
 import React, {Component} from 'react';
-import { BrowserRouter as Router, Routes} from "react-router-dom";
 import '../App.css';
 import './Home.css';
-import IGDTUW2 from "../images/IGDTUW2.jpg"
 import goilogo from "../images/goilogo.jpg";
 import logo from "../images/logo.png";
 import {Nav,NavbarBrand,Navbar, NavDropdown, } from 'react-bootstrap';
 import {Link} from 'react-router-dom';
+
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
+
+
 function Home() {
+    const CardInfo = [{image: "", title: "Patents", text:"asdfghjkl", btn: "button"},
+                      {image: "", title: "Products", text:"asdfghjkl", btn: "button"},
+                      {image: "", title: "Projects", text:"asdfghjkl", btn: "button"},
+                      {image: "", title: "Publications", text:"asdfghjkl", btn: "button"},
+  ];
+
+  const renderCard = (card,index) => {
+    return (
+      <Card className='card' style={{ width: '18rem' }} key={index} >
+      <Card.Img variant="top" src={card.image}/>
+      <Card.Body>
+        <Card.Title>{card.title}</Card.Title>
+        <Card.Text>
+          {card.text}
+        </Card.Text>
+        <Button variant="primary">{card.btn}</Button>
+      </Card.Body>
+      </Card>
+    )
+
+  
+}
+
     return (
         <div >
         <div>
         <div id="coverTitle" className="w-100" >
         <div className="row container">
           <div className="col-5 ">
-          <div className="d-flex align-items-center justify-content-center" style={{height:100, fontSize:20, textAlign:'center',position:'relative',left:70 }}>
+          <div className="d-flex align-items-center justify-content-center" style={{height:100, fontSize:20,fontFamily:"serif", textAlign:'center',position:'relative',left:70 }}>
                CENTRE OF EXCELLENCE IN ARTIFICIAL INTELLIGENCE </div>
           </div>
           <div className="col-2">
@@ -23,7 +49,7 @@ function Home() {
                </div>
           </div>
           <div className="col-5">
-               <div className="d-flex align-items-center justify-content-center" style={{height:100, fontSize:20,position:'relative',left:140}}>
+               <div className="d-flex align-items-center justify-content-center" style={{height:100,fontFamily:"serif", fontSize:20,position:'relative',left:140}}>
                INDIRA GANDHI DELHI TECHNICAL UNIVERSITY FOR WOMEN  </div>
           </div>
         </div>

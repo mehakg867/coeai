@@ -18,7 +18,31 @@ nav{
   width: 64px;
   height: 64px;
 }
+div.pagenav.navbar-nav{
+  margin-left: auto;
+}
+
 a.allnav.nav-link{
-  margin-left: 70px;
-  padding: 40px;
+  margin-left: 10px;
+  margin-right: 20px;
+  color:black ;
+}
+a.allnav.nav-link:hover{
+  border-radius: 2px;
+  color: #a51c30;
+}
+a.allnav.dropdown-item{
+  color:black ;
+  width: auto;
+}
+a.allnav.dropdown-item:hover{
+  border-radius: 2px;
+  color: #a51c30;
+}
+ nav.othernav.navbar.navbar-expand-lg.navbar-light.bg-light.sticky-top{
+  box-shadow:0 -20px 20px -20px #8cb0d4 inset;
+  background-color: #DAEAF1;
+} 
+span.logonav.navbar-brand{
+  margin: auto;
 }
