@@ -15,14 +15,14 @@ function Home() {
                         title: "PATENTS",
                         text:"Exclusive right granted for an invention, which is a product or a process that provides, in general, a new way of doing something, or offers a new technical solution to a problem.",
                         btn: "Explore",
-                        link: "./Fourp/Patents",
+                        link: "./Patent",
                       },
 
                       {image: "https://traderspros.com/wp-content/uploads/2020/11/ethereum-basic-info.png",
                        title: "PRODUCTS",
                         text:"A software product is an out-of-the-box piece of software that's been created to solve a more general problem that regularly occurs within a specific segment.",
                          btn: "Explore",
-                        link: "./Fourp/Products",
+                        link: "./Products",
                         },
 
                       {image: "https://liquidplanner-wpengine.netdna-ssl.com/wp-content/uploads/2019/04/HiRes-17.jpg", 

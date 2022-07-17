@@ -4,10 +4,10 @@ import './App.css';
 import Home from './components/Home';
 import Conference from './components/Conference';
 
-import Projects from './components/Fourp/Projects';
-import Patents from './components/Fourp/Patents';
-import Products from './components/Fourp/Products';
-import Publications from './components/Fourp/Publications';
+import Projects from './components/Projects';
+import Patent from './components/Patent';
+import Products from './components/Products';
+import Publications from './components/Publications';
 
 import ImageRecognition from './components/Research/ImageRecognition';
 import Nlp from './components/Research/Nlp';
