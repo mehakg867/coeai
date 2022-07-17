@@ -28,14 +28,14 @@ function Home() {
                       {image: "https://liquidplanner-wpengine.netdna-ssl.com/wp-content/uploads/2019/04/HiRes-17.jpg", 
                       title: "PROJECTS", 
                       text:"A Software Project is the complete procedure of software development from requirement gathering to testing and maintenance, carried out according to the execution methodologies, in a specified period of time to achieve intended software product.",
-                       btn: "EXPLORE",
+                       btn: "Explore",
                        link: "./Outreach/Projects",
                       },
 
                       {image: "https://healthforce.ucsf.edu/sites/healthforce.ucsf.edu/files/styles/hero/public/hero-images/publications.jpg?itok=p1NVFuYV", 
                       title: "PUBLICATIONS", 
                       text:"Different books and research papers are published by the faculties and the students of the university.",
-                      btn: "EXPLORE",
+                      btn: "Explore",
                       link: "./Outreach/Publications",
                     },
                   ];
