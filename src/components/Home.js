@@ -58,34 +58,30 @@ function Home() {
       <div  className='bgimage'></div>
       <>
       <Navbar bg="light" varient= "bright" sticky="top" expand="lg">
-                <NavbarBrand>
-                    <img src={logo} width="40px" height="40px"/>
-                    INDIRA GANDHI DELHI TECHNICAL UNIVERSITY FOR WOMEN
-                </NavbarBrand>
-                <Nav>
-            
-                <a className="nav-link nv-link" href="/">Home</a>
-                <a className="nav-link nv-link" href="/People">People</a>
+                
+                <Nav className='Navigation'>
+                <Nav.Link className='homenav' as={Link} to="/Aboutus">About us</Nav.Link>
+                <Nav.Link className='homenav'as={Link} to="/People">People</Nav.Link>
 
-                <NavDropdown title= "Research">
-                <NavDropdown.Item herf="Research/Nlp">NLP</NavDropdown.Item>
-                <NavDropdown.Item  herf="Research/ImageRecognition"> Image recognition</NavDropdown.Item>
-                <NavDropdown.Item herf="Research/ComputerVision"> Computer Vision</NavDropdown.Item>
-                <NavDropdown.Item herf="Research/SpeechTech"> Speech technology</NavDropdown.Item>
+                <NavDropdown className='homenav' title= "Research">
+                <NavDropdown.Item className='homenav'as={Link} to="/Research/Nlp">NLP</NavDropdown.Item>
+                <NavDropdown.Item className='homenav' as={Link} to="/Research/ImageRecognition"> Image recognition</NavDropdown.Item>
+                <NavDropdown.Item className='homenav'as={Link} to="/Research/ComputerVision"> Computer Vision</NavDropdown.Item>
+                <NavDropdown.Item className='homenav'as={Link} to="/Research/SpeechTech"> Speech technology</NavDropdown.Item>
                 </NavDropdown> 
 
-                <Nav.Link herf ="Event">Event</Nav.Link>
+                <Nav.Link className='homenav'as={Link} to="/Event">Event</Nav.Link>
 
-                <NavDropdown title= "Outreach Program">
-                <NavDropdown.Item as={Link} to="/Outreach/Projects">Projects</NavDropdown.Item>
-                <NavDropdown.Item herf="Outreach/Products"> Products</NavDropdown.Item>
-                <NavDropdown.Item herf="Outreach/Patents"> Patents</NavDropdown.Item>
-                <NavDropdown.Item herf="Outreach/Publications"> Publications</NavDropdown.Item>
+                <NavDropdown className='homenav'title= "Outreach Program">
+                <NavDropdown.Item className='homenav'as={Link} to="/Outreach/Projects">Projects</NavDropdown.Item>
+                <NavDropdown.Item className='homenav'as={Link} to="/Outreach/Products"> Products</NavDropdown.Item>
+                <NavDropdown.Item className='homenav'as={Link} to="/Outreach/Patents"> Patents</NavDropdown.Item>
+                <NavDropdown.Item className='homenav'as={Link} to="/Outreach/Publications"> Publications</NavDropdown.Item>
                 </NavDropdown> 
 
-                <Nav.Link as={Link} to="/Conference">Conference</Nav.Link>
-                <Nav.Link herf ="Joinus">Joinus</Nav.Link>
-                <Nav.Link herf ="Partnership">Partnership</Nav.Link>
+                <Nav.Link className='homenav' as={Link} to="/Conference">Conference</Nav.Link>
+                <Nav.Link className='homenav'as={Link} to="/Joinus">Joinus</Nav.Link>
+                <Nav.Link className='homenav'as={Link} to="/Partnership">Partnership</Nav.Link>
 
         </Nav>
             </Navbar>
@@ -96,6 +92,7 @@ function Home() {
 
 
           
+           
                            <div>SUPPORTED BY</div>
                               <div><img src={goilogo} alt="this is college logo" className='photo' /></div>
                              <div>Department of Science and Technology</div>

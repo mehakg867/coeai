@@ -18,3 +18,7 @@ nav{
   width: 64px;
   height: 64px;
 }
+a.allnav.nav-link{
+  margin-left: 70px;
+  padding: 40px;
+}
