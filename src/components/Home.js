@@ -15,28 +15,28 @@ function Home() {
                         title: "PATENTS",
                         text:"Exclusive right granted for an invention, which is a product or a process that provides, in general, a new way of doing something, or offers a new technical solution to a problem.",
                         btn: "Explore",
-                        link: "./Outreach/Patents",
+                        link: "./Fourp/Patents",
                       },
 
                       {image: "https://traderspros.com/wp-content/uploads/2020/11/ethereum-basic-info.png",
                        title: "PRODUCTS",
                         text:"A software product is an out-of-the-box piece of software that's been created to solve a more general problem that regularly occurs within a specific segment.",
                          btn: "Explore",
-                        link: "./Outreach/Products",
+                        link: "./Fourp/Products",
                         },
 
                       {image: "https://liquidplanner-wpengine.netdna-ssl.com/wp-content/uploads/2019/04/HiRes-17.jpg", 
                       title: "PROJECTS", 
                       text:"A Software Project is the complete procedure of software development from requirement gathering to testing and maintenance, carried out according to the execution methodologies, in a specified period of time to achieve intended software product.",
                        btn: "EXPLORE",
-                       link: "./Outreach/Projects",
+                       link: "./Fourp/Projects",
                       },
 
                       {image: "https://healthforce.ucsf.edu/sites/healthforce.ucsf.edu/files/styles/hero/public/hero-images/publications.jpg?itok=p1NVFuYV", 
                       title: "PUBLICATIONS", 
                       text:"Different books and research papers are published by the faculties and the students of the university.",
                       btn: "EXPLORE",
-                      link: "./Outreach/Publications",
+                      link: "./Fourp/Publications",
                     },
                   ];
 
@@ -96,10 +96,8 @@ function Home() {
                 <Nav.Link className='homenav'as={Link} to="/Event">Event</Nav.Link>
 
                 <NavDropdown className='homenav'title= "Outreach Program">
-                <NavDropdown.Item className='homenav'as={Link} to="/Outreach/Projects">Projects</NavDropdown.Item>
-                <NavDropdown.Item className='homenav'as={Link} to="/Outreach/Products"> Products</NavDropdown.Item>
-                <NavDropdown.Item className='homenav'as={Link} to="/Outreach/Patents"> Patents</NavDropdown.Item>
-                <NavDropdown.Item className='homenav'as={Link} to="/Outreach/Publications"> Publications</NavDropdown.Item>
+                <NavDropdown.Item className='homenav'as={Link} to="/Outreach/SummerInternship">Summer Internship</NavDropdown.Item>
+                <NavDropdown.Item className='homenav'as={Link} to="/Outreach/WinterInternship"> Winter Internship</NavDropdown.Item>
                 </NavDropdown> 
 
                 <Nav.Link className='homenav' as={Link} to="/Conference">Conference</Nav.Link>

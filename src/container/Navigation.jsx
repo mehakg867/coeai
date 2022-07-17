@@ -18,7 +18,7 @@ function Navigation(){
         
         <>
         <Navbar className='othernav' bg="light" varient= "bright" sticky="top" expand="lg">
-                  <NavbarBrand className='logonav' style={{fontFamily:"serif", textAlign:'center'}} >
+                  <NavbarBrand className='logonav' as={Link} to="/" style={{fontFamily:"serif", textAlign:'center'}} >
                     <img src={logo} width="40px" height="40px"/>
                       INDIRA GANDHI DELHI TECHNICAL UNIVERSITY FOR WOMEN
                   </NavbarBrand>
@@ -37,10 +37,8 @@ function Navigation(){
                   <Nav.Link className='allnav'as={Link} to="/Event">Event</Nav.Link>
   
                   <NavDropdown className='allnav' title= "Outreach Program">
-                  <NavDropdown.Item className='allnav'as={Link} to="/Outreach/Projects">Projects</NavDropdown.Item>
-                  <NavDropdown.Item className='allnav'as={Link} to="/Outreach/Products"> Products</NavDropdown.Item>
-                  <NavDropdown.Item className='allnav'as={Link} to="/Outreach/Patents"> Patents</NavDropdown.Item>
-                  <NavDropdown.Item className='allnav'as={Link} to="/Outreach/Publications"> Publications</NavDropdown.Item>
+                  <NavDropdown.Item className='homenav'as={Link} to="/Outreach/SummerInternship">Summer Internship</NavDropdown.Item>
+                  <NavDropdown.Item className='homenav'as={Link} to="/Outreach/WinterInternship"> Winter Internship</NavDropdown.Item>
                   </NavDropdown> 
   
                   <Nav.Link className='allnav'as={Link} to="/Conference">Conference</Nav.Link>
