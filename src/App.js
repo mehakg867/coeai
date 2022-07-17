@@ -5,7 +5,7 @@ import Home from './components/Home';
 import Conference from './components/Conference';
 
 import Projects from './components/Projects';
-import Patent from './components/Patent';
+import Pat from './components/Pat';
 import Products from './components/Products';
 import Publications from './components/Publications';
 
@@ -35,10 +35,10 @@ function App() {
           <Route path="/" element={<Home />} />
            <Route path="/Conference" element= {<Conference/>}/>
 
-          <Route Path="/Fourp/Patents" element={<Patents/>}/>
-          <Route path="/Fourp/Projects" element={<Projects/>} />
-          <Route path="/Fourp/Products" element={<Products/>} />
-          <Route path="/Fourp/Publications" element={<Publications/>} />
+          <Route path="/Pat" element={<Pat/>}/>
+          <Route path="/Projects" element={<Projects/>} />
+          <Route path="/Products" element={<Products/>} />
+          <Route path="/Publications" element={<Publications/>} />
 
           <Route path="/Research/ComputerVision" element={<ComputerVision/>} />
           <Route path="/Research/ImageRecognition" element={<ImageRecognition />} />

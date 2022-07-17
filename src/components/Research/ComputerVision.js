@@ -7,7 +7,7 @@ function ComputerVision() {
     return (
         <div>
         <Navigation/>
-            <h1>Join us page</h1>
+            <h1>ComputerVision</h1>
         </div>
     );
   }

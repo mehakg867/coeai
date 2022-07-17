@@ -15,7 +15,7 @@ function Home() {
                         title: "PATENTS",
                         text:"Exclusive right granted for an invention, which is a product or a process that provides, in general, a new way of doing something, or offers a new technical solution to a problem.",
                         btn: "Explore",
-                        link: "./Patent",
+                        link: "./Pat",
                       },
 
                       {image: "https://traderspros.com/wp-content/uploads/2020/11/ethereum-basic-info.png",
@@ -29,14 +29,14 @@ function Home() {
                       title: "PROJECTS", 
                       text:"A Software Project is the complete procedure of software development from requirement gathering to testing and maintenance, carried out according to the execution methodologies, in a specified period of time to achieve intended software product.",
                        btn: "Explore",
-                       link: "./Outreach/Projects",
+                       link: "./Projects",
                       },
 
                       {image: "https://healthforce.ucsf.edu/sites/healthforce.ucsf.edu/files/styles/hero/public/hero-images/publications.jpg?itok=p1NVFuYV", 
                       title: "PUBLICATIONS", 
                       text:"Different books and research papers are published by the faculties and the students of the university.",
                       btn: "Explore",
-                      link: "./Outreach/Publications",
+                      link: "./Publications",
                     },
                   ];
 
@@ -81,7 +81,8 @@ function Home() {
       <div  className='bgimage'></div>
       <>
       <Navbar bg="light" varient= "bright" sticky="top" expand="lg">
-                
+      <Navbar.Toggle aria-controls="navbarScroll" />
+        <Navbar.Collapse id="navbarScroll"> 
                 <Nav className='Navigation'>
                 <Nav.Link className='homenav' as={Link} to="/Aboutus">About us</Nav.Link>
                 <Nav.Link className='homenav'as={Link} to="/People">People</Nav.Link>
@@ -105,6 +106,7 @@ function Home() {
                 <Nav.Link className='homenav'as={Link} to="/Partnership">Partnership</Nav.Link>
 
         </Nav>
+        </Navbar.Collapse>
             </Navbar>
             </>
            <div className='grid'>

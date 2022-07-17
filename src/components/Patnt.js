@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import { BrowserRouter as Router} from "react-router-dom";
 import Navigation from '../container/Navigation';
 
-function Patent() {
+function Patnt() {
     return (
         <div>
         <Navigation/>
@@ -11,4 +11,4 @@ function Patent() {
     );
   }
   
-  export default Patent;
+  export default Patnt;

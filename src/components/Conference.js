@@ -7,8 +7,8 @@ function Conference() {
     return (
         <div>
         <Navigation/>
-            <h1>Event page</h1>
-            <p>this is event page</p>
+            <h1>Conference page</h1>
+            <p>this is conference page</p>
         </div>
     );
   }
