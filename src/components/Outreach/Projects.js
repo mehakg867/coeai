@@ -1,15 +1,14 @@
 import React, {Component} from 'react';
 import { BrowserRouter as Router} from "react-router-dom";
-import '../App.css';
-import Navigation from '../container/Navigation';
+import Navigation from '../../container/Navigation';
 
-function Partnership() {
+function Projects() {
     return (
         <div>
         <Navigation />
-            <h1>Partnership page</h1>
+            <h1>project page</h1>
         </div>
     );
   }
   
-  export default Partnership;
+  export default Projects;
