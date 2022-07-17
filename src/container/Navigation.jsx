@@ -36,7 +36,7 @@ function Navigation(){
   
                   <Nav.Link className='allnav'as={Link} to="/Event">Event</Nav.Link>
   
-                  <NavDropdown className='allnav'title= "Outreach Program">
+                  <NavDropdown className='allnav' title= "Outreach Program">
                   <NavDropdown.Item className='allnav'as={Link} to="/Outreach/Projects">Projects</NavDropdown.Item>
                   <NavDropdown.Item className='allnav'as={Link} to="/Outreach/Products"> Products</NavDropdown.Item>
                   <NavDropdown.Item className='allnav'as={Link} to="/Outreach/Patents"> Patents</NavDropdown.Item>
