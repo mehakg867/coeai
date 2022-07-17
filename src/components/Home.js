@@ -15,28 +15,28 @@ function Home() {
                         title: "PATENTS",
                         text:"Exclusive right granted for an invention, which is a product or a process that provides, in general, a new way of doing something, or offers a new technical solution to a problem.",
                         btn: "Explore",
-                        link: "./Fourp/Patents",
+                        link: "./Patent",
                       },
 
                       {image: "https://traderspros.com/wp-content/uploads/2020/11/ethereum-basic-info.png",
                        title: "PRODUCTS",
                         text:"A software product is an out-of-the-box piece of software that's been created to solve a more general problem that regularly occurs within a specific segment.",
                          btn: "Explore",
-                        link: "./Fourp/Products",
+                        link: "./Products",
                         },
 
                       {image: "https://liquidplanner-wpengine.netdna-ssl.com/wp-content/uploads/2019/04/HiRes-17.jpg", 
                       title: "PROJECTS", 
                       text:"A Software Project is the complete procedure of software development from requirement gathering to testing and maintenance, carried out according to the execution methodologies, in a specified period of time to achieve intended software product.",
                        btn: "EXPLORE",
-                       link: "./Fourp/Projects",
+                       link: "./Projects",
                       },
 
                       {image: "https://healthforce.ucsf.edu/sites/healthforce.ucsf.edu/files/styles/hero/public/hero-images/publications.jpg?itok=p1NVFuYV", 
                       title: "PUBLICATIONS", 
                       text:"Different books and research papers are published by the faculties and the students of the university.",
                       btn: "EXPLORE",
-                      link: "./Fourp/Publications",
+                      link: "./Publications",
                     },
                   ];
 
