@@ -13,7 +13,8 @@ h1.display-3.text-white
     padding-bottom: 30px;
     z-index: 3;
     padding-top: 10px;
-    margin-left: 200px;
+    margin-left: 210px;
+    text-align: center;
 }
 p.lead.text-white{
     font-family: 'Taviraj', serif;
@@ -34,6 +35,8 @@ button.btn{
     background-color: whitesmoke;
     margin-left: 210px;
     margin-top: 30px;
+    text-align: center;
+    position: relative;
 
 }
 button.btn-icon.mb-3.mb-sm-0.btn.btn-info:hover{
