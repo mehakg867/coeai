@@ -13,7 +13,7 @@ h1.display-3.text-white
     padding-bottom: 30px;
     z-index: 3;
     padding-top: 10px;
-    margin-left: 210px;
+    margin-left: 250px;
     text-align: center;
 }
 p.lead.text-white{
@@ -33,7 +33,7 @@ a.knowbutn{
 }
 button.btn{
     background-color: whitesmoke;
-    margin-left: 210px;
+    margin-left: 225px;
     margin-top: 30px;
     text-align: center;
     position: relative;
@@ -41,4 +41,5 @@ button.btn{
 }
 button.btn-icon.mb-3.mb-sm-0.btn.btn-info:hover{
     color:  #0dcaf0;
+    box-shadow: -3px 18px 20px 0px rgba(99,89,99,1);
 }
