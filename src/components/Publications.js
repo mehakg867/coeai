@@ -27,8 +27,8 @@ const db = getFirestore(app);
             <h1>Publication page</h1>
             {dataToShow.map((item) => (
                 
-                <div className='pubItems' key={item.id}>
-                <p>{item}</p>
+                <div className='pubItems' key={item.id} style={{}}>
+                    {item}
                 </div>
                 ))}
         </div>
