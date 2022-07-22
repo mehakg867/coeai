@@ -134,3 +134,9 @@ bottom: 2px;
   a.btn.btn-outline-info{
     color: blue;
   }
+
+  @media screen and (max-width:420px) {
+    div#coverTitle.w-100{
+      font-size:30px;
+    }
+  }
