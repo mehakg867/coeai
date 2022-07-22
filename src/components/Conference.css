@@ -1,9 +1,9 @@
 div.section.section-lg.section-shaped.pb-350 {
-    background: rgb(103, 157, 245);
+    background: #DBDFFD;
     padding-top: 5rem;
    
 }
-h1.display-3.text-white
+h1.display-3.text-dark
 {
     font-family: 'PT Serif', serif;
     position: relative;
@@ -16,7 +16,7 @@ h1.display-3.text-white
     margin-left: 240px;
     text-align: center;
 }
-p.lead.text-white{
+p.lead.text-dark{
     font-family: 'Taviraj', serif;
    
     position: relative;
