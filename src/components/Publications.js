@@ -25,14 +25,14 @@ const db = getFirestore(app);
     },[]);
    
     return (
-        <div style={{backgroundColor:'aliceblue'}}>
+        <div style={{backgroundColor:'#fff'}}>
         <Navigation/>
             <h1 style={{fontFamily:'PT Serif'}}>PUBLICATIONS</h1>
             {dataToShow.map((item) => (
 
                 <Row>
                 <div  key={item.id}>
-                <Card style={{ backgroundColor: '#B7D3DF', textAlign: 'left', margin:'10px', border:'0', fontFamily:'Taviraj' }} >
+                <Card className='cards' style={{ textAlign: 'left', margin:'10px', border:'0', fontFamily:'Taviraj',  boxShadow: '0px -20px 40px -10px #8cb0d4 inset' }} >
               <Card.Body>
                 <Card.Text >
                     {item}
