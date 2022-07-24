@@ -25,10 +25,10 @@ function Conference() {
         <div>
         <Navigation/>
         <div className="section section-lg section-shaped pb-350" >
-              <Container className="py-lg-md d-flex">
+             
                 <div className="col px-0">
-                  <Row>
-                    <Col lg="10">
+                  
+                    
                       <h1 className="display-3 text-dark">
                        About Conference
                       </h1>
@@ -63,14 +63,14 @@ function Conference() {
                           </span>
                         </Button> */}
                       </div>
-                    </Col>
-                  </Row>
+                    
+               
                 </div>
-              </Container>
+            
               {/* SVG separator */}
               
             </div>
-            <Wave style={{ transform: 'rotate(180deg)' }}
+            <Wave style={{ transform: 'rotate(180deg)',width:'100vw' }}
             fill='#DBDFFD'
              paused={false}
             options={{
