@@ -71,26 +71,41 @@ function Home() {
 }
 
     return (
-        <div >
         <div>
-        <div id="coverTitle" className="w-100" >
-        <div className="row container">
+        
+        <div>
+          <div className='row' style={{display:'flex', height:100, flex:"100%"}}>
+            <div className='col1' style={{display:'flex', flex:"40%", alignItems:'center', justifyContent:'center',position:'relative',fontSize:'2vw'}}>
+            CENTRE OF EXCELLENCE IN ARTIFICIAL INTELLIGENCE
+            </div>
+            <div className='col2' style={{display:'flex', flex:"20%",alignItems:'center', justifyContent:'center',position:'relative',fontSize:'5vw'}}>
+            <img src={logo} alt="this is college logo" style={{height:'7vw', width:'7vw'}} />
+            </div>
+            <div className='col3' style={{display:'flex', flex:"40%",alignItems:'center', justifyContent:'center',position:'relative',fontSize:'2vw'}}>
+            INDIRA GANDHI DELHI TECHNICAL UNIVERSITY FOR WOMEN 
+            </div>
+          </div>
+        </div>
+
+
+        {/* <div id="coverTitle" className="w-100" style={{display:'flex'}}>
+        <div className="row container" style={{display:'flex'}}>
           <div className="col-5 ">
-          <div className="d-flex align-items-center justify-content-center" style={{height:100, fontSize:20,fontFamily:"serif", textAlign:'center',position:'relative',left:70 }}>
+          <div className="d-flex align-items-center justify-content-center" style={{height:'30vh', fontSize:'5vw',fontFamily:"serif", textAlign:'center',position:'relative',left:70, flex:'40%', padding:'0'}}>
                CENTRE OF EXCELLENCE IN ARTIFICIAL INTELLIGENCE </div>
           </div>
           <div className="col-2">
-            <div className="d-flex align-items-center justify-content-center" style={{height:100,textAlign:'center',position:'relative',left:110 }}>
+            <div className="d-flex align-items-center justify-content-center" style={{height:'30vh',textAlign:'center',position:'relative',left:110, flex:'20%', padding:'0' }}>
               <img src={logo} alt="this is college logo" className='photo' />
                </div>
           </div>
           <div className="col-5">
-               <div className="d-flex align-items-center justify-content-center" style={{height:100,fontFamily:"serif", fontSize:20,position:'relative',left:140}}>
+               <div className="d-flex align-items-center justify-content-center" style={{height:'30vh',fontFamily:"serif", fontSize:'5vw',position:'relative',left:140, flex:'40%', padding:'0'}}>
                INDIRA GANDHI DELHI TECHNICAL UNIVERSITY FOR WOMEN  </div>
           </div>
         </div>
-      </div>
-      </div>
+      
+      </div> */}
       <div  className='bgimage'></div>
       <>
       <Navbar bg="light" varient= "bright" sticky="top" expand="lg">
@@ -98,6 +113,8 @@ function Home() {
         <Navbar.Collapse id="navbarScroll"> 
                 <Nav className='Navigation'>
                 <Nav.Link className='homenav' as={Link} to="/Aboutus">About us</Nav.Link>
+                <Nav.Link className='homenav' as={Link} to="/Conference">Conference</Nav.Link>
+                <Nav.Link className='homenav'as={Link} to="/Event">Event</Nav.Link>
                 <Nav.Link className='homenav'as={Link} to="/People">People</Nav.Link>
 
                 <NavDropdown className='homenav' title= "Research">
@@ -107,16 +124,12 @@ function Home() {
                 <NavDropdown.Item className='homenav'as={Link} to="/Research/SpeechTech"> Speech technology</NavDropdown.Item>
                 </NavDropdown> 
 
-                <Nav.Link className='homenav'as={Link} to="/Event">Event</Nav.Link>
-
                 <NavDropdown className='homenav'title= "Outreach Program">
                 <NavDropdown.Item className='homenav'as={Link} to="/Outreach/SummerInternship">Summer Internship</NavDropdown.Item>
                 <NavDropdown.Item className='homenav'as={Link} to="/Outreach/WinterInternship"> Winter Internship</NavDropdown.Item>
                 </NavDropdown> 
-
-                <Nav.Link className='homenav' as={Link} to="/Conference">Conference</Nav.Link>
-                <Nav.Link className='homenav'as={Link} to="/Joinus">Joinus</Nav.Link>
                 <Nav.Link className='homenav'as={Link} to="/Partnership">Partnership</Nav.Link>
+                <Nav.Link className='homenav'as={Link} to="/Joinus">Join Us</Nav.Link>
 
         </Nav>
         </Navbar.Collapse>
