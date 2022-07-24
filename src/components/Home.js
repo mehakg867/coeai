@@ -74,14 +74,14 @@ function Home() {
         <div>
         
         <div>
-          <div className='row' style={{display:'flex', height:100, flex:"100%"}}>
-            <div className='col1' style={{display:'flex', flex:"40%", alignItems:'center', justifyContent:'center',position:'relative',fontSize:'2vw'}}>
+          <div className='row2' style={{display:'flex', height:100, flex:"100%"}}>
+            <div className='col1' style={{display:'flex', flex:"40%", alignItems:'center', justifyContent:'center',position:'relative',fontSize:'1.5vw',fontFamily:"-moz-initial"}}>
             CENTRE OF EXCELLENCE IN ARTIFICIAL INTELLIGENCE
             </div>
             <div className='col2' style={{display:'flex', flex:"20%",alignItems:'center', justifyContent:'center',position:'relative',fontSize:'5vw'}}>
             <img src={logo} alt="this is college logo" style={{height:'7vw', width:'7vw'}} />
             </div>
-            <div className='col3' style={{display:'flex', flex:"40%",alignItems:'center', justifyContent:'center',position:'relative',fontSize:'2vw'}}>
+            <div className='col3' style={{display:'flex', flex:"40%",alignItems:'center', justifyContent:'center',position:'relative',fontSize:'1.5vw',fontFamily:"-moz-initial"}}>
             INDIRA GANDHI DELHI TECHNICAL UNIVERSITY FOR WOMEN 
             </div>
           </div>

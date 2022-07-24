@@ -18,7 +18,7 @@ function Navigation(){
         
         <>
         <Navbar className='othernav' bg="light" varient= "bright" sticky="top" expand="lg">
-                  <NavbarBrand className='logonav' as={Link} to="/" style={{fontFamily:"serif", textAlign:'center', fontSize:'3vh'}} >
+                  <NavbarBrand className='logonav' as={Link} to="/" style={{fontFamily:"serif", textAlign:'center', fontSize:'1.5vw'}} >
                     <img src={logo} style={{height:'5vh', width:'5vh'}}/>
                       Indira Gandhi Delhi Technical University For Women
                   </NavbarBrand>
