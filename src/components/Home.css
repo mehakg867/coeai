@@ -172,6 +172,7 @@ bottom: 2px;
      font-family: 'Taviraj', serif;
   }
   h1.msgheading{
+    padding-top: 2vw;
     padding-bottom: 5vw;
     font-family: 'Philosopher', sans-serif;
 
@@ -183,6 +184,10 @@ bottom: 2px;
   padding-right: 8vw;
   font-size: 1.3vw;
 
+  }
+  div.msgvice{
+    background-color: #dfeeff;
+    padding-bottom: 3vw;
   }
 
   

@@ -140,7 +140,7 @@ function Home() {
            {CardInfo.map(renderCard)}
            </div>
 <Reveal>
-           <div>
+           <div className='msgvice'>
            <h1 className='msgheading'>THE HON'BLE VICE CHANCELLOR'S MESSAGE</h1>
            <div class="side-by-side"> 
   <div data-aos="fade-up"> 
@@ -202,8 +202,8 @@ Engineer the Human Mind"</p>
                              <div >Department of Science and Technology</div>
                         <div>GOI</div>
 
- 
-        </div>
+                        </div>
+      
     );
   }
   
