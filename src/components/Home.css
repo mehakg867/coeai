@@ -155,3 +155,43 @@ bottom: 2px;
       font-size:30px;
     }
   }
+  .side-by-side { 
+    display: flex; 
+    padding-left:4vw;
+    padding-right: auto;
+  } 
+  img.imagevc{
+    width: 60%;
+    height: 90%;
+  }
+  p.msgvc{
+    
+    padding-top: 5vw;
+   padding-left: 5vw;
+    font-size: 2vw;
+     font-family: 'Taviraj', serif;
+  }
+  h1.msgheading{
+    padding-bottom: 5vw;
+    font-family: 'Philosopher', sans-serif;
+
+  }
+  p.para
+  {
+    text-align: justify;
+  padding-left: 8vw;
+  padding-right: 8vw;
+  font-size: 1.3vw;
+
+  }
+
+  
+  /* .column {
+    float: left;
+    width: 50%;
+  }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  } */
