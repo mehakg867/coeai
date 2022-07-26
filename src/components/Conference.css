@@ -17,13 +17,14 @@ h1.display-3.text-dark
      /* margin-left: 18vw;  */
     text-align: center;
 }
-p.lead.text-dark{
+p.lead{
     font-family: 'Taviraj', serif;
   
     position: relative;
     right:5vw;
     margin-left:  8vw; 
     font-weight: 400;
+    color: black;
    
     
 }
@@ -33,7 +34,7 @@ a.knowbutn{
 }
 button.btn{
     background-color: whitesmoke;
-    margin-left: 6vw;
+
     margin-top: 4vw;
     text-align: center;
     position: relative;
