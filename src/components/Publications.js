@@ -38,7 +38,7 @@ const db = getFirestore(app);
             
             {dataToShow.map((item) => (
               <Row>
-                <div data-aos="fade-up" data-aos-offset="200" data-aos-delay="50" key={item.id}>
+                <div data-aos="fade-up" data-aos-offset="200" key={item.id}>
                 <Card className='cards' style={{ textAlign: 'left', margin:'10px', border:'20', fontFamily:'Taviraj', backgroundColor:'#DBDFFD' }} >
               <Card.Body>
                 <Card.Text>
