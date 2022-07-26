@@ -8,6 +8,7 @@ import {Link} from 'react-router-dom';
 
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import { Fade, Reveal } from 'react-reveal';
 
 
 function Home() {
@@ -138,7 +139,59 @@ function Home() {
            <div className='grid'>
            {CardInfo.map(renderCard)}
            </div>
-                   
+<Reveal>
+           <div>
+           <h1 className='msgheading'>THE HON'BLE VICE CHANCELLOR'S MESSAGE</h1>
+           <div class="side-by-side"> 
+  <div> 
+  <img className='imagevc' src='https://www.igdtuw.ac.in/images/vcmadam1.png' alt='vice chancellor '></img>
+  </div> 
+  <div> 
+  <p className='msgvc'>"The Purpose of Artificial Intelligence is to Re -
+Engineer the Human Mind"</p>
+  </div> 
+  
+</div> 
+
+<div>
+    <p className='para'>We are absolutely privileged to live in an era of Artificial Intelligence and
+data abundance. The evolution of Deep Learning for Artificial Intelligence
+has led to incredible advances in nearly all fields of technology which
+promises an outstripping future. The indispensable necessity of Artificial
+Intelligence couldn’t be more imposed upon in the recent trying times.
+Better healthcare, intelligent flying cars, improved access to financial
+resources and more informed allocation of state resources are just a few of
+what can be in the next decade.
+</p>
+<p className='para'>IGDTUW has established Centre of Excellence - Artificial Intelligence with the
+support of Department of Science and Technology, GOI. I am happy that COE - AI is
+doing excellent work in niche research areas like Speech Technology, NLP,
+Computer Vision and other domains by applying latest AI Technologies including
+ML and DL. By bringing together a team of renowned Academicians, Researchers,
+Faculty and Students, the Centre of Excellence - ArtificialIntelligence strives to
+create a congregation ofideas and intents at a single platform.
+i am happy to know that coe-ai is releasing its first newsletter which </p>
+<p className='para'>highlights of various activities done under coe along with the future plan. I am
+sure that in coming time coe-ai will be more vibrant in terms of various activities
+at national and internationallevel.
+"The Purpose of Artificial Intelligence is to Re -
+Engineer the Human Mind"
+</p>
+  </div>
+  
+
+            {/* <h1>THE HON'BLE VICE CHANCELLOR'S MESSAGE</h1>
+            <div class="row">
+  <div class="column">
+    <img className='imagevc' src='https://www.igdtuw.ac.in/images/vcmadam1.png' alt='vice chancellor '></img>
+  </div>
+  <div class="column">
+    <p>"The Purpose of Artificial Intelligence is to Re -
+Engineer the Human Mind"</p>
+  </div>
+</div> */}
+           </div>
+           </Reveal>
               
 
 
