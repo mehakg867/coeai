@@ -4,22 +4,29 @@ import { getFirestore } from "firebase/firestore";
 import { collection, getDocs } from 'firebase/firestore';
 import app from '../firebase';
 import Card from 'react-bootstrap/Card';
-import {Row,} from "reactstrap";
+import Col from 'react-bootstrap/Col';
+import Row from 'react-bootstrap/Row';
+import './publications.css';
+
 const db = getFirestore(app);
 
 
  function Publications() {
       console.log("start");
-      const [dataToShow, setData] = useState([]);
-        useEffect(() => {
+      const[dataToShow, setData] = useState([]);
       
-      const data = [];
+
+
+        useEffect(() => {
+      const data= [];
+      
           const getValues = async () => {
             const querySnapshot = await getDocs(collection(db, "publications"));
             querySnapshot.forEach((doc) => {
-                data.push(doc.data().info)
-            });
+              data.push(doc.data());
                setData(data);
+            });
+               
           }
        getValues();
     },[]);
@@ -27,20 +34,27 @@ const db = getFirestore(app);
     return (
         <div style={{backgroundColor:'#fff'}}>
         <Navigation/>
-            <h1 style={{fontFamily:'PT Serif'}}>PUBLICATIONS</h1>
+        <h1 style={{fontFamily:'PT Serif'}}>PUBLICATIONS</h1>
+            
             {dataToShow.map((item) => (
-
-                <Row>
-                <div  key={item.id}>
-                <Card className='cards' style={{ textAlign: 'left', margin:'10px', border:'0', fontFamily:'Taviraj',  boxShadow: '0px -20px 40px -10px #8cb0d4 inset' }} >
+              <Row>
+                <div data-aos="fade-up" data-aos-offset="200" key={item.id}>
+                <Card className='cards' style={{ textAlign: 'left', margin:'10px', border:'20', fontFamily:'Taviraj', backgroundColor:'#DBDFFD' }} >
               <Card.Body>
+                <Card.Text>
+                  <span style={{fontWeight:'bold'}}>  Author: </span><span>{item.author}</span>
+                </Card.Text>
                 <Card.Text >
-                    {item}
+                  <span style={{fontWeight:'bold'}}>Article: </span> {item.article}
+                </Card.Text>
+                <Card.Text >
+                  <span style={{fontWeight:'bold'}}> Published At: </span>  {item.publishedAt}
                 </Card.Text>
               </Card.Body>
             </Card> 
                 </div>
                 </Row>
+                
                 ))}
         </div>
 );
