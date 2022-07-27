@@ -9,6 +9,7 @@ import {Link} from 'react-router-dom';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import { Fade, Reveal } from 'react-reveal';
+import Pulse from 'react-reveal/Pulse';
 
 
 function Home() {
@@ -139,7 +140,7 @@ function Home() {
            <div className='grid'>
            {CardInfo.map(renderCard)}
            </div>
-<Reveal>
+           <Pulse>
            <div className='msgvice'>
            <h1 className='msgheading'>THE HON'BLE VICE CHANCELLOR'S MESSAGE</h1>
            <div class="side-by-side"> 
@@ -191,7 +192,7 @@ Engineer the Human Mind"</p>
   </div>
 </div> */}
            </div>
-           </Reveal>
+           </Pulse>
               
 
 

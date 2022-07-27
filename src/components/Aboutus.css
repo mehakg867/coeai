@@ -31,7 +31,26 @@ div.row.justify-content-center{
 div.content{
     font-family: 'Playfair Display', serif;  
     padding-left: auto;
-    padding-top: 0.5vw;
+    padding-top: 1.5vw;
+    
 }
+img.img1{
+    height: 12vw;
+    width: 9vw;
+/*     
+    position: absolute; */
+    
+    /* transform: translate(-50%, -50%);
+    
+   
+    box-sizing: border-box;
+    overflow: hidden; */
+    box-shadow: 0 20px 50px rgb(23, 32, 90);
+   
+    /* color: white; */
+     /* padding: 10px;   */
+  }
+
+
 
 
