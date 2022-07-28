@@ -14,14 +14,15 @@ function Event() {
 
     console.log("start");
     const[dataToShow, setData] = useState([]);
-    
+    const event = collection(db, "Events");
+    const q = query(event, orderBy("Id"));
 
 
       useEffect(() => {
     const data= [];
     
         const getValues = async () => {
-          const querySnapshot = await getDocs(collection(db, "Events"), query(orderBy('Id')));
+          const querySnapshot = await getDocs(q);
           querySnapshot.forEach((doc) => {
             data.push(doc.data());
              setData(data);
