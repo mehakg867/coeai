@@ -40,16 +40,17 @@ function Event() {
     <div className='expert'>
 <div className='expertTalks' key={item.Id}>
     <div className='expertImg'>
-        <img src="https://th.bing.com/th/id/OIP.X4WLXoJLdIgQu5LO5UxIoQAAAA?w=171&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt=''/>
-        <p>{item.name}</p>
-        <p>{item.designation}</p>
+        <img src={item.image} alt=''/>
+        <p style={{textAlign:'center', fontSize:'1vw', fontWeight:'bold', paddingTop:'1vw'}}>{item.name}</p>
+        <p style={{textAlign:'center',  fontSize:'1vw', fontWeight:'bold', marginBottom:'0rem'}}>{item.designation}</p>
     </div>
     <div className='expertTopic'>
-    <div className='expertDate'>
+    <div className='expertDate' style={{fontSize:'1.2vw', fontWeight:'bold', paddingRight:'2vw'}}>
         {item.date}
     </div>
-        <h1 className='expertTopic'>{item.topic}</h1>
-        <p className='expertText'>{item.info}</p>
+        <h1 className='expertTopic' style={{fontSize:'2vw', fontWeight:'bold', paddingRight:'2vw'}}>{item.topic}</h1>
+        <p className='expertText' style={{fontSize:'1.5vw', paddingRight:'2vw'}}>{item.info}</p>
+        <p style={{fontSize:'1.2vw', fontWeight:'bold', paddingRight:'2vw'}}>No. of Participants:{item.participants}</p>
     </div>
 </div>
 </div>
