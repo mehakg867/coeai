@@ -3,7 +3,7 @@ import { BrowserRouter as Router} from "react-router-dom";
 import Navigation from '../container/Navigation';
 import '../App.css';
 import { getFirestore } from "firebase/firestore";
-import { collection, getDocs } from 'firebase/firestore';
+import { collection, getDocs,orderBy,query } from 'firebase/firestore';
 import app from '../firebase';
 import './Event.css';
 
@@ -21,7 +21,7 @@ function Event() {
     const data= [];
     
         const getValues = async () => {
-          const querySnapshot = await getDocs(collection(db, "Events"));
+          const querySnapshot = await getDocs(collection(db, "Events"), query(orderBy('Id')));
           querySnapshot.forEach((doc) => {
             data.push(doc.data());
              setData(data);
@@ -40,7 +40,7 @@ function Event() {
     <div className='expert'>
 <div className='expertTalks' key={item.Id}>
     <div className='expertImg'>
-        <img src={item.image} alt=''/>
+        <img className='eximage' src={item.image} alt=''/>
         <p style={{textAlign:'center', fontSize:'1vw', fontWeight:'bold', paddingTop:'1vw'}}>{item.name}</p>
         <p style={{textAlign:'center',  fontSize:'1vw', fontWeight:'bold', marginBottom:'0rem'}}>{item.designation}</p>
     </div>
