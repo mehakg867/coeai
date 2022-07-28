@@ -36,8 +36,22 @@ const db = getFirestore(app);
         <Navigation/>
         <h1 style={{fontFamily:'PT Serif'}}>PUBLICATIONS</h1>
             
-            {dataToShow.map((item) => (
-              <Row>
+
+        {dataToShow.map((item) => (
+    <div className='expert'>
+<div className='expertTalks' key={item.Id}>
+    <div>
+        <h1 className='expertTopic' style={{fontSize:'2vw', fontWeight:'bold', paddingRight:'2vw'}}> <span > Author </span>{item.author}</h1>
+        <p className='expertText' style={{fontSize:'1.3vw', paddingRight:'2vw'}}> <span > Article: </span>{item.article}</p>
+        <p style={{fontSize:'1.2vw', fontWeight:'bold', paddingRight:'2vw'}}><span > Published At: </span> {item.publishedAt}</p>
+    </div>
+</div>
+</div>
+                ))}
+
+
+            {/* {dataToShow.map((item) => ( */}
+              {/* <Row>
                 <div data-aos="fade-up" data-aos-offset="200" key={item.id}>
                 <Card className='cards' style={{ textAlign: 'left', margin:'10px', border:'20', fontFamily:'Taviraj', backgroundColor:'#DBDFFD' }} >
               <Card.Body>
@@ -55,7 +69,7 @@ const db = getFirestore(app);
                 </div>
                 </Row> 
                 
-                ))}
+                ))} */}
         </div>
 );
   }
