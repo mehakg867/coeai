@@ -35,7 +35,9 @@ function Event() {
     return (
         <div>
         <Navigation />
-            
+  <div>
+    <h1 className='evetalk'>EVENT TALKS</h1>
+  </div>          
 
 {dataToShow.map((item) => (
     <div className='expert'>
