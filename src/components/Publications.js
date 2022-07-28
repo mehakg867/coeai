@@ -42,8 +42,8 @@ const db = getFirestore(app);
 <div className='expertTalks' key={item.Id}>
     <div>
         <h1 className='expertTopic' style={{fontSize:'2vw', fontWeight:'bold', paddingRight:'2vw'}}> <span > Author </span>{item.author}</h1>
-        <p className='expertText' style={{fontSize:'1.3vw', paddingRight:'2vw'}}> <span > Article: </span>{item.article}</p>
-        <p style={{fontSize:'1.2vw', fontWeight:'bold', paddingRight:'2vw'}}><span > Published At: </span> {item.publishedAt}</p>
+        <p className='expertText' style={{fontSize:'1.3vw',fontWeight:'bold', paddingRight:'2vw'}}> <span > Article: </span>{item.article}</p>
+        <p style={{fontSize:'1.2vw',  paddingRight:'2vw'}}><span > Published At: </span> {item.publishedAt}</p>
     </div>
 </div>
 </div>
