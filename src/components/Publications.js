@@ -7,6 +7,7 @@ import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import './publications.css';
+import { Slide } from 'react-reveal';
 
 const db = getFirestore(app);
 
@@ -32,10 +33,11 @@ const db = getFirestore(app);
     },[]);
    
     return (
-        <div style={{backgroundColor:'#fff'}}>
+        <div className='bodyback'>
         <Navigation/>
-        <h1 style={{fontFamily:'PT Serif'}}>PUBLICATIONS</h1>
-            
+        <Slide top>
+        <h1 className='publi' style={{fontFamily:'PT Serif'}}>PUBLICATIONS</h1>
+        </Slide> 
 
         {dataToShow.map((item) => (
     <div className='expert'>

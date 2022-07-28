@@ -48,7 +48,7 @@ fromAI in solving industrial and societal needs.</p>
 software infrastructure to serve as a playground for the creative minds that
 solve real data driven problems at hand.</p>
 
-<p className='aboutcoe'>The CoE-ai at IGDTUW, caters to the requirements of Undergraduate, Post-graduate, and Doctorate programs in the domains of AI, Machine Learning,
+<p className='aboutcoe'>The COE-Ai at IGDTUW, caters to the requirements of Undergraduate, Post-graduate, and Doctorate programs in the domains of AI, Machine Learning,
 and Deep Learning and various applications including Robotics, Drones, NLP,
 and others. it organizes various workshops, seminars, conferences, industry
 talks, hackathons on a regular basis.
@@ -155,7 +155,7 @@ COE AI Phase - II</p>
 <div className="col-xl-3 col-md-6 col-sm-10">
 <div className="single-team">
 <div className="image">
-<img className="img1" src="" alt=""></img>
+<img className="img1" src="https://www.inifdpatna.com/wp-content/uploads/2019/01/dummy-female.png" alt=""></img>
 </div>
 <div className="content">
 <h3>Ms.Mahima Das</h3>

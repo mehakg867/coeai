@@ -6,6 +6,7 @@ import { getFirestore } from "firebase/firestore";
 import { collection, getDocs,orderBy,query } from 'firebase/firestore';
 import app from '../firebase';
 import './Event.css';
+import { Slide } from 'react-reveal';
 
 
 const db = getFirestore(app);
@@ -33,10 +34,12 @@ function Event() {
   },[]);
 
     return (
-        <div>
+        <div className='bodyback'>
         <Navigation />
   <div>
+    <Slide top>
     <h1 className='evetalk'>EVENT TALKS</h1>
+   </Slide>
   </div>          
 
 {dataToShow.map((item) => (
