@@ -15,7 +15,7 @@ function Event() {
     console.log("start");
     const[dataToShow, setData] = useState([]);
     const event = collection(db, "Events");
-    const q = query(event, orderBy("date"));
+    const q = query(event, orderBy("Id","desc"));
 
 
       useEffect(() => {
@@ -52,7 +52,7 @@ function Event() {
         {item.date}
     </div>
         <h1 className='expertTopic' style={{fontSize:'2vw', fontWeight:'bold', paddingRight:'2vw'}}>{item.topic}</h1>
-        <p className='expertText' style={{fontSize:'1.5vw', paddingRight:'2vw'}}>{item.info}</p>
+        <p className='expertText' style={{fontSize:'1.3vw', paddingRight:'2vw'}}>{item.info}</p>
         <p style={{fontSize:'1.2vw', fontWeight:'bold', paddingRight:'2vw'}}>No. of Participants:{item.participants}</p>
     </div>
 </div>
