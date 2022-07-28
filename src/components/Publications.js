@@ -53,7 +53,7 @@ const db = getFirestore(app);
               </Card.Body>
             </Card> 
                 </div>
-                </Row>
+                </Row> 
                 
                 ))}
         </div>
