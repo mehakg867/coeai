@@ -25,3 +25,10 @@
   .grid > div{
     flex-basis: calc(20% -40px);
   }
+  h1.publi{
+    padding-top: 2vw;
+    
+    font-family: 'Playfair Display', serif;
+    font-size:4vw ;
+    
+  }

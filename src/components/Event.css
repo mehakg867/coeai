@@ -71,7 +71,10 @@ div.expertImg{
 }
 h1.evetalk{
     padding-top: 2vw;
-    
     font-family: 'Playfair Display', serif;
     font-size:4vw ;
+}
+p.expertText{
+    font-family: 'Handlee', cursive;
+ font-weight: normal;
 }
