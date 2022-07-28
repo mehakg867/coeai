@@ -34,7 +34,7 @@ function Event() {
   },[]);
 
     return (
-        <div>
+        <div className='bodyback'>
         <Navigation />
   <div>
     <Slide top>

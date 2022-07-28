@@ -33,7 +33,7 @@ const db = getFirestore(app);
     },[]);
    
     return (
-        <div style={{backgroundColor:'#fff'}}>
+        <div className='bodyback'>
         <Navigation/>
         <Slide top>
         <h1 className='publi' style={{fontFamily:'PT Serif'}}>PUBLICATIONS</h1>
