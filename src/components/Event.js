@@ -15,7 +15,7 @@ function Event() {
     console.log("start");
     const[dataToShow, setData] = useState([]);
     const event = collection(db, "Events");
-    const q = query(event, orderBy("date"));
+    const q = query(event, orderBy("Id","desc"));
 
 
       useEffect(() => {
