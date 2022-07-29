@@ -28,7 +28,7 @@ function Projects() {
           <div className='bodyback'>
           
           <Navigation />
-              <h1>Patents</h1>
+              <h1>Projects</h1>
               {dataToShow.map((item) => (
                   <div className='expert'>
   <div className='expertTalks' key={item.Id}>

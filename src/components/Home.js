@@ -145,7 +145,7 @@ function Home() {
            <Pulse>
            <div className='msgvice'>
            <h1 className='msgheading'>THE HON'BLE VICE CHANCELLOR'S MESSAGE</h1>
-           <div class="side-by-side"> 
+           <div className="side-by-side"> 
   <div data-aos="fade-up"> 
   <img className='imagevc' src='https://www.igdtuw.ac.in/images/vcmadam1.png' alt='vice chancellor '></img>
   </div> 
