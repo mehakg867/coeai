@@ -3,7 +3,9 @@ import Navigation from '../container/Navigation';
 import { getFirestore } from "firebase/firestore";
 import { collection, getDocs } from 'firebase/firestore';
 import app from '../firebase';
+import {Zoom} from 'react-reveal';
 const db = getFirestore(app);
+
 
 function Pat() {
     const[dataToShow, setData] = useState([]);
@@ -21,7 +23,7 @@ function Pat() {
    getValues();
 },[]);
     return (
-
+<Zoom>
         <div className='bodyback'>
         
         <Navigation />
@@ -40,6 +42,7 @@ function Pat() {
 </div>
             ))}
         </div>
+        </Zoom>
     );
   }
   

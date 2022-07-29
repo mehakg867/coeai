@@ -11,6 +11,7 @@ import Shambhu from"../images/Shambhu.jpg";
 
 function Aboutus() {
     return (
+        <Zoom>
         <div>
         <Navigation/>
          <section id="about" className="about-section pt-150">
@@ -181,7 +182,7 @@ COE AI Phase - II</p>
 </div>
 
 </div>
-
+</Zoom>
     
     );
   }

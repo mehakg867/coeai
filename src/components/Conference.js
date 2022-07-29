@@ -3,6 +3,7 @@ import { BrowserRouter as Router} from "react-router-dom";
 import Navigation from '../container/Navigation';
 import '../App.css';
 import Wave from "react-wavify";
+import { Zoom } from 'react-reveal';
 
 import {
     Badge,
@@ -20,10 +21,11 @@ import {
     Col
   } from "reactstrap";
   import './Conference.css';
-import { Zoom } from 'react-reveal';
+
 
 function Conference() {
     return (
+      <Zoom>
         <div>
         <Navigation/>
         <div className="section section-lg section-shaped pb-350" >
@@ -88,6 +90,7 @@ function Conference() {
 
            
         </div>
+        </Zoom>
     );
   }
   
