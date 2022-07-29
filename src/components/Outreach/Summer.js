@@ -46,7 +46,7 @@ function Summer() {
   <p className='expertText' style={{fontSize:'1.7vw',fontWeight:'normal', paddingRight:'2vw'}}>{item.content[1]}</p>
   <p className='expertText' style={{fontSize:'1.7vw',fontWeight:'normal', paddingRight:'2vw'}}>{item.content[2]}</p>
   <p className='expertText' style={{fontSize:'1.7vw',fontWeight:'normal', paddingRight:'2vw'}}>{item.content[3]}</p>
-<p style={{fontSize:'1.2vw', fontWeight:'bold', paddingRight:'2vw', aligntext:'center'}}><span><Button variant="outline-info" href={item.brochure}>Brochure</Button></span><span><Button variant="outline-info" href=''>Apply Now</Button></span></p>
+<p style={{fontSize:'1.2vw', fontWeight:'bold', paddingRight:'2vw', aligntext:'center'}}><span style={{padding:'1vw'}}><Button variant="outline-info" href={item.brochure}>Brochure</Button></span>    <span><Button variant="outline-info" href=''>Apply Now</Button></span></p>
     </div>
 </div>
 </div>

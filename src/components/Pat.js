@@ -2,8 +2,15 @@ import React, {useEffect, useState} from 'react';
 import Navigation from '../container/Navigation';
 import { getFirestore } from "firebase/firestore";
 import { collection, getDocs } from 'firebase/firestore';
+import Dropdown from 'react-bootstrap/Dropdown';
 import app from '../firebase';
+import './Pat.css';
 import {Zoom} from 'react-reveal';
+import Button from 'react-bootstrap/Button';
+import Col from 'react-bootstrap/Col';
+import Row from 'react-bootstrap/Row';
+import Toast from 'react-bootstrap/Toast';
+
 const db = getFirestore(app);
 
 
@@ -22,12 +29,30 @@ function Pat() {
       }
    getValues();
 },[]);
+const [showA, setShowA] = useState(true);
+
+  const toggleShowA = () => setShowA(!showA);
+
     return (
 <Zoom>
         <div className='bodyback'>
         
         <Navigation />
             <h1>Patents</h1>
+            {dataToShow.map((item) => (
+            <div className='expertTalks' key={item.Id}>
+            <Button onClick={toggleShowA} className="mb-2">
+          {item.title}
+        </Button>
+        <Toast show={showA} onClose={toggleShowA}>
+          <Toast.Body><p className='expertText' style={{fontSize:'1.5vw',fontWeight:'bold', paddingRight:'2vw'}}> {item.author}</p>
+        <p className='expertText' style={{fontSize:'1.3vw',fontWeight:'normal', paddingRight:'2vw'}}> {item.content1}</p>
+        <p className='expertText' style={{fontSize:'1.3vw',fontWeight:'normal', paddingRight:'2vw'}}> {item.content2}</p></Toast.Body>
+        </Toast>
+ </div>
+  ))}
+
+{/*             
             {dataToShow.map((item) => (
                 <div className='expert'>
 <div className='expertTalks' key={item.Id}>
@@ -40,7 +65,7 @@ function Pat() {
     </div>
 </div>
 </div>
-            ))}
+            ))} */}
         </div>
         </Zoom>
     );
