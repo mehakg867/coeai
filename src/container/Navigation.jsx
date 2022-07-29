@@ -2,6 +2,7 @@ import React from 'react';
 import './Nav.css';
 
 import logo from '../images/logo.png';
+import home from '../images/home.png';
 
 import {Nav,NavbarBrand,Navbar, NavDropdown } from 'react-bootstrap';
 import {Link} from 'react-router-dom';
@@ -25,7 +26,8 @@ function Navigation(){
                   <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
                   <Nav className='pagenav' style={{fontSize:'2.5vh'}}>
-              
+                  <Nav.Link className='allnav' as={Link} to="/">
+                  <img src={home} style={{height:'2vh', width:'2vh'}}/></Nav.Link>
                   <Nav.Link className='allnav' as={Link} to="/Aboutus">About us</Nav.Link>
                   <Nav.Link className='allnav'as={Link} to="/Conference">Conference</Nav.Link>
                   <Nav.Link className='allnav'as={Link} to="/Event">Event</Nav.Link>
