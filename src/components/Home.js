@@ -3,6 +3,7 @@ import '../App.css';
 import './Home.css';
 import goilogo from "../images/goilogo.jpg";
 import logo from "../images/logo.png";
+import azadi from "../images/azadi.png";
 import {Nav,NavbarBrand,Navbar, NavDropdown, } from 'react-bootstrap';
 import {Link} from 'react-router-dom';
 import satyamev_jayate from "../images/satyamev_jayate.webp";
@@ -78,10 +79,11 @@ function Home() {
         <div>
           <div className='row2' style={{display:'flex', height:100, flex:"100%"}}>
           <div className='col2' style={{display:'flex', flex:"20%",alignItems:'center', justifyContent:'center',position:'relative',fontSize:'5vw'}}>
-            <img src={logo} alt="this is college logo" style={{height:'7vw', width:'7vw'}} />
+            <img src={azadi} alt="this is college logo" style={{height:'7vw', width:'7vw'}} />
             </div>
             <div className='col1' style={{display:'flex', flex:"60%", alignItems:'center', justifyContent:'center',position:'relative',fontSize:'1.5vw',fontFamily:"-moz-initial"}}>
            <p>CENTRE OF EXCELLENCE IN ARTIFICIAL INTELLIGENCE</p> 
+           <img src={logo} alt="this is college logo" style={{height:'7vw', width:'7vw'}} />
            <p> INDIRA GANDHI DELHI TECHNICAL UNIVERSITY FOR WOMEN </p>
             </div>
             <div className='col2' style={{display:'flex', flex:"20%",alignItems:'center', justifyContent:'center',position:'relative',fontSize:'5vw'}}>
