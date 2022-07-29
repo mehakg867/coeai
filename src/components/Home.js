@@ -5,7 +5,7 @@ import goilogo from "../images/goilogo.jpg";
 import logo from "../images/logo.png";
 import {Nav,NavbarBrand,Navbar, NavDropdown, } from 'react-bootstrap';
 import {Link} from 'react-router-dom';
-import satyamev_jayate from "../images/satyamev_jayate.webp";
+import image from "../images/image.jpeg";
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import { Fade, Reveal } from 'react-reveal';
@@ -85,7 +85,7 @@ function Home() {
            <p> INDIRA GANDHI DELHI TECHNICAL UNIVERSITY FOR WOMEN </p>
             </div>
             <div className='col2' style={{display:'flex', flex:"20%",alignItems:'center', justifyContent:'center',position:'relative',fontSize:'5vw'}}>
-            <img src={satyamev_jayate} alt="this is college logo" style={{height:'7vw', width:'7vw'}} />
+            <img src={image} alt="this is college logo" style={{height:'7vw', width:'7vw'}} />
            
             </div>
           </div>
