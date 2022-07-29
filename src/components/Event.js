@@ -6,7 +6,7 @@ import { getFirestore } from "firebase/firestore";
 import { collection, getDocs,orderBy,query } from 'firebase/firestore';
 import app from '../firebase';
 import './Event.css';
-import { Slide } from 'react-reveal';
+import { Fade, Slide,Reveal,Zoom } from 'react-reveal';
 
 
 const db = getFirestore(app);
@@ -34,8 +34,11 @@ function Event() {
   },[]);
 
     return (
+     <Zoom>
         <div className='bodyback'>
+      
         <Navigation />
+        
   <div>
     <Slide top>
     <h1 className='evetalk'>EVENT TALKS</h1>
@@ -64,6 +67,7 @@ function Event() {
 
 
         </div>
+        </Zoom>
     );
   }
   

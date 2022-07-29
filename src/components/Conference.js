@@ -75,7 +75,7 @@ function Conference() {
               
             </div>
             <Wave style={{ transform: 'rotate(180deg)',width:'100vw' }}
-            fill='#DBDFFD'
+            fill='#a1e0ff'
              paused={false}
             options={{
               height: 80,
