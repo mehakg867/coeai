@@ -5,13 +5,13 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
-html,body{
+/* html,body{
   display: grid;
   height: 100%;
   width: 100%;
   place-items: center;
-  background: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
-}
+
+} */
 .wrapper .button{
   display: inline-block;
   height: 60px;
@@ -80,3 +80,10 @@ html,body{
 .wrapper .button:nth-child(4) span{
   color: #ff0000;
 }
+div.wrapper{
+    padding-top: 15vw;
+    padding-left: 41vw;
+    padding-right: 30vw;
+    align-items: center;
+}
+  
