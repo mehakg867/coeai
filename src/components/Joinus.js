@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import { Zoom } from 'react-reveal';
 import { BrowserRouter as Router} from "react-router-dom";
 import '../App.css';
 import Navigation from '../container/Navigation';
@@ -6,6 +7,7 @@ import './Joinus.css';
 
 function Joinus() {
     return (
+      <Zoom>
         <div>
         <Navigation/>
             <h1>Join us page</h1>
@@ -30,12 +32,7 @@ function Joinus() {
             </div>
             <span>Instagram</span>
          </div>
-         {/* <div class="button">
-            <div class="icon">
-               <i class="fab fa-codepen"></i>
-            </div>
-            <span>Codepen</span>
-         </div> */}
+        
          <div class="button">
             <div class="icon">
                <i class="fab fa-youtube"></i>
@@ -45,6 +42,8 @@ function Joinus() {
       </div>
    
         </div>
+        </Zoom>
+      
     );
   }
   

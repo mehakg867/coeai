@@ -6,6 +6,7 @@ import app from '../../firebase';
 import "./summer.css";
 import Button from 'react-bootstrap/Button';
 import Navigation from '../../container/Navigation';
+import { Zoom } from 'react-reveal';
 
 const db = getFirestore(app);
 
@@ -28,6 +29,7 @@ function Summer() {
    getValues();
 },[]);
     return (
+      <Zoom>
         <div className='bg'>
         <Navigation/>
             <div><h1>Summer Intership page</h1>
@@ -52,6 +54,7 @@ function Summer() {
 
             </div>
         </div>
+        </Zoom>
     );
   }
   
