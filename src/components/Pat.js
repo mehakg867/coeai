@@ -30,8 +30,8 @@ function Pat() {
                 <div className='expert'>
 <div className='expertTalks' key={item.Id}>
     <div>
-        <h1 className='expertTopic' style={{fontSize:'1.7vw', fontWeight:'bolder', paddingRight:'2vw'}}> {item.author}</h1>
-        <p className='expertText' style={{fontSize:'1.5vw',fontWeight:'bold', paddingRight:'2vw'}}> {item.title}</p>
+        <h1 className='expertTopic' style={{fontSize:'1.7vw', fontWeight:'bolder', paddingRight:'2vw'}}> {item.title}</h1>
+        <p className='expertText' style={{fontSize:'1.5vw',fontWeight:'bold', paddingRight:'2vw'}}> {item.author}</p>
         <p className='expertText' style={{fontSize:'1.3vw',fontWeight:'normal', paddingRight:'2vw'}}> {item.content1}</p>
         <p className='expertText' style={{fontSize:'1.3vw',fontWeight:'normal', paddingRight:'2vw'}}> {item.content2}</p>
 
