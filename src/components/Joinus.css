@@ -90,5 +90,9 @@ div.button{
     margin: auto;
 }
 div.bb{
-    background: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
+    background-image: url("../images/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; 
+    
 }
