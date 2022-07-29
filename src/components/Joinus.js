@@ -8,40 +8,50 @@ import './Joinus.css';
 function Joinus() {
     return (
       <Zoom>
-        <div>
+        <div className='bb'>
+
         <Navigation/>
             <h1>Join us page</h1>
             
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-       <div class="wrapper">
-         <div class="button">
-            <div class="icon">
-               <i class="fab fa-facebook-f"></i>
+       <div className="wrapper">
+         <div className="button">
+            <div className="icon">
+               <i className="fab fa-facebook-f"></i>
             </div>
             <span>Facebook</span>
          </div>
-         <div class="button">
-            <div class="icon">
-               <i class="fab fa-twitter"></i>
+         <br></br>
+         <div className="button">
+            <div className="icon">
+               <i className="fab fa-twitter"></i>
             </div>
             <span>Twitter</span>
          </div>
-         <div class="button">
-            <div class="icon">
-               <i class="fab fa-instagram"></i>
+         <br></br>
+
+         <div className="button" >
+            <div className="icon">
+               <i className="fab fa-instagram"></i>
             </div>
             <span>Instagram</span>
          </div>
-        
-         <div class="button">
-            <div class="icon">
-               <i class="fab fa-youtube"></i>
+         <br></br>
+         <div className="button">
+            <div className="icon">
+               <i className="fab fa-youtube"></i>
             </div>
             <span>YouTube</span>
          </div>
       </div>
-   
+  <br></br>
+  <br></br>
+  <br></br>
+  <br></br>
+  <br></br>
+  <br></br>
         </div>
+
         </Zoom>
       
     );
