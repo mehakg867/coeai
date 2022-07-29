@@ -8,6 +8,7 @@ import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import './publications.css';
 import { Slide } from 'react-reveal';
+import { Zoom } from 'react-reveal';
 
 const db = getFirestore(app);
 
@@ -33,6 +34,7 @@ const db = getFirestore(app);
     },[]);
    
     return (
+      <Zoom>
         <div className='bodyback'>
         <Navigation/>
         <Slide top>
@@ -73,6 +75,7 @@ const db = getFirestore(app);
                 
                 ))} */}
         </div>
+        </Zoom>
 );
   }
   
