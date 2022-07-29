@@ -34,17 +34,18 @@
     
   }
   div.expertTalks{
-   background: rgba( 192, 210, 237, 0.05 );
-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-backdrop-filter: blur( 13px );
--webkit-backdrop-filter: blur( 13px );
-border-radius: 10px;
-border: 1px solid rgba( 255, 255, 255, 0.18 );
+    background: rgba( 255, 255, 255, 0.4 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 14.5px );
+    -webkit-backdrop-filter: blur( 14.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
   }
 
   div.bodyback{
-    background-image: url("data:image/jpeg;base64,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");
+    background-image: url("https://previews.123rf.com/images/olepeshkina/olepeshkina2003/olepeshkina200300065/143779774-light-blue-textured-background-abstraction-top-view-horizontal.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    
   }
