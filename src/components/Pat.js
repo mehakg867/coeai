@@ -7,10 +7,13 @@ import app from '../firebase';
 import './Pat.css';
 import useCollapse from 'react-collapsed';
 import {Zoom} from 'react-reveal';
-import Button from 'react-bootstrap/Button';
-import Col from 'react-bootstrap/Col';
-import Row from 'react-bootstrap/Row';
-import Toast from 'react-bootstrap/Toast';
+// import cx from "classnames";
+// import Collapse from "@kunukn/react-collapse";
+
+// import Button from 'react-bootstrap/Button';
+// import Col from 'react-bootstrap/Col';
+// import Row from 'react-bootstrap/Row';
+// import Toast from 'react-bootstrap/Toast';
 
 const db = getFirestore(app);
 
