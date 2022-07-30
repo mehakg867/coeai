@@ -2,12 +2,21 @@ import React, {useEffect, useState} from 'react';
 import Navigation from '../container/Navigation';
 import { getFirestore } from "firebase/firestore";
 import { collection, getDocs } from 'firebase/firestore';
+import { Dropdown } from 'react-bootstrap';
 import app from '../firebase';
+import './Pat.css';
+import useCollapse from 'react-collapsed';
 import {Zoom} from 'react-reveal';
+
+
+
 const db = getFirestore(app);
 
+function Demo() {
+  const { getCollapseProps, getToggleProps, isExpanded } = useCollapse()
 
 function Pat() {
+    
     const[dataToShow, setData] = useState([]);
     useEffect(() => {
   const data= [];
@@ -22,13 +31,21 @@ function Pat() {
       }
    getValues();
 },[]);
+
     return (
 <Zoom>
         <div className='bodyback'>
         
         <Navigation />
             <h1>Patents</h1>
-            {dataToShow.map((item) => (
+            <div>
+      <button {...getToggleProps()}>
+        {isExpanded ? 'Collapse' : 'Expand'}
+      </button>
+      <section {...getCollapseProps()}>Collapsed content 🙈</section>
+    </div>
+                      
+            {/* {dataToShow.map((item) => (
                 <div className='expert'>
 <div className='expertTalks' key={item.Id}>
     <div>
@@ -40,7 +57,10 @@ function Pat() {
     </div>
 </div>
 </div>
-            ))}
+            ))}  */}
+
+
+            
         </div>
         </Zoom>
     );

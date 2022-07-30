@@ -46,8 +46,8 @@
  a.homenav{
     font-size: 3vh;
     color:black ;
-    margin-left: 5vh;
-    margin-right: 5vh;
+    margin-left: 1.5vw;
+    margin-right: 1.5vw;
     margin-top: 2vh;
     margin-bottom: 1vh;
     justify-content: center;
@@ -60,8 +60,8 @@
   
   div.homenav.nav-item.dropdown{
     font-size: 3vh;
-    margin-left: 5vh;
-    margin-right: 5vh;
+    margin-left: 1.5vw;
+    margin-right: 1.5vw;
     margin-top: 2vh;
     margin-bottom: 3vh;
     color:black ;

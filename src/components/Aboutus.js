@@ -20,7 +20,7 @@ function Aboutus() {
 <div className="col-lg-6">
     <Fade top>
 <div className="about-img mb-50">
-<img src="https://preview.uideck.com/items/bliss/assets/img/about/about-img.svg" alt="about"></img>
+<img  className="imageab "src="https://preview.uideck.com/items/bliss/assets/img/about/about-img.svg" alt="about"></img>
 </div>
 </Fade>
 </div>
@@ -173,6 +173,30 @@ COE AI Phase - II</p>
 <h3>Ms. Shreshtha Singh
 </h3>
 <p>Technical Assistant, COE-AI </p>
+</div>
+</div>
+</div>
+<div className="col-xl-3 col-md-6 col-sm-10">
+<div className="last-img">
+<div className="image">
+<img className="img1" src="https://www.inifdpatna.com/wp-content/uploads/2019/01/dummy-female.png" alt=""></img>
+</div>
+<div className="content">
+<h3>Ms. Pooja Gambhir
+</h3>
+<p>JRF, COE-AI </p>
+</div>
+</div>
+</div>
+<div className="col-xl-3 col-md-6 col-sm-10">
+<div className="last-img">
+<div className="image">
+<img className="img1" src="https://www.inifdpatna.com/wp-content/uploads/2019/01/dummy-female.png" alt=""></img>
+</div>
+<div className="content">
+<h3>Mrs. Nidhi Arora
+</h3>
+<p>JRF, COE-AI </p>
 </div>
 </div>
 </div>

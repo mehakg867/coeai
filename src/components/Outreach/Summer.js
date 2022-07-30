@@ -40,13 +40,13 @@ function Summer() {
     <div className='expertTopic'>
     
         <h1 className='expertTopic' style={{fontSize:'2vw', fontWeight:'bold', paddingRight:'2vw'}}>{item.internship}</h1>
-        <div className='expertDate' style={{fontSize:'1.7vw', fontWeight:'normal', paddingRight:'2vw',paddingTop:'1vw'}}>
+        <div className='expertDate' style={{fontSize:'1.7vw', fontWeight:'normal', paddingRight:'2vw',paddingTop:'1vw',paddingBottom:'0.5vw'}}>
         {item.date}
     </div>
   <p className='expertText' style={{fontSize:'1.7vw',fontWeight:'normal', paddingRight:'2vw'}}>{item.content[1]}</p>
   <p className='expertText' style={{fontSize:'1.7vw',fontWeight:'normal', paddingRight:'2vw'}}>{item.content[2]}</p>
   <p className='expertText' style={{fontSize:'1.7vw',fontWeight:'normal', paddingRight:'2vw'}}>{item.content[3]}</p>
-<p style={{fontSize:'1.2vw', fontWeight:'bold', paddingRight:'2vw', aligntext:'center'}}><span><Button variant="outline-info" href={item.brochure}>Brochure</Button></span><span><Button variant="outline-info" href=''>Apply Now</Button></span></p>
+<p style={{fontSize:'1.2vw', fontWeight:'bold', paddingRight:'2vw', aligntext:'center'}}><Button variant="outline-info" style={{marginRight:'1vw'}} href={item.brochure}>Brochure</Button><Button variant="outline-info" href={item.Apply_Now}>Apply Now</Button></p>
     </div>
 </div>
 </div>

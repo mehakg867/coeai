@@ -28,23 +28,25 @@
     box-shadow: 0 1.4rem 8rem rgba(0,0,0,.2);
     align-items: center;
     text-align: justify;
-    border-radius: .8rem;
+    border-radius: 1rem;
 }
 
 .expertImg{
     min-width: 20vw;
     max-width: 20vw;
     /* height: 15vw; */
-    transform: translateX(-8vw);
+    transform: translateX(-4vw);
     position: relative;
 }
 
 .expertImg img{
-    width: 20vw;
+    width: 13vw;
     height: 15vw;
-    object-fit: cover;
+    object-fit: contain;
     display: block;
     border-radius: .8rem;
+   position: relative;
+   left: 3vw;
 }
 
 .expertImg::before{
