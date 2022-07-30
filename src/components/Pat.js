@@ -5,78 +5,34 @@ import { collection, getDocs } from 'firebase/firestore';
 import Dropdown from 'react-bootstrap/Dropdown';
 import app from '../firebase';
 import './Pat.css';
-import useCollapse from 'react-collapsed';
-import {Zoom} from 'react-reveal';
-import Button from 'react-bootstrap/Button';
-import Col from 'react-bootstrap/Col';
-import Row from 'react-bootstrap/Row';
-import Toast from 'react-bootstrap/Toast';
-
+import Collapsible from './Collapsible.tsx';
 const db = getFirestore(app);
 
 
 
 function Pat() {
-    const { getCollapseProps, getToggleProps, isExpanded } = useCollapse();
-    const[dataToShow, setData] = useState([]);
-    useEffect(() => {
-  const data= [];
-  
-      const getValues = async () => {
-        const querySnapshot = await getDocs(collection(db, "Patents"));
-        querySnapshot.forEach((doc) => {
-          data.push(doc.data());
-           setData(data);
-        });
-           
-      }
-   getValues();
-},[]);
-const [showA, setShowA] = useState(true);
-
-  const toggleShowA = () => setShowA(!showA);
-
-    return (
-<Zoom>
-        <div className='bodyback'>
-        
-        <Navigation />
-            <h1>Patents</h1>
-            {dataToShow.map((item) => (
- <div className="collapsible">
-        <div className="header" {...getToggleProps()}>
-            {isExpanded ? 'Collapse' : 'Expand'}
-        </div>
-        <div {...getCollapseProps()}>
-            <div className="content">
-                Now you can see the hidden content. <br/><br/>
-                Click again to hide...
-            </div>
-        </div>
-    </div>
-
-  ))}
-
-{/*             
-            {dataToShow.map((item) => (
-                <div className='expert'>
-<div className='expertTalks' key={item.Id}>
+   
+  return (
     <div>
-        <h1 className='expertTopic' style={{fontSize:'1.7vw', fontWeight:'bolder', paddingRight:'2vw'}}> {item.title}</h1>
-        <p className='expertText' style={{fontSize:'1.5vw',fontWeight:'bold', paddingRight:'2vw'}}> {item.author}</p>
-        <p className='expertText' style={{fontSize:'1.3vw',fontWeight:'normal', paddingRight:'2vw'}}> {item.content1}</p>
-        <p className='expertText' style={{fontSize:'1.3vw',fontWeight:'normal', paddingRight:'2vw'}}> {item.content2}</p>
-
+        <Navigation />
+        <h1>People page</h1>
+        <div className="App container">
+      <Collapsible
+        open
+        title="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+      >
+        Consectetur adipiscing elit pellentesque habitant morbi tristique.
+        Pulvinar pellentesque habitant morbi tristique. Vel quam elementum
+        pulvinar etiam. Pulvinar pellentesque habitant morbi tristique senectus
+        et netus et. Elementum integer enim neque volutpat. Faucibus in ornare
+        quam viverra orci sagittis. Amet volutpat consequat mauris nunc congue
+        nisi vitae suscipit. Dui accumsan sit amet nulla. Proin sagittis nisl
+        rhoncus mattis. Enim nulla aliquet porttitor lacus. Arcu odio ut sem
+        nulla pharetra diam sit amet. Gravida rutrum quisque non tellus orci ac
+        auctor augue
+      </Collapsible>
     </div>
-</div>
-</div>
-            ))} */}
-
-
-            
-        </div>
-        </Zoom>
-    );
-  }
+    </div>
+);  }
   
   export default Pat;
