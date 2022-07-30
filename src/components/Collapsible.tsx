@@ -18,7 +18,7 @@ const Collapsible: React.FC<IProps> = ({ open, children, title }) => {
       <div className="card">
         <div>
           <div className="p-3 border-bottom d-flex justify-content-between">
-            <h6 className='expertTopic' style={{fontSize:'1vw', fontWeight:'bolder', paddingRight:'2vw'}}>{title}</h6>
+            <h1 className='expertTopic' style={{fontSize:'1.4vw', fontWeight:'bolder', paddingRight:'2vw'}}>{title}</h1>
             
             <button type="button" className="btn" onClick={handleFilterOpening}>
               {!isOpen ? (
