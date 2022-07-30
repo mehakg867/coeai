@@ -13,8 +13,8 @@ div.pagenav.navbar-nav{
 }
 
 a.allnav.nav-link{
-  margin-left: 1vh;
-  margin-right: 1vh;
+  margin-left: 0.3vw;
+  margin-right: 0.3vw;
   color:black ;
   text-align: center;
   margin-top: 1.5vh;

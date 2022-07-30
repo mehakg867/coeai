@@ -20,7 +20,7 @@ function Aboutus() {
 <div className="col-lg-6">
     <Fade top>
 <div className="about-img mb-50">
-<img src="https://preview.uideck.com/items/bliss/assets/img/about/about-img.svg" alt="about"></img>
+<img  className="imageab "src="https://preview.uideck.com/items/bliss/assets/img/about/about-img.svg" alt="about"></img>
 </div>
 </Fade>
 </div>
