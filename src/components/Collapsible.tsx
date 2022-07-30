@@ -1,9 +1,5 @@
 import React, { useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faChevronUp,
-  faChevronDown
-} from "@fortawesome/fontawesome-free-solid";
+
 interface IProps {
   open?: boolean;
   title: string;
@@ -25,10 +21,8 @@ const Collapsible: React.FC<IProps> = ({ open, children, title }) => {
             <h6 className="font-weight-bold">{title}</h6>
             <button type="button" className="btn" onClick={handleFilterOpening}>
               {!isOpen ? (
-                <FontAwesomeIcon icon="fa-solid fa-angle-down" />
-                              ) : (
-                <FontAwesomeIcon icon={faChevronUp} />
-              )}
+               <i className="fa-solid fa-angle-down"></i>):( <i className="fa-solid fa-angle-down"></i>)                 
+              }
             </button>
           </div>
         </div>
