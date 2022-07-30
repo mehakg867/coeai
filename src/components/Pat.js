@@ -11,26 +11,50 @@ const db = getFirestore(app);
 
 
 function Pat() {
-   
+  const[dataToShow, setData] = useState([]);
+      
+
+
+  useEffect(() => {
+const data= [];
+
+    const getValues = async () => {
+      const querySnapshot = await getDocs(collection(db, "Patents"));
+      querySnapshot.forEach((doc) => {
+        data.push(doc.data());
+         setData(data);
+      });
+         
+    }
+ getValues();
+},[]);
   return (
+
+
+    
     <div>
         <Navigation />
         <h1>People page</h1>
         <div className="App container">
-      <Collapsible
+
+        {dataToShow.map((item) => (
+    <div className='expert'>
+<div className='expertTalks' key={item.Id}>
+    <div>
+    <Collapsible
         open
-        title="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-      >
-        Consectetur adipiscing elit pellentesque habitant morbi tristique.
-        Pulvinar pellentesque habitant morbi tristique. Vel quam elementum
-        pulvinar etiam. Pulvinar pellentesque habitant morbi tristique senectus
-        et netus et. Elementum integer enim neque volutpat. Faucibus in ornare
-        quam viverra orci sagittis. Amet volutpat consequat mauris nunc congue
-        nisi vitae suscipit. Dui accumsan sit amet nulla. Proin sagittis nisl
-        rhoncus mattis. Enim nulla aliquet porttitor lacus. Arcu odio ut sem
-        nulla pharetra diam sit amet. Gravida rutrum quisque non tellus orci ac
-        auctor augue
+        title1={item.title} title2={item.author}>
+        <p className='expertText' style={{fontSize:'1.7vw',fontWeight:'bold', paddingRight:'2vw'}}>{item.content1} </p>
+        <p className='expertText' style={{fontSize:'1.7vw',fontWeight:'bold', paddingRight:'2vw'}}>{item.content2} </p>
+
+        
       </Collapsible>
+    </div>
+</div>
+</div>
+                ))}
+
+      
     </div>
     </div>
 );  }
