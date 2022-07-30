@@ -32,7 +32,7 @@ const db = getFirestore(app);
    
     return (
       <Zoom>
-        <div className='bodyback'>
+        <div className='bb'>
         <Navigation/>
         <Slide top>
         <h1 className='publi' style={{fontFamily:'PT Serif'}}>PUBLICATIONS</h1>

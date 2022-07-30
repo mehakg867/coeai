@@ -4,6 +4,7 @@ import { getFirestore } from "firebase/firestore";
 import { collection, getDocs } from 'firebase/firestore';
 import app from '../firebase';
 import './Pat.css';
+import { Zoom } from 'react-reveal';
 import Collapsible from './Collapsible.tsx';
 const db = getFirestore(app);
 
@@ -30,10 +31,10 @@ const data= [];
   return (
 
 
-    
-    <div>
+  <Zoom>
+    <div className='bb'>
         <Navigation />
-        <h1>People page</h1>
+        <h1 className='pat'>Patents</h1>
         <div className="App container">
 
         {dataToShow.map((item) => (
@@ -43,9 +44,9 @@ const data= [];
     <Collapsible
         open
         title={item.title}>
-                <p className='expertText' style={{fontSize:'1.7vw',fontWeight:'bold', paddingRight:'2vw'}}>{item.author} </p>
-        <p className='expertText' style={{fontSize:'1.4vw',fontWeight:'normal', paddingRight:'2vw'}}>{item.content1} </p>
-        <p className='expertText' style={{fontSize:'1.4vw',fontWeight:'normal', paddingRight:'2vw'}}>{item.content2} </p>
+                <p className='expertText' style={{fontSize:'1.7vw',fontWeight:'bold', }}>{item.author} </p>
+        <p className='expertText' style={{fontSize:'1.4vw',fontWeight:'normal'} }>{item.content1} </p>
+        <p className='expertText' style={{fontSize:'1.4vw',fontWeight:'normal'}}>{item.content2} </p>
 
         
       </Collapsible>
@@ -57,6 +58,7 @@ const data= [];
       
     </div>
     </div>
+    </Zoom>  
 );  }
   
   export default Pat;

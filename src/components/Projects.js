@@ -25,7 +25,7 @@ function Projects() {
   },[]);
       return (
   <Zoom>
-          <div className='bodyback'>
+          <div className='bb'>
           
           <Navigation />
               <h1>Projects</h1>
