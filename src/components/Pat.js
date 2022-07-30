@@ -5,6 +5,7 @@ import { collection, getDocs } from 'firebase/firestore';
 import Dropdown from 'react-bootstrap/Dropdown';
 import app from '../firebase';
 import './Pat.css';
+import useCollapse from 'react-collapsed';
 import {Zoom} from 'react-reveal';
 import Button from 'react-bootstrap/Button';
 import Col from 'react-bootstrap/Col';
@@ -14,7 +15,9 @@ import Toast from 'react-bootstrap/Toast';
 const db = getFirestore(app);
 
 
+
 function Pat() {
+    const { getCollapseProps, getToggleProps, isExpanded } = useCollapse();
     const[dataToShow, setData] = useState([]);
     useEffect(() => {
   const data= [];
@@ -40,16 +43,18 @@ const [showA, setShowA] = useState(true);
         <Navigation />
             <h1>Patents</h1>
             {dataToShow.map((item) => (
-            <div className='expertTalks' key={item.Id}>
-            <Button onClick={toggleShowA} className="mb-2">
-          {item.title}
-        </Button>
-        <Toast show={showA} onClose={toggleShowA}>
-          <Toast.Body><p className='expertText' style={{fontSize:'1.5vw',fontWeight:'bold', paddingRight:'2vw'}}> {item.author}</p>
-        <p className='expertText' style={{fontSize:'1.3vw',fontWeight:'normal', paddingRight:'2vw'}}> {item.content1}</p>
-        <p className='expertText' style={{fontSize:'1.3vw',fontWeight:'normal', paddingRight:'2vw'}}> {item.content2}</p></Toast.Body>
-        </Toast>
- </div>
+ <div className="collapsible">
+        <div className="header" {...getToggleProps()}>
+            {isExpanded ? 'Collapse' : 'Expand'}
+        </div>
+        <div {...getCollapseProps()}>
+            <div className="content">
+                Now you can see the hidden content. <br/><br/>
+                Click again to hide...
+            </div>
+        </div>
+    </div>
+
   ))}
 
 {/*             
@@ -66,6 +71,9 @@ const [showA, setShowA] = useState(true);
 </div>
 </div>
             ))} */}
+
+
+            
         </div>
         </Zoom>
     );
