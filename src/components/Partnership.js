@@ -3,6 +3,9 @@ import { BrowserRouter as Router} from "react-router-dom";
 import '../App.css';
 import Navigation from '../container/Navigation';
 import construction from "../images/construction.jpg";
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
+
 
 function Partnership() {
     return (

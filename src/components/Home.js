@@ -79,15 +79,15 @@ function Home() {
         <div>
           <div className='row2' style={{display:'flex', height:100, flex:"100%"}}>
           <div className='col2' style={{display:'flex', flex:"20%",alignItems:'center', justifyContent:'center',position:'relative',fontSize:'5vw'}}>
-            <img src={azadi} alt="this is college logo" style={{height:'7vw', width:'7vw'}} />
+            <img src={azadi} alt="this is college logo" style={{height:'4vw', width:'5vw'}} />
             </div>
-            <div className='col1' style={{display:'flex', flex:"60%", alignItems:'center', justifyContent:'center',position:'relative',fontSize:'1.5vw',fontFamily:"-moz-initial"}}>
-           <p>CENTRE OF EXCELLENCE IN ARTIFICIAL INTELLIGENCE</p> 
-           <img src={logo} alt="this is college logo" style={{height:'7vw', width:'7vw'}} />
-           <p> INDIRA GANDHI DELHI TECHNICAL UNIVERSITY FOR WOMEN </p>
+            <div className='col1' style={{display:'flex', flex:"75%", alignItems:'center', justifyContent:'center',position:'relative',fontSize:'1.5vw'}}>
+           <p className='fontp'style={{paddingTop:'1.5vw',paddingRight:'2vw'}}>CENTRE OF EXCELLENCE IN ARTIFICIAL INTELLIGENCE</p> 
+           <img src={logo} alt="this is college logo" style={{height:'5vw', width:'5vw'}} />
+           <p className='fontp' style={{paddingTop:'1.5vw',paddingLeft:'3vw'}}> INDIRA GANDHI DELHI TECHNICAL UNIVERSITY FOR WOMEN </p>
             </div>
             <div className='col2' style={{display:'flex', flex:"20%",alignItems:'center', justifyContent:'center',position:'relative',fontSize:'5vw'}}>
-            <img src={satyamev_jayate} alt="this is college logo" style={{height:'7vw', width:'7vw'}} />
+            <img src={satyamev_jayate} alt="this is college logo" style={{height:'5vw', width:'3vw'}} />
            
             </div>
           </div>
