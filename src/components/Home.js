@@ -93,26 +93,17 @@ function Home() {
           </div>
         </div>
 
-
-        {/* <div id="coverTitle" className="w-100" style={{display:'flex'}}>
-        <div className="row container" style={{display:'flex'}}>
-          <div className="col-5 ">
-          <div className="d-flex align-items-center justify-content-center" style={{height:'30vh', fontSize:'5vw',fontFamily:"serif", textAlign:'center',position:'relative',left:70, flex:'40%', padding:'0'}}>
-               CENTRE OF EXCELLENCE IN ARTIFICIAL INTELLIGENCE </div>
-          </div>
-          <div className="col-2">
-            <div className="d-flex align-items-center justify-content-center" style={{height:'30vh',textAlign:'center',position:'relative',left:110, flex:'20%', padding:'0' }}>
-              <img src={logo} alt="this is college logo" className='photo' />
-               </div>
-          </div>
-          <div className="col-5">
-               <div className="d-flex align-items-center justify-content-center" style={{height:'30vh',fontFamily:"serif", fontSize:'5vw',position:'relative',left:140, flex:'40%', padding:'0'}}>
-               INDIRA GANDHI DELHI TECHNICAL UNIVERSITY FOR WOMEN  </div>
+      <div>
+        <div className='row'>
+          <div className='bgimage' style={{display:'flex', flex:"80%",position:'relative',fontSize:'2vw'}}>
+            
+        </div>
+          <div className='col'style={{display:'flex', flex:"20%",position:'relative',fontSize:'2vw'}}>
+            <h2>BULLETIEN BOARD</h2>
           </div>
         </div>
+      </div>
       
-      </div> */}
-      <div  className='bgimage'></div>
       <>
       <Navbar bg="light" varient= "bright" sticky="top" expand="lg">
       <Navbar.Toggle aria-controls="navbarScroll" />
@@ -183,18 +174,6 @@ at national and internationallevel.
 Engineer the Human Mind"
 </p>
   </div>
-  
-
-            {/* <h1>THE HON'BLE VICE CHANCELLOR'S MESSAGE</h1>
-            <div class="row">
-  <div class="column">
-    <img className='imagevc' src='https://www.igdtuw.ac.in/images/vcmadam1.png' alt='vice chancellor '></img>
-  </div>
-  <div class="column">
-    <p>"The Purpose of Artificial Intelligence is to Re -
-Engineer the Human Mind"</p>
-  </div>
-</div> */}
            </div>
            </Pulse>
               
