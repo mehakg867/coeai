@@ -79,4 +79,6 @@ h1.evetalk{
 p.expertText{
     font-family: 'Handlee', cursive;
  font-weight: normal;
+ overflow:auto;
+ display:block;
 }

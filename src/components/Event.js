@@ -35,7 +35,7 @@ function Event() {
 
     return (
      <Zoom>
-        <div className='bodyback'>
+        <div className='bb'>
       
         <Navigation />
         
