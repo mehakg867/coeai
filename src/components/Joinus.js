@@ -11,7 +11,7 @@ function Joinus() {
         <div className='bb'>
 
         <Navigation/>
-            <h1>Join us page</h1>
+            <h1 className='pat'>Join us page</h1>
             
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
        <div className="wrapper">

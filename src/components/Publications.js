@@ -35,7 +35,7 @@ const db = getFirestore(app);
         <div className='bb'>
         <Navigation/>
         <Slide top>
-        <h1 className='publi' style={{fontFamily:'PT Serif'}}>PUBLICATIONS</h1>
+        <h1 className='pat'>PUBLICATIONS</h1>
         </Slide> 
 
         {dataToShow.map((item) => (
