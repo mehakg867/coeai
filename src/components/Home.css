@@ -189,6 +189,11 @@ bottom: 2px;
     background-color: #f6f6f6;
     padding-bottom: 3vw;
   }
+  div.row2{
+    height: 13vw;
+    margin-top: -2vw;
+    margin-bottom: -1vw;;
+  }
 
   
   /* .column {
@@ -200,7 +205,11 @@ bottom: 2px;
     display: table;
     clear: both;
   } */
-p.fontp{
-  font-family: 'Kaisei Opti', serif;
-
+div.row{
+  --bs-gutter-x: 0rem;
+}
+p.phead{
+  
+ margin-top: -2vw;
+ margin-top: -2vw;
 }
