@@ -11,6 +11,8 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import { Fade, Reveal } from 'react-reveal';
 import Pulse from 'react-reveal/Pulse';
+import coeai from "../images/coeai.png"
+import goilogo1 from "../images/goilogo1.png"
 
 
 function Home() {
@@ -77,42 +79,41 @@ function Home() {
         <div>
         
         <div>
-          <div className='row2' style={{display:'flex', height:100, flex:"100%"}}>
-          <div className='col2' style={{display:'flex', flex:"20%",alignItems:'center', justifyContent:'center',position:'relative',fontSize:'5vw'}}>
-            <img src={azadi} alt="this is college logo" style={{height:'4vw', width:'5vw'}} />
+          <div className='row2' style={{display:'flex', flex:"100%",}}>
+          <div className='col2' style={{display:'flex', flex:"10%",alignItems:'center', justifyContent:'center',position:'relative',top:'0.7vw',fontSize:'5vw'}}>
+          <img src={azadi} alt="this is college logo" style={{height:'4.5vw', width:'6vw',position:'relative',down:'4vw'}} />
             </div>
-            <div className='col1' style={{display:'flex', flex:"75%", alignItems:'center', justifyContent:'center',position:'relative',fontSize:'1.5vw'}}>
-           <p className='fontp'style={{paddingTop:'1.5vw',paddingRight:'2vw'}}>CENTRE OF EXCELLENCE IN ARTIFICIAL INTELLIGENCE</p> 
-           <img src={logo} alt="this is college logo" style={{height:'5vw', width:'5vw'}} />
-           <p className='fontp' style={{paddingTop:'1.5vw',paddingLeft:'3vw'}}> INDIRA GANDHI DELHI TECHNICAL UNIVERSITY FOR WOMEN </p>
+           < div className='col2' style={{display:'flex', flex:"10%",alignItems:'center', justifyContent:'center',position:'relative',left:'4vw',top:'0.2vw',fontSize:'5vw'}}>
+            <img src={logo} alt="this is college logo" style={{height:'6.5vw', width:'7vw'}} />
             </div>
-            <div className='col2' style={{display:'flex', flex:"20%",alignItems:'center', justifyContent:'center',position:'relative',fontSize:'5vw'}}>
-            <img src={satyamev_jayate} alt="this is college logo" style={{height:'5vw', width:'3vw'}} />
+            <div className='row' style={{display:'flex', flex:"70%", alignItems:'center', justifyContent:'center',position:'relative',right:'2vw'}}>
+           <p className='phead'style={{fontWeight:'bold',marginBottom:'-7vw', fontSize:'2vw',fontFamily:'initial'}}>CENTRE OF EXCELLENCE IN ARTIFICIAL INTELLIGENCE</p> 
+           <p className='phead'style={{fontWeight:'normal', fontSize:'2vw',marginBottom:'-6vw',fontFamily:"serif"}}> INDIRA GANDHI DELHI TECHNICAL UNIVERSITY FOR WOMEN </p>
+           <p className='phead'style={{marginBottom:'-3vw',fontFamily:'revert-layer',position:'relative',right:'2vw'}}>(Established by Govt. of Delhi vide Act 9 of 2012)</p>
+           <p className='phead'style={{marginBottom:'0', marginTop:'-3vw',fontFamily:'revert-layer',position:'relative',right:'2vw'}}>ISO 9001:2015 Certified University</p>
+            </div>
+            <div className='col2' style={{display:'flex', flex:"10%",alignItems:'center', justifyContent:'center',position:'relative',fontSize:'5vw',top:'0.7vw'}}>
+          
+            <img src={goilogo1} alt="this is college logo" style={{height:'6vw', width:'7vw'}} />
+              
+            
+            
            
             </div>
           </div>
         </div>
 
-
-        {/* <div id="coverTitle" className="w-100" style={{display:'flex'}}>
-        <div className="row container" style={{display:'flex'}}>
-          <div className="col-5 ">
-          <div className="d-flex align-items-center justify-content-center" style={{height:'30vh', fontSize:'5vw',fontFamily:"serif", textAlign:'center',position:'relative',left:70, flex:'40%', padding:'0'}}>
-               CENTRE OF EXCELLENCE IN ARTIFICIAL INTELLIGENCE </div>
-          </div>
-          <div className="col-2">
-            <div className="d-flex align-items-center justify-content-center" style={{height:'30vh',textAlign:'center',position:'relative',left:110, flex:'20%', padding:'0' }}>
-              <img src={logo} alt="this is college logo" className='photo' />
-               </div>
-          </div>
-          <div className="col-5">
-               <div className="d-flex align-items-center justify-content-center" style={{height:'30vh',fontFamily:"serif", fontSize:'5vw',position:'relative',left:140, flex:'40%', padding:'0'}}>
-               INDIRA GANDHI DELHI TECHNICAL UNIVERSITY FOR WOMEN  </div>
+      <div>
+        <div className='row'>
+          <div className='bgimage' style={{display:'flex', flex:"80%",position:'relative',fontSize:'2vw'}}>
+            
+        </div>
+          <div className='col'style={{display:'flex', flex:"20%",position:'relative',fontSize:'2vw'}}>
+            <h2>BULLETIEN BOARD</h2>
           </div>
         </div>
+      </div>
       
-      </div> */}
-      <div  className='bgimage'></div>
       <>
       <Navbar bg="light" varient= "bright" sticky="top" expand="lg">
       <Navbar.Toggle aria-controls="navbarScroll" />
@@ -183,18 +184,6 @@ at national and internationallevel.
 Engineer the Human Mind"
 </p>
   </div>
-  
-
-            {/* <h1>THE HON'BLE VICE CHANCELLOR'S MESSAGE</h1>
-            <div class="row">
-  <div class="column">
-    <img className='imagevc' src='https://www.igdtuw.ac.in/images/vcmadam1.png' alt='vice chancellor '></img>
-  </div>
-  <div class="column">
-    <p>"The Purpose of Artificial Intelligence is to Re -
-Engineer the Human Mind"</p>
-  </div>
-</div> */}
            </div>
            </Pulse>
               
