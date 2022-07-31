@@ -193,9 +193,11 @@ bottom: 2px;
     padding-bottom: 3vw;
   }
   div.row2{
-    height: 13vw;
+    height: 12.5vw;
     margin-top: -2vw;
-    margin-bottom: -1vw;;
+   padding-bottom: -2vw;
+    margin-bottom: 0vw;;
+    width: auto;
   }
 
   
@@ -212,7 +214,7 @@ div.row{
   --bs-gutter-x: 0rem;
 }
 p.phead{
-  
+
  margin-top: -2vw;
  margin-top: -2vw;
 }
