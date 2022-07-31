@@ -11,6 +11,8 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import { Fade, Reveal } from 'react-reveal';
 import Pulse from 'react-reveal/Pulse';
+import coeai from "../images/coeai.png"
+import goilogo1 from "../images/goilogo1.png"
 
 
 function Home() {
@@ -77,17 +79,23 @@ function Home() {
         <div>
         
         <div>
-          <div className='row2' style={{display:'flex', height:100, flex:"100%"}}>
+          <div className='row2' style={{display:'flex', flex:"100%"}}>
           <div className='col2' style={{display:'flex', flex:"20%",alignItems:'center', justifyContent:'center',position:'relative',fontSize:'5vw'}}>
-            <img src={azadi} alt="this is college logo" style={{height:'7vw', width:'7vw'}} />
+            <img src={coeai} alt="this is college logo" style={{height:'7vw', width:'7vw'}} />
+            <img src={logo} alt="this is college logo" style={{height:'5vw', width:'5vw'}} />
             </div>
-            <div className='col1' style={{display:'flex', flex:"60%", alignItems:'center', justifyContent:'center',position:'relative',fontSize:'1.5vw',fontFamily:"-moz-initial"}}>
-           <p>CENTRE OF EXCELLENCE IN ARTIFICIAL INTELLIGENCE</p> 
-           <img src={logo} alt="this is college logo" style={{height:'7vw', width:'7vw'}} />
-           <p> INDIRA GANDHI DELHI TECHNICAL UNIVERSITY FOR WOMEN </p>
+            <div className='row' style={{display:'flex', flex:"60%", alignItems:'center', justifyContent:'center',position:'relative',fontSize:'1vw',fontFamily:"Montserrat"}}>
+           <p style={{fontWeight:'bold',marginBottom:'0', fontSize:'2vw'}}>CENTRE OF EXCELLENCE IN ARTIFICIAL INTELLIGENCE</p> 
+           <p style={{fontWeight:'normal', fontSize:'2vw',marginBottom:'0'}}> INDIRA GANDHI DELHI TECHNICAL UNIVERSITY FOR WOMEN </p>
+           <p style={{marginBottom:'0',}}>(Established by Govt. of Delhi vide Act 9 of 2012)</p>
+           <p style={{marginBottom:'0',}}>ISO 9001:2015 Certified University</p>
             </div>
             <div className='col2' style={{display:'flex', flex:"20%",alignItems:'center', justifyContent:'center',position:'relative',fontSize:'5vw'}}>
-            <img src={satyamev_jayate} alt="this is college logo" style={{height:'7vw', width:'7vw'}} />
+            <img src={azadi} alt="this is college logo" style={{height:'4vw', width:'4vw'}} />
+            <img src={goilogo1} alt="this is college logo" style={{height:'7vw', width:'7vw'}} />
+              
+            
+            
            
             </div>
           </div>
