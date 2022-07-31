@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, {useEffect, useState} from 'react';
 import '../App.css';
 import './Home.css';
 import goilogo from "../images/goilogo.jpg";
@@ -13,9 +13,33 @@ import { Fade, Reveal } from 'react-reveal';
 import Pulse from 'react-reveal/Pulse';
 import coeai from "../images/coeai.png"
 import goilogo1 from "../images/goilogo1.png"
+import { getFirestore } from "firebase/firestore";
+import { collection, getDocs } from 'firebase/firestore';
+import app from '../firebase';
 
+const db = getFirestore(app);
 
 function Home() {
+
+  const[dataToShow, setData] = useState([]);
+      
+
+
+  useEffect(() => {
+const data= [];
+
+    const getValues = async () => {
+      const querySnapshot = await getDocs(collection(db, "notice"));
+      querySnapshot.forEach((doc) => {
+        data.push(doc.data());
+         setData(data);
+      });
+         
+    }
+ getValues();
+},[]);
+
+
     const CardInfo = [{image: "https://th.bing.com/th/id/OIP.4byI5Yjd4tBAKO_o1fGHVgHaEK?pid=ImgDet&rs=1",
                         title: "PATENTS",
                         text:"Exclusive right granted for an invention, which is a product or a process that provides, in general, a new way of doing something, or offers a new technical solution to a problem.",
@@ -72,6 +96,10 @@ function Home() {
       </Card>
     )
 
+
+
+    
+
   
 }
 
@@ -108,8 +136,14 @@ function Home() {
           <div className='bgimage' style={{display:'flex', flex:"80%",position:'relative',fontSize:'2vw'}}>
             
         </div>
-          <div className='col'style={{display:'flex', flex:"20%",position:'relative',fontSize:'2vw'}}>
-            <h2>BULLETIEN BOARD</h2>
+          <div style={{ flex:"20%",position:'relative',fontSize:'2vw', border:'0.2vw solid #60BEEB'}}>
+          <div className='row' style={{textAlign:'center',  boxShadow:'0 -20px 20px -20px #8cb0d4 inset'}}><p>NOTICE BOARD</p>
+          
+          </div>
+          {dataToShow.map((item) => (
+            <marquee behavior="scroll" direction="up" scrollamount="3" height='100%'>
+              <p  style={{fontSize:'1vw', }}><a href={item.link} style={{textDecoration:'none'}}>{item.name}</a></p>
+          </marquee> ))}
           </div>
         </div>
       </div>

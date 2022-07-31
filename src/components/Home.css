@@ -18,6 +18,9 @@
   height:30vh;
 
 }
+div.row{
+  --bs-gutter-x: 0rem;
+}
 .photo{
     width: 10vw;
     height: 10vw;
