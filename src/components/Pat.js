@@ -2,7 +2,6 @@ import React, {useEffect, useState} from 'react';
 import Navigation from '../container/Navigation';
 import { getFirestore } from "firebase/firestore";
 import { collection, getDocs } from 'firebase/firestore';
-import Dropdown from 'react-bootstrap/Dropdown';
 import app from '../firebase';
 import './Pat.css';
 import Collapsible from './Collapsible.tsx';
