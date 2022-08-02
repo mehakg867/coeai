@@ -107,18 +107,18 @@ const data= [];
         <div>
         
         <div>
-          <div className='row2' style={{display:'flex', flex:"100%",}}>
+          <div className='row2' style={{display:'flex', flex:"100%",marginBottom:'0vw',height:'12vw'}}>
           <div className='col2' style={{display:'flex', flex:"10%",alignItems:'center', justifyContent:'center',position:'relative',top:'0.7vw',fontSize:'5vw'}}>
           <img src={azadi} alt="this is college logo" style={{height:'4.5vw', width:'6vw',position:'relative',down:'4vw'}} />
             </div>
-           < div className='col2' style={{display:'flex', flex:"10%",alignItems:'center', justifyContent:'center',position:'relative',left:'4vw',top:'0.2vw',fontSize:'5vw'}}>
+           < div className='col2' style={{display:'flex', flex:"10%",alignItems:'center', justifyContent:'center',position:'relative',left:'4.5vw',top:'0.2vw',fontSize:'5vw'}}>
             <img src={logo} alt="this is college logo" style={{height:'6.5vw', width:'7vw'}} />
             </div>
-            <div className='row' style={{display:'flex', flex:"70%", alignItems:'center', justifyContent:'center',position:'relative',right:'2vw'}}>
-           <p className='phead'style={{fontWeight:'bold',marginBottom:'-7vw', fontSize:'2vw',fontFamily:'initial'}}>CENTRE OF EXCELLENCE IN ARTIFICIAL INTELLIGENCE</p> 
-           <p className='phead'style={{fontWeight:'normal', fontSize:'2vw',marginBottom:'-6vw',fontFamily:"serif"}}> INDIRA GANDHI DELHI TECHNICAL UNIVERSITY FOR WOMEN </p>
-           <p className='phead'style={{marginBottom:'-3vw',fontFamily:'revert-layer',position:'relative',right:'2vw'}}>(Established by Govt. of Delhi vide Act 9 of 2012)</p>
-           <p className='phead'style={{marginBottom:'0', marginTop:'-3vw',fontFamily:'revert-layer',position:'relative',right:'2vw'}}>ISO 9001:2015 Certified University</p>
+            <div className='row' style={{display:'flex', flex:"70%", alignItems:'center', justifyContent:'center',position:'relative',right:'1.5vw'}}>
+           <p className='phead'style={{fontWeight:'bold',marginBottom:'-7.5vw', fontSize:'2vw',fontFamily:"Times"}}>CENTRE OF EXCELLENCE IN ARTIFICIAL INTELLIGENCE</p> 
+           <p className='phead'style={{fontWeight:'normal', fontSize:'2vw',marginBottom:'-7vw',fontFamily:"Times"}}> INDIRA GANDHI DELHI TECHNICAL UNIVERSITY FOR WOMEN </p>
+           <p className='phead'style={{marginBottom:'-4.5vw',fontFamily:'Times',position:'relative',right:'2vw'}}>(Established by Govt. of Delhi vide Act 9 of 2012)</p>
+           <p className='phead'style={{marginBottom:'0', marginTop:'-1vw',fontFamily:'Times',position:'relative',right:'2vw'}}>ISO 9001:2015 Certified University</p>
             </div>
             <div className='col2' style={{display:'flex', flex:"10%",alignItems:'center', justifyContent:'center',position:'relative',fontSize:'5vw',top:'0.7vw'}}>
           
