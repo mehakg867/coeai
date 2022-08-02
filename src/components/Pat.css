@@ -1,0 +1,42 @@
+div.card{
+    border: 0px;
+    --bs-card-bg:none;
+}
+/* div.border-bottom{
+    border: 0px;
+} */
+button.btn{
+    margin-top: 0%;
+    
+}
+div.bloc{
+    display: flex;
+    vertical-align: middle;
+    align-content: flex-end;
+}
+h1.expertTopic{
+    
+ font-weight: 1.7vw;
+}
+div.block1{
+    width:68vw;
+    overflow:auto;
+    text-align: left;
+}
+
+div.block2{
+    overflow:auto;
+    justify-content: stretch;
+}
+div.bb{
+display:block;
+overflow:auto;
+height: 100%;
+  
+   
+}
+h1.pat{
+    padding-top: 2vw;
+    font-family: 'Playfair Display', serif;
+    font-size: 4vw;
+}

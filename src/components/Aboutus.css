@@ -1,0 +1,63 @@
+div.about-img.mb-50{
+    padding-top: 5vw;
+    padding-right:15vw;
+}
+h1.react-reveal.mb-25{
+    padding-top: 5vw;
+    padding-bottom: 2vw;
+    font-family: 'Playfair Display', serif;
+    font-size:3vw ;
+}
+h1.mb-25{
+    padding-top: 5vw;
+    padding-bottom: 2vw;
+    font-family: 'Playfair Display', serif;
+    font-size:3vw  
+}
+p.aboutcoe{
+    padding: 0.5vw;
+    text-align: justify;
+    font-size: 1.2vw;
+    font-family: 'Playfair Display', serif;
+    color: gray;
+}
+div.teams{
+    background-color:  #f6f6f6;
+}
+div.row.justify-content-center{
+    padding-top: 3vw  ;
+    padding-left: auto;
+}
+div.content{
+    font-family: 'Playfair Display', serif;  
+    padding-left: auto;
+    padding-top: 1.5vw;
+    
+}
+img.img1{
+    height: 12vw;
+    width: 9vw;
+/*     
+    position: absolute; */
+    
+    /* transform: translate(-50%, -50%);
+    
+   
+    box-sizing: border-box;
+    overflow: hidden; */
+    box-shadow: 0 20px 50px rgb(23, 32, 90);
+   
+    /* color: white; */
+     /* padding: 10px;   */
+  }
+  div.last-img{
+    padding-top: 2vw;
+  }
+
+img.imageab{
+    height: 45vw;
+    width:40vw;
+    align-items:center ;
+}
+
+

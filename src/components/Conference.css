@@ -1,0 +1,46 @@
+div.section.section-lg.section-shaped.pb-350 {
+    background:#a1e0ff;
+    padding-top: 2rem;
+    width: 100vw;
+   
+}
+h1.display-3.text-dark
+{
+    font-family: 'PT Serif', serif;
+    position: relative;
+    font-size: 4vw;
+    line-height: 1em;
+    font-weight: 400;
+    padding-bottom: 7vh;
+    /* z-index: 3; */
+    padding-top: 8vh;
+     /* margin-left: 18vw;  */
+    text-align: center;
+}
+p.lead{
+    font-family: 'Taviraj', serif;
+  
+    position: relative;
+    right:5vw;
+    margin-left:  8vw; 
+    font-weight: 400;
+    color: black;
+   
+    
+}
+a.knowbutn{
+        color: blue;
+    text-decoration: none;
+}
+button.btn{
+    background-color: whitesmoke;
+
+    margin-top: 4vw;
+    text-align: center;
+    position: relative;
+
+}
+button.btn-icon.mb-3.mb-sm-0.btn.btn-info:hover{
+    color:  #0dcaf0;
+    box-shadow: -3px 18px 20px 0px rgba(99,89,99,1);
+}

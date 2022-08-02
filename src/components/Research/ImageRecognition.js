@@ -1,14 +1,16 @@
 import React, {Component} from 'react';
 import { BrowserRouter as Router} from "react-router-dom";
 import Navigation from '../../container/Navigation';
-//import './App.css';
+import construction from "../../images/construction.jpg";
 
 function ImageRecognition() {
   return (
     
       <div>
       <Navigation />
-          <h1>About page</h1>
+          <h1>Image recognition</h1>
+          <p>Page under Construction</p>
+          <img src={construction}/>
       </div>
    
       

@@ -1,40 +1,30 @@
-nav{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    min-height: 10vh;
-    background-color: antiquewhite;
-  }
 
 .nav-links{
     color: #011c38;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     list-style: none;
     text-decoration: none;
 }
-.photo{
-  width: 64px;
-  height: 64px;
-}
+
 div.pagenav.navbar-nav{
   margin-left: auto;
 }
 
 a.allnav.nav-link{
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 0.3vw;
+  margin-right: 0.3vw;
   color:black ;
   text-align: center;
-  margin-top: 10px;
+  margin-top: 1.5vh;
 }
 a.allnav.nav-link:hover{
   border-radius: 2px;
   color: #a51c30;
 }
 a.allnav.dropdown-item{
-  color:black ;
+  color:black;
   width: auto;
 }
 a.allnav.dropdown-item:hover{
@@ -44,6 +34,7 @@ a.allnav.dropdown-item:hover{
  nav.othernav.navbar.navbar-expand-lg.navbar-light.bg-light.sticky-top{
   box-shadow:0 -20px 20px -20px #8cb0d4 inset;
   background-color: #DAEAF1;
+  width: 100vw;
 } 
 span.logonav.navbar-brand{
   margin: auto;
@@ -52,4 +43,7 @@ div.allnav.nav-item.dropdown{
   text-align: center;
 
 
+}
+a.logonav.navbar-brand{
+margin-top: 0.5vw;
 }
