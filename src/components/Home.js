@@ -16,6 +16,7 @@ import goilogo1 from "../images/goilogo1.png"
 import { getFirestore } from "firebase/firestore";
 import { collection, getDocs } from 'firebase/firestore';
 import app from '../firebase';
+import Footer from '../container/Footer';
 
 const db = getFirestore(app);
 
@@ -122,7 +123,7 @@ const data= [];
             </div>
             <div className='col2' style={{display:'flex', flex:"10%",alignItems:'center', justifyContent:'center',position:'relative',fontSize:'5vw',top:'0.7vw'}}>
           
-            <img src={goilogo1} alt="this is college logo" style={{height:'6vw', width:'7vw'}} />
+            <img src={goilogo1} alt="this is college logo" style={{height:'7vw', width:'7vw'}} />
               
             
             
@@ -225,11 +226,11 @@ Engineer the Human Mind"
 
           
            
-                           <div>SUPPORTED BY</div>
+                           {/* <div>SUPPORTED BY</div>
                               <div ><img src={goilogo} alt="this is college logo" className='photo' /></div>
                              <div >Department of Science and Technology</div>
-                        <div>GOI</div>
-
+                        <div>GOI</div> */}
+<Footer/>
                         </div>
       
     );
