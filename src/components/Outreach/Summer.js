@@ -30,7 +30,7 @@ function Summer() {
 },[]);
     return (
       <Zoom>
-        <div className='bg'>
+        <div className='bb'>
         <Navigation/>
             <div><h1>Summer Intership page</h1>
 
