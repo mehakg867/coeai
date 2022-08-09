@@ -33,6 +33,8 @@ div.row{
     background-position: center;
     height: 60vh;
     width: 50vw;
+    background-attachment: fixed;
+
   }
   
   .element style {
