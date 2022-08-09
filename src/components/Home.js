@@ -142,7 +142,7 @@ const data= [];
           
           </div>
           {dataToShow.map((item) => (
-            <marquee behavior="scroll" direction="up" scrollamount="3" height='100%'>
+            <marquee behavior="scroll" direction="up" scrollamount="3" height='100%' style={{backgroundImage:' https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlKahSwc13elt75P40e6c9j0VzmZyFxQbS0A&usqp=CAU'}}>
               <p  style={{fontSize:'1vw', }}><a href={item.link} style={{textDecoration:'none'}}>{item.name}</a></p>
           </marquee> ))}
           </div>
