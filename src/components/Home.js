@@ -63,7 +63,7 @@ const data= [];
                        link: "./Projects",
                       },
 
-                      {image: "C:/Users/Shruti Dubey/OneDrive/Documents/GitHub/coeai/src/images/publication.jpg", 
+                      {image: "https://firebasestorage.googleapis.com/v0/b/coeai-fcece.appspot.com/o/events_images%2Fpublication.jpg?alt=media&token=14b7ae2e-82c1-48f2-9d71-9f4495c67068", 
                       title: "PUBLICATIONS", 
                       text:"Different books and research papers are published by the faculties and the students of the university.",
                       btn: "Explore",
