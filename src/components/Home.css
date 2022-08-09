@@ -31,8 +31,8 @@ div.row{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 100vh;
-    width: 99vw;
+    height: 60vh;
+    width: 50vw;
   }
   
   .element style {

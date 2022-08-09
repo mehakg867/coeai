@@ -16,6 +16,8 @@ import goilogo1 from "../images/goilogo1.png"
 import { getFirestore } from "firebase/firestore";
 import { collection, getDocs } from 'firebase/firestore';
 import app from '../firebase';
+import Picture from "../container/Picture";
+import Footer from '../container/Footer';
 
 const db = getFirestore(app);
 
@@ -133,15 +135,14 @@ const data= [];
 
       <div>
         <div className='row'>
-          <div className='bgimage' style={{display:'flex', flex:"80%",position:'relative',fontSize:'2vw'}}>
-            
-        </div>
+         
+          <Picture/>
           <div style={{ flex:"20%",position:'relative',fontSize:'2vw', border:'0.2vw solid #60BEEB'}}>
           <div className='row' style={{textAlign:'center',  boxShadow:'0 -20px 20px -20px #8cb0d4 inset'}}><p>NOTICE BOARD</p>
           
           </div>
           {dataToShow.map((item) => (
-            <marquee behavior="scroll" direction="up" scrollamount="3" height='100%'>
+            <marquee behavior="scroll" direction="up" scrollamount="3" height='100%' style={{backgroundImage:' https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlKahSwc13elt75P40e6c9j0VzmZyFxQbS0A&usqp=CAU'}}>
               <p  style={{fontSize:'1vw', }}><a href={item.link} style={{textDecoration:'none'}}>{item.name}</a></p>
           </marquee> ))}
           </div>
@@ -225,11 +226,11 @@ Engineer the Human Mind"
 
           
            
-                           <div>SUPPORTED BY</div>
+                           {/* <div>SUPPORTED BY</div>
                               <div ><img src={goilogo} alt="this is college logo" className='photo' /></div>
                              <div >Department of Science and Technology</div>
-                        <div>GOI</div>
-
+                        <div>GOI</div> */}
+<Footer/>
                         </div>
       
     );
