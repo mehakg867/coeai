@@ -179,7 +179,9 @@ COE AI Phase - II</p>
 <div className="col-xl-3 col-md-6 col-sm-10">
 <div className="last-img">
 <div className="image">
-<img className="img1" src="https://www.inifdpatna.com/wp-content/uploads/2019/01/dummy-female.png" alt=""></img>
+
+<img className="img1" src="https://firebasestorage.googleapis.com/v0/b/coeai-fcece.appspot.com/o/events_images%2FPooja%20Gambhir.jpeg?alt=media&token=e38420d2-332e-4cb3-b4ed-01f805f6752enpm start" alt=""></img>
+
 </div>
 <div className="content">
 <h3>Ms. Pooja Gambhir
