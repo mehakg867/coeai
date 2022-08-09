@@ -179,11 +179,9 @@ COE AI Phase - II</p>
 <div className="col-xl-3 col-md-6 col-sm-10">
 <div className="last-img">
 <div className="image">
-<<<<<<< HEAD
-<img className="img1" src="https://firebasestorage.googleapis.com/v0/b/coeai-fcece.appspot.com/o/events_images%2FPooja%20Gambhir.jpeg?alt=media&token=e38420d2-332e-4cb3-b4ed-01f805f6752e" alt=""></img>
-=======
+
 <img className="img1" src="https://firebasestorage.googleapis.com/v0/b/coeai-fcece.appspot.com/o/events_images%2FPooja%20Gambhir.jpeg?alt=media&token=e38420d2-332e-4cb3-b4ed-01f805f6752enpm start" alt=""></img>
->>>>>>> aa31d3c803228bd0490a1251b8b179ab3943ec79
+
 </div>
 <div className="content">
 <h3>Ms. Pooja Gambhir
