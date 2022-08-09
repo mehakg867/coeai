@@ -63,7 +63,7 @@ const data= [];
                        link: "./Projects",
                       },
 
-                      {image: "https://healthforce.ucsf.edu/sites/healthforce.ucsf.edu/files/styles/hero/public/hero-images/publications.jpg?itok=p1NVFuYV", 
+                      {image: "C:/Users/Shruti Dubey/OneDrive/Documents/GitHub/coeai/src/images/publication.jpg", 
                       title: "PUBLICATIONS", 
                       text:"Different books and research papers are published by the faculties and the students of the university.",
                       btn: "Explore",
