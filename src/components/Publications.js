@@ -4,8 +4,7 @@ import { getFirestore } from "firebase/firestore";
 import { collection, getDocs } from 'firebase/firestore';
 import app from '../firebase';
 import './publications.css';
-import { Slide } from 'react-reveal';
-import { Zoom } from 'react-reveal';
+
 
 const db = getFirestore(app);
 
@@ -31,12 +30,9 @@ const db = getFirestore(app);
     },[]);
    
     return (
-      <Zoom>
         <div className='bb'>
         <Navigation/>
-        <Slide top>
         <h1 className='pat'>PUBLICATIONS</h1>
-        </Slide> 
 
         {dataToShow.map((item) => (
     <div className='expert'>
@@ -52,7 +48,6 @@ const db = getFirestore(app);
 
 
         </div>
-        </Zoom>
 );
   }
   

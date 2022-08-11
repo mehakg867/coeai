@@ -2,36 +2,28 @@ import React, {Component} from 'react';
 import { BrowserRouter as Router} from "react-router-dom";
 import Navigation from '../container/Navigation';
 import '../App.css';
-import Fade from 'react-reveal/Fade';
 import './Aboutus.css';
-import { Bounce, Slide, Zoom } from 'react-reveal';
 import ssaggarwal from"../images/ssaggarwal.jpg";
 import Shambhu from"../images/Shambhu.jpg";
 
 
 function Aboutus() {
     return (
-        <Zoom>
         <div>
         <Navigation/>
          <section id="about" className="about-section pt-150">
 <div className="container">
 <div className="row">
 <div className="col-lg-6">
-    <Fade top>
 <div className="about-img mb-50">
 <img  className="imageab "src="https://preview.uideck.com/items/bliss/assets/img/about/about-img.svg" alt="about"></img>
 </div>
-</Fade>
 </div>
 <div className="col-lg-6">
 <div className="about-content mb-50">
 <div className="section-title mb-50">
-    <Fade left>
 <h1 className="mb-25">ABOUT
 COE - AI</h1>
-</Fade>
-<Zoom>
 <p className='aboutcoe'>IGDTUW has established COE in Artificial Intelligence with the support of the
 Department of Science and Technology, GOI. Under the magnanimous leadership
 of Dr. (Mrs.) Amita Dev, avant-garde and state of the art infrastructure with
@@ -54,7 +46,6 @@ and Deep Learning and various applications including Robotics, Drones, NLP,
 and others. it organizes various workshops, seminars, conferences, industry
 talks, hackathons on a regular basis.
 </p>
-</Zoom>
 </div>
 </div>
 </div>
@@ -62,10 +53,7 @@ talks, hackathons on a regular basis.
 </div>
 </section>
 <div className='teams'>
-    <Slide left>
 <h1 className="mb-25">MEET THE TEAM</h1>
-</Slide>
-<Bounce>
 <div className="row justify-content-center">
 <div className="col-xl-3 col-md-6 col-sm-10">
 <div className="single-team">
@@ -114,8 +102,7 @@ COE AI Phase - II</p>
 </div>
 </div>
 </div>
-</Bounce>
-<Bounce>
+
 <div className="row justify-content-center">
 <div className="col-xl-3 col-md-6 col-sm-10">
 <div className="single-team">
@@ -204,11 +191,9 @@ COE AI Phase - II</p>
 </div>
 
 </div>
-</Bounce>
 </div>
 
 </div>
-</Zoom>
     
     );
   }

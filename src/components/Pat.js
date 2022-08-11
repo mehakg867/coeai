@@ -4,7 +4,6 @@ import { getFirestore } from "firebase/firestore";
 import { collection, getDocs } from 'firebase/firestore';
 import app from '../firebase';
 import './Pat.css';
-import { Zoom } from 'react-reveal';
 import Collapsible from './Collapsible.tsx';
 const db = getFirestore(app);
 
@@ -31,7 +30,6 @@ const data= [];
   return (
 
 
-  <Zoom>
     <div className='bb'>
         <Navigation />
         <h1 className='pat'>Patents</h1>
@@ -58,7 +56,6 @@ const data= [];
       
     </div>
     </div>
-    </Zoom>  
 );  }
   
   export default Pat;
