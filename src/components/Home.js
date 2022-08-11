@@ -1,7 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import '../App.css';
 import './Home.css';
-import goilogo from "../images/goilogo.jpg";
 import logo from "../images/logo.png";
 import azadi from "../images/azadi.png";
 import {Nav,NavbarBrand,Navbar, NavDropdown, } from 'react-bootstrap';
@@ -9,8 +8,6 @@ import {Link} from 'react-router-dom';
 import satyamev_jayate from "../images/satyamev_jayate.webp";
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import { Fade, Reveal } from 'react-reveal';
-import Pulse from 'react-reveal/Pulse';
 import coeai from "../images/coeai.png"
 import goilogo1 from "../images/goilogo1.png"
 import { getFirestore } from "firebase/firestore";
@@ -180,7 +177,6 @@ const data= [];
            <div className='grid'>
            {CardInfo.map(renderCard)}
            </div>
-           <Pulse>
            <div className='msgvice'>
            <h1 className='msgheading'>THE HON'BLE VICE CHANCELLOR'S MESSAGE</h1>
            <div className="side-by-side"> 
@@ -220,7 +216,6 @@ Engineer the Human Mind"
 </p>
   </div>
            </div>
-           </Pulse>
               
 
 

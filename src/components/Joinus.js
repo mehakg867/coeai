@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import { Zoom } from 'react-reveal';
 import { BrowserRouter as Router} from "react-router-dom";
 import '../App.css';
 import Navigation from '../container/Navigation';
@@ -7,7 +6,6 @@ import './Joinus.css';
 
 function Joinus() {
     return (
-      <Zoom>
         <div className='bb'>
 
         <Navigation/>
@@ -53,7 +51,6 @@ function Joinus() {
   <br></br>
         </div>
 
-        </Zoom>
       
     );
   }
