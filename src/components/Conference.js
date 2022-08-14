@@ -1,23 +1,12 @@
-import React, {Component} from 'react';
-import { BrowserRouter as Router} from "react-router-dom";
+import React from 'react';
+
 import Navigation from '../container/Navigation';
 import '../App.css';
 import Wave from "react-wavify";
 
 import {
-    Badge,
     Button,
-    Card,
-    CardBody,
-    CardImg,
-    FormGroup,
-    Input,
-    InputGroupAddon,
-    InputGroupText,
-    InputGroup,
-    Container,
-    Row,
-    Col
+    
   } from "reactstrap";
   import './Conference.css';
 
@@ -46,7 +35,7 @@ function Conference() {
                           color="info"
             
                         >
-                          <a className="knowbutn" href="https://aist2022.com/" target="_blank">Read More</a>
+                          <a className="knowbutn" href="https://aist2022.com/" target="_blank" rel="noopener noreferrer">Read More</a>
                           {/* <span className="btn-inner--icon mr-1">
                             <i className="fa fa-code" />
                           </span>

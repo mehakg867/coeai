@@ -1,5 +1,5 @@
-import React, {Component} from 'react';
-import { BrowserRouter as Router} from "react-router-dom";
+import React from 'react';
+
 import Navigation from '../../container/Navigation';
 import construction from "../../images/construction.jpg";
 
@@ -9,7 +9,7 @@ function ComputerVision() {
         <Navigation/>
             <h1>Computer Vision</h1>
             <p>Page under Construction</p>
-            <img src={construction}/>
+            <img src={construction} alt="construction"/>
         </div>
     );
   }
