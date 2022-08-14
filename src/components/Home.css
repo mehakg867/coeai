@@ -131,6 +131,11 @@ bottom: 2px;
  .grid > div{
    flex-basis: calc(20% -40px);
  }
+ .card-Img-top{
+   height: 30%;
+   width:100%;
+   object-fit: cover;
+ }
 
  .Butn{
   display: inline-block;
