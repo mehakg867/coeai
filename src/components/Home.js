@@ -1,17 +1,12 @@
 import React, {useEffect, useState} from 'react';
 import '../App.css';
 import './Home.css';
-import goilogo from "../images/goilogo.jpg";
 import logo from "../images/logo.png";
 import azadi from "../images/azadi.png";
-import {Nav,NavbarBrand,Navbar, NavDropdown, } from 'react-bootstrap';
+import {Nav,Navbar, NavDropdown, } from 'react-bootstrap';
 import {Link} from 'react-router-dom';
-import satyamev_jayate from "../images/satyamev_jayate.webp";
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import { Fade, Reveal } from 'react-reveal';
-import Pulse from 'react-reveal/Pulse';
-import coeai from "../images/coeai.png"
 import goilogo1 from "../images/goilogo1.png"
 import { getFirestore } from "firebase/firestore";
 import { collection, getDocs } from 'firebase/firestore';
@@ -63,7 +58,7 @@ const data= [];
                        link: "./Projects",
                       },
 
-                      {image: "https://healthforce.ucsf.edu/sites/healthforce.ucsf.edu/files/styles/hero/public/hero-images/publications.jpg?itok=p1NVFuYV", 
+                      {image: "https://firebasestorage.googleapis.com/v0/b/coeai-fcece.appspot.com/o/events_images%2Fpublication.jpg?alt=media&token=14b7ae2e-82c1-48f2-9d71-9f4495c67068", 
                       title: "PUBLICATIONS", 
                       text:"Different books and research papers are published by the faculties and the students of the university.",
                       btn: "Explore",
@@ -71,19 +66,12 @@ const data= [];
                     },
                   ];
 
-    const styles ={
-      cardImage: {
-        objectFit: 'cover',
-        
-        width: '100%',
-        height: '30%'
-        }
-      }
-
   const renderCard = (card,index) => {
     return (
       <Card className='box' style={{ width: '18rem', backgroundColor: 'aliceblue' }} key={index} >
-      <Card.Img variant="top" src={card.image} style={styles.cardImage}/>
+      <Card.Img variant="top" src={card.image} style={{objectFit: 'cover', 
+        width: '100%',
+        height: '30%'}}/>
       <Card.Body>
         <Card.Title>{card.title}</Card.Title>
         <Card.Text>
@@ -180,7 +168,6 @@ const data= [];
            <div className='grid'>
            {CardInfo.map(renderCard)}
            </div>
-           <Pulse>
            <div className='msgvice'>
            <h1 className='msgheading'>THE HON'BLE VICE CHANCELLOR'S MESSAGE</h1>
            <div className="side-by-side"> 
@@ -220,7 +207,6 @@ Engineer the Human Mind"
 </p>
   </div>
            </div>
-           </Pulse>
               
 
 

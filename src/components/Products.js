@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import { BrowserRouter as Router} from "react-router-dom";
 import Navigation from '../container/Navigation';
 import construction from "../images/construction.jpg";
 

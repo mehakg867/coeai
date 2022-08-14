@@ -3,7 +3,6 @@ import { BrowserRouter as Router} from "react-router-dom";
 import Navigation from '../container/Navigation';
 import '../App.css';
 import Wave from "react-wavify";
-import { Zoom } from 'react-reveal';
 
 import {
     Badge,
@@ -24,7 +23,6 @@ import {
 
 function Conference() {
     return (
-      <Zoom>
         <div>
         <Navigation/>
         <div className="section section-lg section-shaped pb-350" >
@@ -35,14 +33,12 @@ function Conference() {
                       <h1 className="display-3 text-dark">
                        About Conference
                       </h1>
-                      <Zoom>
                       <p className="lead">
                       After the grand success of three versions of International Conference on Artificial Intelligence and Speech Technology (AIST2019, AIST2020 and AIST2021), Indira Gandhi Delhi Technical University for Women, Delhi is all set to ready for hosting its fourth version i.e. 4th International Conference on Artificial Intelligence and Speech Technology (AIST2022) on 9-10th December, 2022 at IGDTUW Campus, Delhi. Last three Conferences witnessed a number of Expert Researchers, Academicians and Industry Practioners in AI and Speech Domain from premier Institutions in India and abroad including Japan, Australia, France, Germany,  Hungary, Czech Republic, Myanmar, Uzbekistan, Austria, Vietnam and others.
                     </p>
                     <p className="lead">
                       Thanks to Artificial Intelligence (AI), Machine Learning(ML), Natural Language Processing (NLP) and Speech Technology, which are enabling the development of Virtual Assistants in user-facing applications and working in the background to automate workflows. AI driven solutions like speech recognition systems are more accurate and efficient and makes it easier to identify and understand the components of natural language. These models can be used for voice recognition services, making an NLP service well-rounded and more efficient for various domain including medical (e.g. speech impaired people), forensics and academics and others.
                       </p>
-                      </Zoom>
                       <div className="btn-wrapper">
                         <Button
                           className="btn"
@@ -89,7 +85,6 @@ function Conference() {
 
            
         </div>
-        </Zoom>
     );
   }
   

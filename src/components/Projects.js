@@ -1,10 +1,8 @@
 import React, {useEffect, useState} from 'react';
-import { BrowserRouter as Router} from "react-router-dom";
 import Navigation from '../container/Navigation';
 import app from '../firebase';
 import { collection, getDocs } from 'firebase/firestore';
 import { getFirestore } from "firebase/firestore";
-import {Zoom} from 'react-reveal';
 const db = getFirestore(app);
 
 function Projects() {
@@ -24,7 +22,6 @@ function Projects() {
      getValues();
   },[]);
       return (
-  <Zoom>
           <div className='bb'>
           
           <Navigation />
@@ -43,7 +40,6 @@ function Projects() {
   </div>
               ))}
           </div>
-          </Zoom>
       );
   
   }

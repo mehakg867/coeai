@@ -1,3 +1,4 @@
+import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import IGDTUW2 from '../images/IGDTUW2.jpg';
 import IGDTUW3 from '../images/IGDTUW3.jpg';

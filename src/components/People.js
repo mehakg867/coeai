@@ -1,5 +1,4 @@
-import React, {Component} from 'react';
-import { BrowserRouter as Router} from "react-router-dom";
+import React from 'react';
 import '../App.css';
 import Navigation from '../container/Navigation';
 
