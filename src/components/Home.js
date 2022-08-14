@@ -69,9 +69,7 @@ const data= [];
   const renderCard = (card,index) => {
     return (
       <Card className='box' style={{ width: '18rem', backgroundColor: 'aliceblue' }} key={index} >
-      <Card.Img variant="top" src={card.image} style={{objectFit: 'cover', 
-        width: '100%',
-        height: '30%'}}/>
+      <Card.Img variant="top" src={card.image} />
       <Card.Body>
         <Card.Title>{card.title}</Card.Title>
         <Card.Text>
