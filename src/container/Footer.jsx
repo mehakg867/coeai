@@ -38,7 +38,7 @@ const Footer = () => <footer className="page-footer font-small blue pt-4" >
     </div>
 
     <div className="footer-copyright text-center py-3">© 2020 Copyright:
-        <a href="https://www.igdtuw.ac.in/" target="_blank" > IGDTUW</a>
+        <a href="https://www.igdtuw.ac.in/" target="_blank" rel="noopener noreferrer" > IGDTUW</a>
     </div>
 
 </footer>

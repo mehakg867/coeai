@@ -1,5 +1,5 @@
-import React, {Component} from 'react';
-import { BrowserRouter as Router} from "react-router-dom";
+import React from 'react';
+
 import Navigation from '../../container/Navigation';
 import construction from "../../images/construction.jpg";
 
@@ -10,7 +10,7 @@ function ImageRecognition() {
       <Navigation />
           <h1>Image recognition</h1>
           <p>Page under Construction</p>
-          <img src={construction}/>
+          <img src={construction} alt="construction"/>
       </div>
    
       

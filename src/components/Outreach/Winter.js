@@ -1,5 +1,5 @@
-import React, {Component} from 'react';
-import { BrowserRouter as Router} from "react-router-dom";
+import React from 'react';
+
 import construction from "../../images/construction.jpg";
 
 import Navigation from '../../container/Navigation';
@@ -10,7 +10,7 @@ function Winter() {
         <Navigation/>
             <h1>Winter Internship </h1>
             <p>Page under Construction</p>
-            <img src={construction}/>
+            <img src={construction} alt="construction"/>
         </div>
     );
   }
