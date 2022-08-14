@@ -1,7 +1,6 @@
 import React from 'react';
 import '../App.css';
 import Navigation from '../container/Navigation';
-
 import ssaggarwal from"../images/ssaggarwal.jpg";
 import Shambhu from"../images/Shambhu.jpg";
 
@@ -13,7 +12,9 @@ function People() {
             <Navigation />
             
             <div className='teams'>
- 
+    
+<h1 className="mb-25">MEET THE TEAM</h1>
+
 <div className="row justify-content-center">
 <div className="col-xl-3 col-md-6 col-sm-10">
 <div className="single-team">

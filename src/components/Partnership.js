@@ -10,7 +10,7 @@ function Partnership() {
         <div>
         <Navigation />
             <h1>Partnership page</h1>
-            <img src={construction}/>
+            <img src={construction} alt ="construction" />
         </div>
     );
   }

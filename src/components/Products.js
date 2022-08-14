@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import Navigation from '../container/Navigation';
 import construction from "../images/construction.jpg";
 
@@ -8,7 +8,7 @@ function Products() {
         <Navigation/>
             <h1>Product</h1>
             <p>Page under Construction</p>
-            <img src={construction}/>
+            <img src={construction} alt="construction"/>
             
         </div>
     );

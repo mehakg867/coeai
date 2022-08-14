@@ -16,14 +16,14 @@ function Joinus() {
             <div className="icon">
                <i className="fab fa-facebook-f"></i>
             </div>
-            <a href='https://www.facebook.com/igdtuw.delhi.5' target="_blank">    <span>Facebook</span></a>
+            <a href='https://www.facebook.com/igdtuw.delhi.5' target="_blank" rel="noopener noreferrer">    <span>Facebook</span></a>
          </div>
          <br></br>
          <div className="button">
             <div className="icon">
                <i className="fab fa-twitter"></i>
             </div>
-            <a href='https://mobile.twitter.com/igdtuw_delhi' target="_blank">  <span>Twitter</span></a>
+            <a href='https://mobile.twitter.com/igdtuw_delhi' target="_blank" rel="noopener noreferrer">  <span>Twitter</span></a>
          </div>
          <br></br>
 
@@ -31,7 +31,7 @@ function Joinus() {
             <div className="icon">
                <i className="fab fa-linkedin"></i>
             </div>
-          <a href='https://www.linkedin.com/school/indira-gandhi-delhi-technical-university-for-women-new-delhi/' target="_blank"> <span >Linkedin</span></a>
+          <a href='https://www.linkedin.com/school/indira-gandhi-delhi-technical-university-for-women-new-delhi/' target="_blank" rel="noopener noreferrer"> <span >Linkedin</span></a>
             
          </div>
          <br></br>
@@ -39,7 +39,7 @@ function Joinus() {
             <div className="icon">
                <i className="fab fa-youtube"></i>
             </div>
-            <a href='https://www.youtube.com/channel/UCKmYhevZ59gJJP0ZbpReBKA' target="_blank">     <span>YouTube</span></a>
+            <a href='https://www.youtube.com/channel/UCKmYhevZ59gJJP0ZbpReBKA' target="_blank" rel="noopener noreferrer">     <span>YouTube</span></a>
          </div>
       </div>
   <br></br>
