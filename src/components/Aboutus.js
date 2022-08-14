@@ -4,9 +4,7 @@ import Navigation from '../container/Navigation';
 import '../App.css';
 import Fade from 'react-reveal/Fade';
 import './Aboutus.css';
-import { Bounce, Slide, Zoom } from 'react-reveal';
-import ssaggarwal from"../images/ssaggarwal.jpg";
-import Shambhu from"../images/Shambhu.jpg";
+import { Zoom } from 'react-reveal';
 
 
 function Aboutus() {
@@ -61,7 +59,7 @@ talks, hackathons on a regular basis.
 </div>
 </div>
 </section>
-<div className='teams'>
+{/* <div className='teams'>
     <Slide left>
 <h1 className="mb-25">MEET THE TEAM</h1>
 </Slide>
@@ -205,11 +203,10 @@ COE AI Phase - II</p>
 
 </div>
 </Bounce>
-</div>
-
-</div>
+</div> */}
+ </div>
 </Zoom>
-    
+ 
     );
   }
   

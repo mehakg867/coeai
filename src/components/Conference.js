@@ -8,7 +8,6 @@ import { Zoom } from 'react-reveal';
 import {
     Badge,
     Button,
-    Card,
     CardBody,
     CardImg,
     FormGroup,
