@@ -14,10 +14,7 @@ function People() {
             <Navigation />
             
             <div className='teams'>
-    <Slide left>
-<h1 className="mb-25">MEET THE TEAM</h1>
-</Slide>
-<Bounce>
+ 
 <div className="row justify-content-center">
 <div className="col-xl-3 col-md-6 col-sm-10">
 <div className="single-team">
@@ -66,8 +63,7 @@ COE AI Phase - II</p>
 </div>
 </div>
 </div>
-</Bounce>
-<Bounce>
+
 <div className="row justify-content-center">
 <div className="col-xl-3 col-md-6 col-sm-10">
 <div className="single-team">
@@ -156,7 +152,7 @@ COE AI Phase - II</p>
 </div>
 
 </div>
-</Bounce>
+
 </div>
 
 </div>
