@@ -1,5 +1,4 @@
 import React, {useEffect, useState} from 'react';
-import { BrowserRouter as Router} from "react-router-dom";
 import Navigation from '../container/Navigation';
 import app from '../firebase';
 import { collection, getDocs } from 'firebase/firestore';

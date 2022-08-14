@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import '../App.css';
 import Navigation from '../container/Navigation';
 import construction from "../images/construction.jpg";

@@ -3,12 +3,10 @@ import '../App.css';
 import './Home.css';
 import logo from "../images/logo.png";
 import azadi from "../images/azadi.png";
-import {Nav,NavbarBrand,Navbar, NavDropdown, } from 'react-bootstrap';
+import {Nav,Navbar, NavDropdown, } from 'react-bootstrap';
 import {Link} from 'react-router-dom';
-import satyamev_jayate from "../images/satyamev_jayate.webp";
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import coeai from "../images/coeai.png"
 import goilogo1 from "../images/goilogo1.png"
 import { getFirestore } from "firebase/firestore";
 import { collection, getDocs } from 'firebase/firestore';
@@ -68,19 +66,12 @@ const data= [];
                     },
                   ];
 
-    const styles ={
-      cardImage: {
-        objectFit: 'cover',
-        
-        width: '100%',
-        height: '30%'
-        }
-      }
-
   const renderCard = (card,index) => {
     return (
       <Card className='box' style={{ width: '18rem', backgroundColor: 'aliceblue' }} key={index} >
-      <Card.Img variant="top" src={card.image} style={styles.cardImage}/>
+      <Card.Img variant="top" src={card.image} style={{objectFit: 'cover', 
+        width: '100%',
+        height: '30%'}}/>
       <Card.Body>
         <Card.Title>{card.title}</Card.Title>
         <Card.Text>
