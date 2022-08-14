@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import { BrowserRouter as Router} from "react-router-dom";
 import '../App.css';
 import Navigation from '../container/Navigation';
-import { Bounce, Slide, Zoom } from 'react-reveal';
+
 import ssaggarwal from"../images/ssaggarwal.jpg";
 import Shambhu from"../images/Shambhu.jpg";
 
