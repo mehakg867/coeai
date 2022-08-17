@@ -3,7 +3,7 @@ import '../App.css';
 import './Home.css';
 import logo from "../images/logo.png";
 import azadi from "../images/azadi.png";
-import {Nav,Navbar, NavDropdown, } from 'react-bootstrap';
+import {Container, Nav,Navbar, NavDropdown, } from 'react-bootstrap';
 import {Link} from 'react-router-dom';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
@@ -68,6 +68,7 @@ const data= [];
 
   const renderCard = (card,index) => {
     return (
+      <Container fluid>
       <Card className='box' style={{ width: '18rem', backgroundColor: 'aliceblue' }} key={index} >
       <Card.Img variant="top" src={card.image} />
       <Card.Body>
@@ -82,6 +83,8 @@ const data= [];
       <Button variant="outline-info" href={card.link}>{card.btn}</Button>
         </Card.Footer>
       </Card>
+      </Container>
+      
     )
 
 
