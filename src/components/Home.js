@@ -68,7 +68,6 @@ const data= [];
 
   const renderCard = (card,index) => {
     return (
-      <Container fluid>
       <Card className='box' style={{ width: '18rem', backgroundColor: 'aliceblue' }} key={index} >
       <Card.Img variant="top" src={card.image} />
       <Card.Body>
@@ -82,9 +81,7 @@ const data= [];
       <Card.Footer>
       <Button variant="outline-info" href={card.link}>{card.btn}</Button>
         </Card.Footer>
-      </Card>
-      </Container>
-      
+      </Card>      
     )
 
 
