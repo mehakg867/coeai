@@ -22,7 +22,8 @@ import {
   MDBBtn,
   MDBRow,
   MDBCardFooter,
-  MDBCol
+  MDBCol,
+  MDBFooter
 } from 'mdb-react-ui-kit';
 
 const db = getFirestore(app);
@@ -190,7 +191,7 @@ const data= [];
         Exclusive right granted for an invention, which is a product or a process that provides, in general, a new way of doing something, or offers a new technical solution to a problem.
         </MDBCardText>
         <MDBCardFooter>
-        <MDBBtn href='./Pat'>Explore</MDBBtn>
+        <a href="./Pat" class="btn btn-outline-primary waves-effect">Explore</a>
         </MDBCardFooter>
       </MDBCardBody>
     </MDBCard>
@@ -203,9 +204,8 @@ const data= [];
         <MDBCardText>
         A software product is an out-of-the-box piece of software that's been created to solve a more general problem that regularly occurs within a specific segment.
         </MDBCardText>
-       < MDBCardFooter>
-
-        <MDBBtn href='./Products'>Explore</MDBBtn>
+       <MDBCardFooter>
+       <a href="./Products" class="btn btn-outline-primary waves-effect">Explore</a>
         </MDBCardFooter>
       </MDBCardBody>
     </MDBCard>
@@ -219,7 +219,8 @@ const data= [];
         A Software Project is the complete procedure of software development from requirement gathering to testing and maintenance, carried out according to the execution methodologies, in a specified period of time to achieve intended software product.
         </MDBCardText>
         <MDBCardFooter>
-        <MDBBtn href='./Projects'>Explore</MDBBtn>
+
+        <a href="./Projects" class="btn btn-outline-primary waves-effect">Explore</a>
         </MDBCardFooter>
       </MDBCardBody>
     </MDBCard>
@@ -233,11 +234,13 @@ const data= [];
         Different books and research papers are published by the faculties and the students of the university
         </MDBCardText>
         <MDBCardFooter>
-        <MDBBtn href='./Publications'>Explore</MDBBtn>
+        <a href="./Publications" class="btn btn-outline-primary waves-effect">Explore</a>
+
         </MDBCardFooter>
       </MDBCardBody>
     </MDBCard>
     </MDBCol>
+    
 
     </MDBRow>
 
