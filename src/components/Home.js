@@ -189,7 +189,7 @@ const data= [];
         Exclusive right granted for an invention, which is a product or a process that provides, in general, a new way of doing something, or offers a new technical solution to a problem.
         </MDBCardText>
         <MDBCardFooter>
-        <a href="/Pat" class="btn btn-outline-primary waves-effect">Explore</a>
+        <a href="./Pat" class="btn btn-outline-primary waves-effect">Explore</a>
         </MDBCardFooter>
       </MDBCardBody>
     </MDBCard>
@@ -203,7 +203,7 @@ const data= [];
         A software product is an out-of-the-box piece of software that's been created to solve a more general problem that regularly occurs within a specific segment.
         </MDBCardText>
        <MDBCardFooter>
-       <a href="/Products" class="btn btn-outline-primary waves-effect">Explore</a>
+       <a href="./Products" class="btn btn-outline-primary waves-effect">Explore</a>
         </MDBCardFooter>
       </MDBCardBody>
     </MDBCard>
@@ -218,7 +218,7 @@ const data= [];
         </MDBCardText>
         <MDBCardFooter>
 
-        <a href="/Projects" class="btn btn-outline-primary waves-effect">Explore</a>
+        <a href="./Projects" class="btn btn-outline-primary waves-effect">Explore</a>
         </MDBCardFooter>
       </MDBCardBody>
     </MDBCard>
@@ -232,7 +232,7 @@ const data= [];
         Different books and research papers are published by the faculties and the students of the university
         </MDBCardText>
         <MDBCardFooter>
-        <a href="/Publications" class="btn btn-outline-primary waves-effect">Explore</a>
+        <a href="./Publications" class="btn btn-outline-primary waves-effect">Explore</a>
 
         </MDBCardFooter>
       </MDBCardBody>
