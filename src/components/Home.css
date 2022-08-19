@@ -232,3 +232,9 @@ a.ripple.ripple-surface.btn.btn-primary{
   margin-top: auto;
 
 }
+div.card-footer{
+  position:absolute;
+  bottom:0;
+  right:0vw;
+  width:100%;
+}

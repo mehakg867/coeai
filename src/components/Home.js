@@ -189,7 +189,9 @@ const data= [];
         <MDBCardText>
         Exclusive right granted for an invention, which is a product or a process that provides, in general, a new way of doing something, or offers a new technical solution to a problem.
         </MDBCardText>
+        <MDBCardFooter>
         <MDBBtn href='./Pat'>Explore</MDBBtn>
+        </MDBCardFooter>
       </MDBCardBody>
     </MDBCard>
     </MDBCol>
