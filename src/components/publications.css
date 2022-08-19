@@ -16,13 +16,14 @@
     box-shadow: -3px 18px 20px 0px rgba(99,89,99,1);
     transition: all .15s ease;
 }
+
 .grid{
     min-height: 100%;
-    display: flex;
+   display: flex; 
     flex-wrap: wrap;
     flex-direction: row;
   }
- 
+
   .grid > div{
     flex-basis: calc(20% -40px);
   }
