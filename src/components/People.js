@@ -11,7 +11,7 @@ function People() {
         <div>
             <Navigation />
             
-            <div className='teams'>
+            <div className="bb">
     
 <h1 className="mb-25">MEET THE TEAM</h1>
 
