@@ -30,8 +30,8 @@ const data= [];
   return (
 
 
-    <div className='teams'>
-        <Navigation/>
+    <div className='bb'>
+        <Navigation />
         <h1 className='pat'>Patents</h1>
         <div className="App container">
 
