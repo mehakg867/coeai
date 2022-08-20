@@ -10,7 +10,7 @@ function Partnership() {
         <div className='bb'>
         <Navigation />
             <h1 className='pat'>Partnership page</h1>
-            <h2 style={{fontFamily: "'Kaisei Opti', serif"}}>Government bodies/ Institutes/ Organizations
+            <h2 style={{fontFamily: "'Kaisei Opti', serif",fontSize:"2.5vw"}}>Government bodies/ Institutes/ Organizations
 </h2>
             <Marquee gradient="false" speed={30}>
             <img className="gbrand"src="https://firebasestorage.googleapis.com/v0/b/coeai-fcece.appspot.com/o/govt_brands%2F780.png?alt=media&token=cfb8bc03-facc-4e06-ba65-02937ccdb6c2" alt=""></img>
@@ -22,7 +22,7 @@ function Partnership() {
             <img className="gbrand"src="https://firebasestorage.googleapis.com/v0/b/coeai-fcece.appspot.com/o/govt_brands%2Fipgcl-logo.png?alt=media&token=758ae125-1479-4955-a21a-b674ede6cf05" alt=""></img>
             <img className="gbrand"src="https://firebasestorage.googleapis.com/v0/b/coeai-fcece.appspot.com/o/govt_brands%2Fpost.png?alt=media&token=77d3a084-56e5-4a87-8145-22ea75eb0dfa" alt=""></img>
   </Marquee>
-  <h2 style={{fontFamily: "'Kaisei Opti', serif" ,marginTop:"2vw"}}>INDUSTRIAL ORGANIZATIONS
+  <h2 style={{fontFamily: "'Kaisei Opti', serif" ,marginTop:"2vw",fontSize:"2.5vw"}}>INDUSTRIAL ORGANIZATIONS
 </h2>
 <Marquee gradient="false" speed={50}>
             <img className="brand"src="https://firebasestorage.googleapis.com/v0/b/coeai-fcece.appspot.com/o/govt_brands%2F1646199475329-removebg-preview.png?alt=media&token=7fe9f65a-b502-45c3-af2c-c4398bdeb3dc"  alt="edunet"></img>
