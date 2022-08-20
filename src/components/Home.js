@@ -132,7 +132,7 @@ const data= [];
           </div>
         </div>
 
-      <div>
+      <div className="picnotice">
         <div className='row'>
          
           <Picture/>
