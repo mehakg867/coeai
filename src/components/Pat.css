@@ -41,5 +41,9 @@ h1.pat{
     font-size: 4vw;
 }
 p.expertText{
-    display:flex;
+        display:flex;
+
+}
+div.p-3.d-flex {
+    padding: 0%!important;
 }
