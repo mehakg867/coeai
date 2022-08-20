@@ -1,0 +1,20 @@
+img.gbrand{
+    height: 13vw;
+ width:auto;
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+   margin-left: 5vw ;
+
+}
+img.brand{
+    height: 10vw;
+ width:10vw;
+    margin-top: 2vw;
+    margin-bottom: 3vw;
+   margin-left: 5vw ;
+
+}
+div.marquee{
+     display: inline;
+     background: none;
+}

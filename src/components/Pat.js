@@ -42,11 +42,9 @@ const data= [];
     <Collapsible
         open
         title={item.title}>
-                <p className='expertText' style={{fontSize:'1.7vw',fontWeight:'bold', }}>{item.author} </p>
+        <p className='expertText' style={{fontSize:'1.7vw',fontWeight:'bold', }}>{item.author}</p>
         <p className='expertText' style={{fontSize:'1.4vw',fontWeight:'normal'} }>{item.content1} </p>
-        <p className='expertText' style={{fontSize:'1.4vw',fontWeight:'normal'}}>{item.content2} </p>
-
-        
+        <p className='expertText' style={{fontSize:'1.4vw',fontWeight:'normal'}}>{item.content2} </p>  
       </Collapsible>
     </div>
 </div>
