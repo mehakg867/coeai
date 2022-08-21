@@ -13,6 +13,7 @@ import { collection, getDocs } from 'firebase/firestore';
 import app from '../firebase';
 import Picture from "../container/Picture";
 import Footer from '../container/Footer';
+import KommunicateChat from '../chat';
 import {
   MDBCard,
   MDBCardBody,
@@ -22,7 +23,6 @@ import {
   MDBRow,
   MDBCardFooter,
   MDBCol,
-  MDBTypography
 } from 'mdb-react-ui-kit';
 
 const db = getFirestore(app);
@@ -77,28 +77,22 @@ const data= [];
           </div>
         </div>
 
-      <MDBTypography note noteColor='primary'>
-        <strong>Note primary:</strong> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum doloremque
-        officia laboriosam. Itaque ex obcaecati architecto! Qui necessitatibus delectus placeat illo rem id nisi
-        consequatur esse, sint perspiciatis soluta porro?
-      </MDBTypography>
-
       <div className="picnotice">
         <div className='row'>
          
           <Picture/>
-          <div className="square border border-info rounded" style={{ flex:"20%",position:'relative',fontSize:'2vw', border:'0.2vw solid #60BEEB'}}>
-          <div style={{textAlign:'center',  boxShadow:'0 -20px 20px -20px #8cb0d4 inset'}}><p>NOTICE BOARD</p></div>
-
+          <div style={{ flex:"20%",position:'relative',fontSize:'2vw', border:'0.2vw solid #60BEEB' , overflowY:'scroll', maxHeight:'27.7vw'}}>
+          <div className='row' style={{textAlign:'center',  boxShadow:'0 -20px 20px -20px #8cb0d4 inset'  }}><p>NOTICE BOARD</p>
         
+          </div>
           {dataToShow.map((item) => (
-              <h6><a href={item.link} style={{textDecoration:'none'}}>{item.name}</a></h6>            
-           
-             ))}
+            <MDBCard className='notice' border border-4 shadow-inner  style={{fontSize:'0.8vw', textAlign:'left',  backgroundColor: 'aliceblue'}}>
+            <MDBCardBody><a target="_blank" rel="noopener noreferrer" href={item.link} style={{textDecoration:'none'}}>{item.name}</a></MDBCardBody>
+          </MDBCard>
+          ))}
           </div>
         </div>
       </div>
-      
       <>
       <Navbar bg="light" varient= "bright" sticky="top" expand="lg">
       <Navbar.Toggle aria-controls="navbarScroll" />
@@ -190,6 +184,7 @@ const data= [];
     
 
     </MDBRow>
+    <KommunicateChat/>
 
            <div className='msgvice'>
            <h1 className='msgheading'>THE HON'BLE VICE CHANCELLOR'S MESSAGE</h1>
