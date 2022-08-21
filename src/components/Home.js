@@ -13,6 +13,7 @@ import { collection, getDocs } from 'firebase/firestore';
 import app from '../firebase';
 import Picture from "../container/Picture";
 import Footer from '../container/Footer';
+import KommunicateChat from '../chat';
 import {
   MDBCard,
   MDBCardBody,
@@ -48,65 +49,9 @@ const data= [];
 
 
 
-//     const CardInfo = [{image: "https://th.bing.com/th/id/OIP.4byI5Yjd4tBAKO_o1fGHVgHaEK?pid=ImgDet&rs=1",
-//                         title: "PATENTS",
-//                         text:"Exclusive right granted for an invention, which is a product or a process that provides, in general, a new way of doing something, or offers a new technical solution to a problem.",
-//                         btn: "Explore",
-//                         link: "./Pat",
-//                       },
-
-//                       {image: "https://traderspros.com/wp-content/uploads/2020/11/ethereum-basic-info.png",
-//                        title: "PRODUCTS",
-//                         text:"A software product is an out-of-the-box piece of software that's been created to solve a more general problem that regularly occurs within a specific segment.",
-//                          btn: "Explore",
-//                         link: "./Products",
-//                         },
-
-//                       {image: "https://liquidplanner-wpengine.netdna-ssl.com/wp-content/uploads/2019/04/HiRes-17.jpg", 
-//                       title: "PROJECTS", 
-//                       text:"A Software Project is the complete procedure of software development from requirement gathering to testing and maintenance, carried out according to the execution methodologies, in a specified period of time to achieve intended software product.",
-//                        btn: "Explore",
-//                        link: "./Projects",
-//                       },
-
-//                       {image: "https://firebasestorage.googleapis.com/v0/b/coeai-fcece.appspot.com/o/events_images%2Fpublication.jpg?alt=media&token=14b7ae2e-82c1-48f2-9d71-9f4495c67068", 
-//                       title: "PUBLICATIONS", 
-//                       text:"Different books and research papers are published by the faculties and the students of the university.",
-//                       btn: "Explore",
-//                       link: "./Publications",
-//                     },
-//                   ];
-
-//   const renderCard = (card,index) => {
-//     return (
-//       <Card className='box' style={{ width: '18rem', backgroundColor: 'aliceblue' }} key={index} >
-//       <Card.Img variant="top" src={card.image} style={{objectFit: 'cover', 
-//         width: '100%',
-//         height: '30%'}}/>
-//       <Card.Body>
-//         <Card.Title>{card.title}</Card.Title>
-//         <Card.Text>
-//           {card.text}
-//         </Card.Text>
-        
-        
-//       </Card.Body>
-//       <Card.Footer>
-//       <Button variant="outline-info" href={card.link}>{card.btn}</Button>
-//         </Card.Footer>
-//       </Card>
-//     )
-
-
-
-    
-
-  
-// }
-
     return (
         <div>
-        
+        {/* Top header */}
         <div>
           <div className='row2' style={{display:'flex', flex:"100%",marginBottom:'0vw',height:'12vw'}}>
           <div className='col2' style={{display:'flex', flex:"10%",alignItems:'center', justifyContent:'center',position:'relative',top:'0.7vw',fontSize:'5vw'}}>
@@ -136,18 +81,18 @@ const data= [];
         <div className='row'>
          
           <Picture/>
-          <div style={{ flex:"20%",position:'relative',fontSize:'2vw', border:'0.2vw solid #60BEEB'}}>
-          <div className='row' style={{textAlign:'center',  boxShadow:'0 -20px 20px -20px #8cb0d4 inset'}}><p>NOTICE BOARD</p>
+          <div className="notif" style={{ flex:"20%",position:'relative',fontSize:'2vw', border:'0.2vw solid #60BEEB' , overflowY:'scroll', maxHeight:'60vh'}}>
+          <div className='row' style={{textAlign:'center',  boxShadow:'0 -20px 20px -20px #8cb0d4 inset'  }}><p>NOTICE BOARD</p>
         
           </div>
           {dataToShow.map((item) => (
-            <marquee behavior="scroll" direction="up" scrollamount="3"scrolldelay="50" onmouseover="this.stop();" onmouseout="this.start();" height='100%' >
-              <p  style={{fontSize:'1vw', }}><a href={item.link} style={{textDecoration:'none'}}>{item.name}</a></p>
-          </marquee> ))}
+            <MDBCard className='notice' border border-4 shadow-inner  style={{fontSize:'0.8vw', textAlign:'left',  backgroundColor: 'aliceblue'}}>
+            <MDBCardBody><a className='notice' target="_blank" rel="noopener noreferrer" href={item.link} style={{textDecoration:'none'}}>{item.name}</a></MDBCardBody>
+          </MDBCard>
+          ))}
           </div>
         </div>
       </div>
-      
       <>
       <Navbar bg="light" varient= "bright" sticky="top" expand="lg">
       <Navbar.Toggle aria-controls="navbarScroll" />
@@ -176,9 +121,7 @@ const data= [];
         </Navbar.Collapse>
             </Navbar>
             </>
-           {/* <div className='grid'>
-           {CardInfo.map(renderCard)}
-           </div> */}
+           
            <MDBRow>
       <MDBCol sm='3'>
            <MDBCard className='box' style={{ width: '18rem',height:"35rem", backgroundColor: 'aliceblue' }}>
@@ -241,6 +184,7 @@ const data= [];
     
 
     </MDBRow>
+    <KommunicateChat/>
 
            <div className='msgvice'>
            <h1 className='msgheading'>THE HON'BLE VICE CHANCELLOR'S MESSAGE</h1>
