@@ -81,13 +81,13 @@ const data= [];
         <div className='row'>
          
           <Picture/>
-          <div style={{ flex:"20%",position:'relative',fontSize:'2vw', border:'0.2vw solid #60BEEB' , overflowY:'scroll', maxHeight:'27.7vw'}}>
+          <div className="notif" style={{ flex:"20%",position:'relative',fontSize:'2vw', border:'0.2vw solid #60BEEB' , overflowY:'scroll', maxHeight:'60vh'}}>
           <div className='row' style={{textAlign:'center',  boxShadow:'0 -20px 20px -20px #8cb0d4 inset'  }}><p>NOTICE BOARD</p>
         
           </div>
           {dataToShow.map((item) => (
             <MDBCard className='notice' border border-4 shadow-inner  style={{fontSize:'0.8vw', textAlign:'left',  backgroundColor: 'aliceblue'}}>
-            <MDBCardBody><a target="_blank" rel="noopener noreferrer" href={item.link} style={{textDecoration:'none'}}>{item.name}</a></MDBCardBody>
+            <MDBCardBody><a className='notice' target="_blank" rel="noopener noreferrer" href={item.link} style={{textDecoration:'none'}}>{item.name}</a></MDBCardBody>
           </MDBCard>
           ))}
           </div>
