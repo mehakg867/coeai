@@ -5,14 +5,24 @@ import logo from "../images/logo.png";
 import azadi from "../images/azadi.png";
 import {Container, Nav,Navbar, NavDropdown, } from 'react-bootstrap';
 import {Link} from 'react-router-dom';
-import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
+// import Button from 'react-bootstrap/Button';
+// import Card from 'react-bootstrap/Card';
 import goilogo1 from "../images/goilogo1.png"
 import { getFirestore } from "firebase/firestore";
 import { collection, getDocs } from 'firebase/firestore';
 import app from '../firebase';
 import Picture from "../container/Picture";
 import Footer from '../container/Footer';
+import {
+  MDBCard,
+  MDBCardBody,
+  MDBCardTitle,
+  MDBCardText,
+  MDBCardImage,
+  MDBRow,
+  MDBCardFooter,
+  MDBCol,
+} from 'mdb-react-ui-kit';
 
 const db = getFirestore(app);
 
@@ -37,59 +47,62 @@ const data= [];
 },[]);
 
 
-    const CardInfo = [{image: "https://th.bing.com/th/id/OIP.4byI5Yjd4tBAKO_o1fGHVgHaEK?pid=ImgDet&rs=1",
-                        title: "PATENTS",
-                        text:"Exclusive right granted for an invention, which is a product or a process that provides, in general, a new way of doing something, or offers a new technical solution to a problem.",
-                        btn: "Explore",
-                        link: "./Pat",
-                      },
 
-                      {image: "https://traderspros.com/wp-content/uploads/2020/11/ethereum-basic-info.png",
-                       title: "PRODUCTS",
-                        text:"A software product is an out-of-the-box piece of software that's been created to solve a more general problem that regularly occurs within a specific segment.",
-                         btn: "Explore",
-                        link: "./Products",
-                        },
+//     const CardInfo = [{image: "https://th.bing.com/th/id/OIP.4byI5Yjd4tBAKO_o1fGHVgHaEK?pid=ImgDet&rs=1",
+//                         title: "PATENTS",
+//                         text:"Exclusive right granted for an invention, which is a product or a process that provides, in general, a new way of doing something, or offers a new technical solution to a problem.",
+//                         btn: "Explore",
+//                         link: "./Pat",
+//                       },
 
-                      {image: "https://liquidplanner-wpengine.netdna-ssl.com/wp-content/uploads/2019/04/HiRes-17.jpg", 
-                      title: "PROJECTS", 
-                      text:"A Software Project is the complete procedure of software development from requirement gathering to testing and maintenance, carried out according to the execution methodologies, in a specified period of time to achieve intended software product.",
-                       btn: "Explore",
-                       link: "./Projects",
-                      },
+//                       {image: "https://traderspros.com/wp-content/uploads/2020/11/ethereum-basic-info.png",
+//                        title: "PRODUCTS",
+//                         text:"A software product is an out-of-the-box piece of software that's been created to solve a more general problem that regularly occurs within a specific segment.",
+//                          btn: "Explore",
+//                         link: "./Products",
+//                         },
 
-                      {image: "https://firebasestorage.googleapis.com/v0/b/coeai-fcece.appspot.com/o/events_images%2Fpublication.jpg?alt=media&token=14b7ae2e-82c1-48f2-9d71-9f4495c67068", 
-                      title: "PUBLICATIONS", 
-                      text:"Different books and research papers are published by the faculties and the students of the university.",
-                      btn: "Explore",
-                      link: "./Publications",
-                    },
-                  ];
+//                       {image: "https://liquidplanner-wpengine.netdna-ssl.com/wp-content/uploads/2019/04/HiRes-17.jpg", 
+//                       title: "PROJECTS", 
+//                       text:"A Software Project is the complete procedure of software development from requirement gathering to testing and maintenance, carried out according to the execution methodologies, in a specified period of time to achieve intended software product.",
+//                        btn: "Explore",
+//                        link: "./Projects",
+//                       },
 
-  const renderCard = (card,index) => {
-    return (
-      <Card className='box' style={{ width: '18rem', backgroundColor: 'aliceblue' }} key={index} >
-      <Card.Img variant="top" src={card.image} />
-      <Card.Body>
-        <Card.Title>{card.title}</Card.Title>
-        <Card.Text>
-          {card.text}
-        </Card.Text>
+//                       {image: "https://firebasestorage.googleapis.com/v0/b/coeai-fcece.appspot.com/o/events_images%2Fpublication.jpg?alt=media&token=14b7ae2e-82c1-48f2-9d71-9f4495c67068", 
+//                       title: "PUBLICATIONS", 
+//                       text:"Different books and research papers are published by the faculties and the students of the university.",
+//                       btn: "Explore",
+//                       link: "./Publications",
+//                     },
+//                   ];
+
+//   const renderCard = (card,index) => {
+//     return (
+//       <Card className='box' style={{ width: '18rem', backgroundColor: 'aliceblue' }} key={index} >
+//       <Card.Img variant="top" src={card.image} style={{objectFit: 'cover', 
+//         width: '100%',
+//         height: '30%'}}/>
+//       <Card.Body>
+//         <Card.Title>{card.title}</Card.Title>
+//         <Card.Text>
+//           {card.text}
+//         </Card.Text>
         
         
-      </Card.Body>
-      <Card.Footer>
-      <Button variant="outline-info" href={card.link}>{card.btn}</Button>
-        </Card.Footer>
-      </Card>      
-    )
+//       </Card.Body>
+//       <Card.Footer>
+//       <Button variant="outline-info" href={card.link}>{card.btn}</Button>
+//         </Card.Footer>
+//       </Card>
+//     )
 
 
 
     
 
   
-}
+// }
 
     return (
         <div>
@@ -103,10 +116,10 @@ const data= [];
             <img src={logo} alt="this is college logo" style={{height:'6.5vw', width:'7vw'}} />
             </div>
             <div className='row' style={{display:'flex', flex:"70%", alignItems:'center', justifyContent:'center',position:'relative',right:'1.5vw'}}>
-           <p className='phead'style={{fontWeight:'bold',marginBottom:'-7.5vw', fontSize:'2vw',fontFamily:"Times"}}>CENTRE OF EXCELLENCE IN ARTIFICIAL INTELLIGENCE</p> 
-           <p className='phead'style={{fontWeight:'normal', fontSize:'2vw',marginBottom:'-7vw',fontFamily:"Times"}}> INDIRA GANDHI DELHI TECHNICAL UNIVERSITY FOR WOMEN </p>
-           <p className='phead'style={{marginBottom:'-4.5vw',fontFamily:'Times',position:'relative',right:'2vw'}}>(Established by Govt. of Delhi vide Act 9 of 2012)</p>
-           <p className='phead'style={{marginBottom:'0', marginTop:'-1vw',fontFamily:'Times',position:'relative',right:'2vw'}}>ISO 9001:2015 Certified University</p>
+           <h3 className='phead'style={{fontWeight:'bold',marginTop:'2.5vw', fontSize:'2vw',fontFamily:"Times",marginBottom:'0vw'}}>CENTRE OF EXCELLENCE IN ARTIFICIAL INTELLIGENCE</h3> 
+           <p className='phead'style={{marginBottom:'1.5vw',marginTop:'0vw',fontWeight:'normal', fontSize:'2vw',fontFamily:"Times"}}> INDIRA GANDHI DELHI TECHNICAL UNIVERSITY FOR WOMEN </p>
+           <p className='phead'style={{marginBottom:'2vw',fontFamily:'Times',fontSize:'1vw',position:'relative',right:'2vw'}}>(Established by Govt. of Delhi vide Act 9 of 2012)</p>
+           <p className='phead'style={{marginBottom:'4vw', fontFamily:'Times',fontSize:'1vw',position:'relative',right:'2vw'}}>ISO 9001:2015 Certified University</p>
             </div>
             <div className='col2' style={{display:'flex', flex:"10%",alignItems:'center', justifyContent:'center',position:'relative',fontSize:'5vw',top:'0.7vw'}}>
           
@@ -119,7 +132,7 @@ const data= [];
           </div>
         </div>
 
-      <div>
+      <div className="picnotice">
         <div className='row'>
          
           <Picture/>
@@ -128,7 +141,7 @@ const data= [];
         
           </div>
           {dataToShow.map((item) => (
-            <marquee behavior="scroll" direction="up" scrollamount="3" height='100%' style={{backgroundImage:' https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlKahSwc13elt75P40e6c9j0VzmZyFxQbS0A&usqp=CAU'}}>
+            <marquee behavior="scroll" direction="up" scrollamount="3"scrolldelay="50" onmouseover="this.stop();" onmouseout="this.start();" height='100%' >
               <p  style={{fontSize:'1vw', }}><a href={item.link} style={{textDecoration:'none'}}>{item.name}</a></p>
           </marquee> ))}
           </div>
@@ -163,9 +176,72 @@ const data= [];
         </Navbar.Collapse>
             </Navbar>
             </>
-           <div className='grid'>
+           {/* <div className='grid'>
            {CardInfo.map(renderCard)}
-           </div>
+           </div> */}
+           <MDBRow>
+      <MDBCol sm='3'>
+           <MDBCard className='box' style={{ width: '18rem',height:"35rem", backgroundColor: 'aliceblue' }}>
+      <MDBCardImage src='https://th.bing.com/th/id/OIP.4byI5Yjd4tBAKO_o1fGHVgHaEK?pid=ImgDet&rs=1' position='top' alt='...' style={{objectFit: 'cover', width: '100%',height: '30%'}} />
+      <MDBCardBody>
+        <MDBCardTitle>PATENTS</MDBCardTitle>
+        <MDBCardText>
+        Exclusive right granted for an invention, which is a product or a process that provides, in general, a new way of doing something, or offers a new technical solution to a problem.
+        </MDBCardText>
+        <MDBCardFooter>
+        <a href="/Pat" class="btn btn-outline-primary waves-effect">Explore</a>
+        </MDBCardFooter>
+      </MDBCardBody>
+    </MDBCard>
+    </MDBCol>
+    <MDBCol sm='3'>
+    <MDBCard className='box' style={{ width: '18rem',height:"35rem", backgroundColor: 'aliceblue' }}>
+      <MDBCardImage src='https://traderspros.com/wp-content/uploads/2020/11/ethereum-basic-info.png' position='top' alt='...' style={{objectFit: 'cover', width: '100%',height: '30%'}}/>
+      <MDBCardBody>
+        <MDBCardTitle>PRODUCTS</MDBCardTitle>
+        <MDBCardText>
+        A software product is an out-of-the-box piece of software that's been created to solve a more general problem that regularly occurs within a specific segment.
+        </MDBCardText>
+       <MDBCardFooter>
+       <a href="/Products" class="btn btn-outline-primary waves-effect">Explore</a>
+        </MDBCardFooter>
+      </MDBCardBody>
+    </MDBCard>
+    </MDBCol>
+    <MDBCol sm='3'>
+    <MDBCard className='box' style={{ width: '18rem',height:"35rem", backgroundColor: 'aliceblue' }}>
+      <MDBCardImage src='https://liquidplanner-wpengine.netdna-ssl.com/wp-content/uploads/2019/04/HiRes-17.jpg' position='top' alt='...' style={{objectFit: 'cover', width: '100%',height: '30%'}} />
+      <MDBCardBody>
+        <MDBCardTitle>PROJECTS</MDBCardTitle>
+        <MDBCardText>
+        A Software Project is the complete procedure of software development from requirement gathering to testing and maintenance, carried out according to the execution methodologies, in a specified period of time to achieve intended software product.
+        </MDBCardText>
+        <MDBCardFooter>
+
+        <a href="/Projects" class="btn btn-outline-primary waves-effect">Explore</a>
+        </MDBCardFooter>
+      </MDBCardBody>
+    </MDBCard>
+    </MDBCol>
+    <MDBCol sm='3'>
+    <MDBCard className='box' style={{ width: '18rem',height:"35rem", backgroundColor: 'aliceblue' }}>
+      <MDBCardImage src='https://firebasestorage.googleapis.com/v0/b/coeai-fcece.appspot.com/o/events_images%2Fpublication.jpg?alt=media&token=14b7ae2e-82c1-48f2-9d71-9f4495c67068' position='top' alt='...' style={{objectFit: 'cover', width: '100%',height: '30%'}} />
+      <MDBCardBody>
+        <MDBCardTitle>PUBLICATIONS</MDBCardTitle>
+        <MDBCardText>
+        Different books and research papers are published by the faculties and the students of the university
+        </MDBCardText>
+        <MDBCardFooter>
+        <a href="/Publications" class="btn btn-outline-primary waves-effect">Explore</a>
+
+        </MDBCardFooter>
+      </MDBCardBody>
+    </MDBCard>
+    </MDBCol>
+    
+
+    </MDBRow>
+
            <div className='msgvice'>
            <h1 className='msgheading'>THE HON'BLE VICE CHANCELLOR'S MESSAGE</h1>
            <div className="side-by-side"> 

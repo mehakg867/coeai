@@ -40,3 +40,10 @@ h1.pat{
     font-family: 'Playfair Display', serif;
     font-size: 4vw;
 }
+p.expertText{
+        display:flex;
+
+}
+div.p-3.d-flex {
+    padding: 0%!important;
+}
