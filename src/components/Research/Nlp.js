@@ -7,7 +7,7 @@ function Nlp() {
     return (
         <div>
         <Navigation />
-            <h1>Natural Language Processing </h1>
+            <h1 className='evetalk'>Natural Language Processing </h1>
             <p>Page under Construction</p>
             <img src={construction} alt="construction"/>
         </div>

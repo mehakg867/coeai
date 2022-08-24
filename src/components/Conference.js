@@ -21,7 +21,7 @@ function Conference() {
                   
                     
                       <h1 className="display-3 text-dark">
-                       About Conference
+                      AIST-2021
                       </h1>
                       <p className="lead">
                       After the grand success of three versions of International Conference on Artificial Intelligence and Speech Technology (AIST2019, AIST2020 and AIST2021), Indira Gandhi Delhi Technical University for Women, Delhi is all set to ready for hosting its fourth version i.e. 4th International Conference on Artificial Intelligence and Speech Technology (AIST2022) on 9-10th December, 2022 at IGDTUW Campus, Delhi. Last three Conferences witnessed a number of Expert Researchers, Academicians and Industry Practioners in AI and Speech Domain from premier Institutions in India and abroad including Japan, Australia, France, Germany,  Hungary, Czech Republic, Myanmar, Uzbekistan, Austria, Vietnam and others.

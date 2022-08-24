@@ -8,7 +8,7 @@ function ImageRecognition() {
     
       <div>
       <Navigation />
-          <h1>Image recognition</h1>
+          <h1 className='evetalk'>Image recognition</h1>
           <p>Page under Construction</p>
           <img src={construction} alt="construction"/>
       </div>
