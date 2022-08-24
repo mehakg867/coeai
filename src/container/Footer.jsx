@@ -16,22 +16,22 @@ const Footer = () => <footer className="page-footer font-small blue pt-4" >
             <hr className="clearfix w-100 d-md-none pb-0"/>
 
             <div className="col-md-3 mb-md-0 mb-3">
-                <h5 className="text-uppercase">Links</h5>
+                <h5 className="text-uppercase" style={{padding:"1vw"}}>Useful Links</h5>
                 <ul className="list-unstyled">
-                    <li><a href="https://dpl.gov.in/">Delhi Public Library</a></li>
-                    <li><a href="#!">Link 2</a></li>
-                    <li><a href="#!">Link 3</a></li>
-                    <li><a href="#!">Link 4</a></li>
+                    <li style={{marginBottom:"0.5vw"}}><a href="https://www.igdtuw.ac.in/Research.php?id=21">Ph.D. RELATED CIRCULARS/NOTICES</a></li>
+                    <li style={{marginBottom:"0.5vw"}}><a href="https://www.igdtuw.ac.in/Research.php?id=3">Ph.D. PROGRAM</a></li>
+                    <li style={{marginBottom:"0.5vw"}}><a href="https://www.igdtuw.ac.in/Research.php?id=2">PH.D REGULATIONS</a></li>
+                    <li style={{marginBottom:"0.5vw"}}><a href="https://aist2022.com/">AIST</a></li>
                 </ul>
             </div>
 
             <div className="col-md-3 mb-md-0 mb-3">
-                <h5 className="text-uppercase">Links</h5>
-                <ul className="list-unstyled">
-                    <li><a href="#!">Link 1</a></li>
-                    <li><a href="#!">Link 2</a></li>
-                    <li><a href="#!">Link 3</a></li>
-                    <li><a href="#!">Link 4</a></li>
+                <h5 className="text-uppercase" style={{padding:"1vw"}}>Quick Links</h5>
+                <ul className="list-unstyled" >
+                    <li style={{marginBottom:"0.5vw"}}><a href="https://dst.gov.in/">Department of Science and Technology</a></li>
+                    <li style={{marginBottom:"0.5vw"}}><a href="https://dhr.gov.in/" >Department OF Health Research</a></li>
+                    <li style={{marginBottom:"0.5vw"}}><a href="https://www.ieee.org/">IEEE</a></li>
+                    <li style={{marginBottom:"0.5vw"}}><a href="https://link.springer.com/search?facet-discipline=%22Computer+Science%22"style={{marginTop:"1vw"}}>Springer</a></li>
                 </ul>
             </div>
         </div>
