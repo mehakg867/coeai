@@ -30,7 +30,7 @@ function Summer() {
     return (
         <div className='bb'>
         <Navigation/>
-            <div><h1>Summer Intership page</h1>
+            <div><h1 className='evetalk'>Summer Intership page</h1>
 
             {dataToShow.map((item) => (
     <div className='expert'>

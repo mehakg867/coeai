@@ -99,7 +99,7 @@ const data= [];
         <Navbar.Collapse id="navbarScroll"> 
                 <Nav className='Navigation'>
                 <Nav.Link className='homenav' as={Link} to="/Aboutus">About us</Nav.Link>
-                <Nav.Link className='homenav' as={Link} to="/Conference">Conference</Nav.Link>
+                <Nav.Link className='homenav' as={Link} to="/Conference">AIST-2021</Nav.Link>
                 <Nav.Link className='homenav'as={Link} to="/Event">Event</Nav.Link>
                 <Nav.Link className='homenav'as={Link} to="/People">People</Nav.Link>
 

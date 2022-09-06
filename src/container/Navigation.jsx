@@ -29,7 +29,7 @@ function Navigation(){
                   <Nav.Link className='allnav' as={Link} to="/">
                   <img src={home} alt="logo" style={{height:'2vh', width:'2vh'}}/></Nav.Link>
                   <Nav.Link className='allnav' as={Link} to="/Aboutus">About us</Nav.Link>
-                  <Nav.Link className='allnav'as={Link} to="/Conference">Conference</Nav.Link>
+                  <Nav.Link className='allnav'as={Link} to="/Conference">AIST-2021</Nav.Link>
                   <Nav.Link className='allnav'as={Link} to="/Event">Event</Nav.Link>
                   <Nav.Link className='allnav'as={Link} to="/People">People</Nav.Link>
   

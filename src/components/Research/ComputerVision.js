@@ -7,7 +7,7 @@ function ComputerVision() {
     return (
         <div>
         <Navigation/>
-            <h1>Computer Vision</h1>
+            <h1 className='evetalk'>Computer Vision</h1>
             <p>Page under Construction</p>
             <img src={construction} alt="construction"/>
         </div>
