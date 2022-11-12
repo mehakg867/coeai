@@ -153,7 +153,7 @@ const data= [];
     </MDBCol>
     <MDBCol sm='3'>
     <MDBCard className='box' style={{ width: '18rem',height:"35rem", backgroundColor: 'aliceblue' }}>
-      <MDBCardImage src='https://liquidplanner-wpengine.netdna-ssl.com/wp-content/uploads/2019/04/HiRes-17.jpg' position='top' alt='...' style={{objectFit: 'cover', width: '100%',height: '30%'}} />
+      <MDBCardImage src='https://blog.hubbado.com/content/images/2020/01/projectmanager.png' position='top' alt='...' style={{objectFit: 'cover', width: '100%',height: '30%'}} />
       <MDBCardBody>
         <MDBCardTitle>PROJECTS</MDBCardTitle>
         <MDBCardText>
