@@ -3,7 +3,7 @@
 # CoE-AI Website
 
 IGDTUW has established COE in Artificial Intelligence with the support of the Department 
-of Science and Technology, GOI So we have created a website to show all the information regarding that Department
+of Science and Technology, GOI So we have created a website to show all the information regarding that Department.
 
 
 ## Installation
