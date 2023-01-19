@@ -47,8 +47,6 @@ https://mehak-branch--chic-raindrop-504d38.netlify.app/
 
 
 
-
-
 ## Demo
 
 https://drive.google.com/file/d/1CzqTzLvo4S87qMPdM4Ig25RN8j3EUeoc/view
