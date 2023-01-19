@@ -36,13 +36,13 @@ react-beauty-marquee
 
 **Database/ Data Storage:** Firestore Database
 For Firebase Refer Firebase Documentation
+
 https://firebase.google.com/docs
 
 
 ## Deployment
 We have deployed this project on netlify.com
 
-#
 https://mehak-branch--chic-raindrop-504d38.netlify.app/
 
 
