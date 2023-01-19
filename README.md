@@ -35,6 +35,8 @@ react-beauty-marquee
 ● Backend: Firebase
 
 **Database/ Data Storage:** Firestore Database
+For Firebase Refer Firebase Documentation
+https://firebase.google.com/docs
 
 
 ## Deployment
